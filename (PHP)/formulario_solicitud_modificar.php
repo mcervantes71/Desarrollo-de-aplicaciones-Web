@@ -21,7 +21,9 @@
                 }
                 else
                 {
-                    $comando = "SELECT * FROM Leave_requests WHERE leave_request_id = $id";
+                    $comando = "SELECT *
+                                FROM Leave_requests
+                                WHERE leave_request_id = $id";
 
                     $resultado = $conexion->query($comando);
 
@@ -42,15 +44,15 @@
                                     </div>
                                     <div class='form-group'>
                                         <label for='start_date'>Fecha del primer d&iacute;a</label>
-                                        <input type='date' class='form-control' name='start_date' value='".$rows["start_date"]."' />
+                                        <input type='date' class='form-control' name='start_date' value='".$rows["start_date"]."' placeholder='AAAA-MM-DD' />
                                     </div>
                                     <div class='form-group'>
                                         <label for='end_date'>Fecha del &uacute;ltimo d&iacute;a</label>
-                                        <input type='date' class='form-control' name='end_date' value='".$rows["end_date"]."' />
+                                        <input type='date' class='form-control' name='end_date' value='".$rows["end_date"]."' placeholder='AAAA-MM-DD' />
                                     </div>
                                     <div class='form-group'>
                                         <label for='return_date'>Fecha de regreso</label>
-                                        <input type='date' class='form-control' name='return_date' value='".$rows["return_date"]."' />
+                                        <input type='date' class='form-control' name='return_date' value='".$rows["return_date"]."' placeholder='AAAA-MM-DD' />
                                     </div>
                                     <div class='form-group'>
                                         <label for='number_of_days'>N&uacute;mero de d&iacute;as</label>

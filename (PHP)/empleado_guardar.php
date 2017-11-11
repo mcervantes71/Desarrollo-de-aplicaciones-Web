@@ -12,7 +12,20 @@
     }
     else
     {
-        $comando = "INSERT INTO Employees(first_name, last_name, email, manager, available_annual_leaves, available_sick_leaves) VALUES('".$first_name."', '".$last_name."', '".$email."', '".$manager."', 3, 3)";
+        $comando = "INSERT INTO Employees
+                       (first_name,
+                        last_name,
+                        email,
+                        manager,
+                        available_annual_leaves,
+                        available_sick_leaves)
+                    VALUES
+                       ('".$first_name."',
+                        '".$last_name."',
+                        '".$email."',
+                        '".$manager."',
+                           3,
+                           3)";
 
         if($conexion->query($comando))
         {

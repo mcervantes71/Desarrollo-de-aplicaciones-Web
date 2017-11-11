@@ -11,11 +11,18 @@
     }
     else
     {
-        $comando = "INSERT INTO Refusal_comments(leave_request_id, comment) VALUES($leave_request_id, '".$comment."')";
+        $comando = "INSERT INTO Refusal_comments
+                        (leave_request_id,
+                         comment)
+                    VALUES(
+                         $leave_request_id,
+                         '".$comment."')";
 
         if($conexion->query($comando))
         {
-            $comando = "UPDATE Leave_requests SET status='".$status."' WHERE leave_request_id = $leave_request_id";
+            $comando = "UPDATE Leave_requests
+                        SET status='".$status."'
+                        WHERE leave_request_id = $leave_request_id";
 
             if($conexion->query($comando))
             {

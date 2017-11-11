@@ -14,7 +14,22 @@
     }
     else
     {
-        $comando = "INSERT INTO Leave_requests(employee_id, start_date, end_date, return_date, number_of_days, type_of_leave, status) VALUES($employee_id, '".$start_date."', '".$end_date."', '".$return_date."', $number_of_days, '".$type_of_leave."', '0')";
+        $comando = "INSERT INTO Leave_requests
+                       (employee_id,
+                        start_date,
+                        end_date,
+                        return_date,
+                        number_of_days,
+                        type_of_leave,
+                        status)
+                    VALUES
+                        ($employee_id,
+                        '".$start_date."',
+                        '".$end_date."',
+                        '".$return_date."',
+                         $number_of_days,
+                        '".$type_of_leave."',
+                        '0')";
 
         if($conexion->query($comando))
         {

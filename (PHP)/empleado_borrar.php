@@ -9,7 +9,8 @@
     }
     else
     {
-        $comando = "DELETE FROM Employees WHERE employee_id = $id";
+        $comando = "DELETE FROM Employees
+                    WHERE employee_id = $id";
 
         if($conexion->query($comando))
         {

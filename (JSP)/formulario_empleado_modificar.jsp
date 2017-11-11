@@ -30,7 +30,9 @@
                     
                     String id = request.getParameter("id");
                      
-                    String  comando = "SELECT * FROM Employees WHERE employee_id =" + id;
+                    String  comando = "SELECT *
+                                       FROM Employees
+                                       WHERE employee_id =" + id;
                     
                     Statement declaracion =  conexion.createStatement();
                     

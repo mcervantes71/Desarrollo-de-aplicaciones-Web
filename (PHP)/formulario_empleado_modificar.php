@@ -21,7 +21,9 @@
                 }
                 else
                 {
-                    $comando = "SELECT * FROM Employees WHERE employee_id = $id";
+                    $comando = "SELECT *
+                                FROM Employees
+                                WHERE employee_id = $id";
 
                     $resultado = $conexion->query($comando);
 

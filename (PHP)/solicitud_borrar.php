@@ -1,4 +1,3 @@
-
 <?php
     require_once "conexion.php";
 
@@ -10,7 +9,8 @@
     }
     else
     {
-        $comando = "DELETE FROM Leave_requests WHERE leave_request_id = $id";
+        $comando = "DELETE FROM Leave_requests
+                    WHERE leave_request_id = $id";
 
         if($conexion->query($comando))
         {

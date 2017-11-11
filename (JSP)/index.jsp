@@ -47,7 +47,8 @@
                     
                     Connection conexion = DriverManager.getConnection(conexionURL, user, password);
                     
-                    String  comando = "SELECT * FROM Employees";
+                    String  comando = "SELECT *
+                                       FROM Employees";
                     
                     Statement declaracion =  conexion.createStatement();
                     

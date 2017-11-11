@@ -31,7 +31,8 @@
                               "end_date = '" + end_date + "', " +
                               "return_date = '" + return_date + "', " +
                               "number_of_days = " + number_of_days + ", " +
-                              "type_of_leave = '" + type_of_leave + "' " +
+                              "type_of_leave = '" + type_of_leave + "', " +
+                              "status = '0' " +
                           "WHERE leave_request_id = " + original_id;
 
         Statement declaracion =  conexion.createStatement();

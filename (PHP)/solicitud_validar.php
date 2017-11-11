@@ -9,8 +9,10 @@
     }
     else
     {
-        $comando = "UPDATE Leave_requests SET status = '4' WHERE leave_request_id = $id";
-echo $comando;
+        $comando = "UPDATE Leave_requests
+                    SET status = '4'
+                    WHERE leave_request_id = $id";
+
         if($conexion->query($comando))
         { 
             header("Location:permisos.php");

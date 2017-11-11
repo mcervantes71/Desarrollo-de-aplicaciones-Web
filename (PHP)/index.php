@@ -38,7 +38,8 @@
                 }
                 else
                 {
-                    $comando = "SELECT * FROM Employees";
+                    $comando = "SELECT *
+                                FROM Employees";
 
                     $resultado = $conexion->query($comando);
 
