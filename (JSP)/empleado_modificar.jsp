@@ -31,7 +31,7 @@
                           "WHERE employee_id = " + original_id;
 
         Statement declaracion =  conexion.createStatement();
-out.println(comando);
+
         declaracion.execute(comando);
 
         declaracion.close();
