@@ -28,7 +28,12 @@
                         <a class="nav-link" href="permisos.jsp">Permisos</a>
                     </li>  
                 </ul>
-            </div>  
+            </div>
+            <form action="empleado_buscar.jsp" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" name="id" class="form-control" placeholder="Buscar # Empleado">
+                </div>
+            </form>
         </nav>
         <div class="container">
             <h1>Empleados</h1>
@@ -47,8 +52,8 @@
                     
                     Connection conexion = DriverManager.getConnection(conexionURL, user, password);
                     
-                    String  comando = "SELECT *
-                                       FROM Employees";
+                    String  comando = "SELECT *" +
+                                      "FROM Employees";
                     
                     Statement declaracion =  conexion.createStatement();
                     
