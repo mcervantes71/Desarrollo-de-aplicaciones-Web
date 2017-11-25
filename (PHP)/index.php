@@ -21,7 +21,12 @@
                         <a class="nav-link" href="permisos.php">Permisos</a>
                     </li>  
                 </ul>
-            </div>  
+            </div>
+            <form action="empleado_buscar.php" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="number" name="id" class="form-control" placeholder="Buscar # Empleado">
+                </div>
+            </form>
         </nav>
         <div class="container">
             <h1>Empleados</h1>

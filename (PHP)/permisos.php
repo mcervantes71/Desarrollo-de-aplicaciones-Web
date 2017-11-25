@@ -75,6 +75,7 @@
                                         <td>".$rows["last_name"]."</td>
                                         <td><center>".$rows["number_of_days"]."</center></td>
                                         <td>".$rows["type_of_leave"]."</td>";
+                            
                             switch($rows["status"])
                             {
                                 case 0:

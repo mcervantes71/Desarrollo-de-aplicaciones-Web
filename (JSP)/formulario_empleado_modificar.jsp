@@ -48,11 +48,11 @@
                             "</div>" +
                             "<div class='form-group'>" +
                                 "<label for='first_name'>Nombre</label>" +
-                                "<input type='text' class='form-control' name='first_name' value='" + resultado.getString("first_name") + "' />" +
+                                "<input type='text' class='form-control' name='first_name' value='" + resultado.getString("first_name") + "' onkeyup='validar_texto(this.value)' />" +
                             "</div>" +
                             "<div class='form-group'>" +
                                 "<label for='last_name'>Apellido</label>" +
-                                "<input type='text' class='form-control' name='last_name' value='" + resultado.getString("last_name") + "' />" +
+                                "<input type='text' class='form-control' name='last_name' value='" + resultado.getString("last_name") + "' onkeyup='validar_texto(this.value)' />" +
                             "</div>" +
                             "<div class='form-group'>" +
                                 "<label for='email'>Correo</label>" +
@@ -60,7 +60,7 @@
                             "</div>" +
                             "<div class='form-group'>" +
                                 "<label for='manager'>Supervisor</label>" +
-                                "<input type='text' class='form-control' name='manager' value='" + resultado.getString("manager") +"' />" +
+                                "<input type='text' class='form-control' name='manager' value='" + resultado.getString("manager") +"' onkeyup='validar_texto(this.value)' />" +
                             "</div>" +
                             "<button type='submit' class='btn btn-primary'>Guardar</button>" +
                             "<button type='submit' class='btn btn-danger' formaction='index.jsp' formmethod='POST'>Cancelar</button>" +
@@ -77,6 +77,7 @@
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
         </div>
     </body>
 </html>
