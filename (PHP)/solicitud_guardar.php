@@ -8,7 +8,7 @@
     $number_of_days = $_POST["number_of_days"];
     $type_of_leave = $_POST["type_of_leave"];
     
-    if($conexion->connet_error)
+    if($conexion->connect_error)
     {
         die("Error".$conexion->connect_error);
     }

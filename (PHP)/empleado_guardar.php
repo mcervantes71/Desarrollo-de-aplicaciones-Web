@@ -6,7 +6,7 @@
     $email = $_POST["email"];
     $manager = $_POST["manager"];
     
-    if($conexion->connet_error)
+    if($conexion->connect_error)
     {
         die("Error".$conexion->connect_error);
     }

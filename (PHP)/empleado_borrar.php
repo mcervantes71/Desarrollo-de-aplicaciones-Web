@@ -3,7 +3,7 @@
     
     $id = $_GET["id"];
     
-    if($conexion->connet_error)
+    if($conexion->connect_error)
     {
         die("Error".$conexion->connect_error);
     }

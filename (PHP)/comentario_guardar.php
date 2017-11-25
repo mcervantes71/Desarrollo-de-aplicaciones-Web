@@ -5,7 +5,7 @@
     $comment = $_POST["comment"];
     $status = $_POST["status"];
 
-    if($conexion->error)
+    if($conexion->connect_error)
     {
         die("Error: ".$conexion->error);
     }
