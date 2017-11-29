@@ -8,12 +8,12 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.php">Empleados</a>
                     </li>
@@ -21,18 +21,16 @@
                         <a class="nav-link" href="permisos.php">Permisos</a>
                     </li>  
                 </ul>
+                <form class="form-inline my-2 my-lg-0" action="empleado_buscar.php">
+                    <input class="form-control mr-sm-2" type="number" name="id" placeholder="Buscar # Empleado">
+                </form>
             </div>
-            <form action="empleado_buscar.php" class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="number" name="id" class="form-control" placeholder="Buscar # Empleado">
-                </div>
-            </form>
         </nav>
         <div class="container">
             <h1>Empleados</h1>
 
             <form action="formulario_empleado.html">
-                <button type="submit" class="btn btn-primary">Nuevo</button>
+                <button type="submit" class="btn btn-primary">Nuevo</button>-
             </form>
             <?php
                 require_once "conexion.php";
