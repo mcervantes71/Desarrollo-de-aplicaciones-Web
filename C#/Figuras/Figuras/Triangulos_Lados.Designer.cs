@@ -1,6 +1,6 @@
 ﻿namespace Figuras
 {
-    partial class Form1
+    partial class Triangulos_Lados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Triangulos_Lados));
             this.lb_lado1 = new System.Windows.Forms.Label();
             this.lb_lado2 = new System.Windows.Forms.Label();
             this.lb_lado3 = new System.Windows.Forms.Label();
@@ -108,6 +109,7 @@
             this.Controls.Add(this.lb_lado2);
             this.Controls.Add(this.lb_lado1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Tipo de Triángulo";

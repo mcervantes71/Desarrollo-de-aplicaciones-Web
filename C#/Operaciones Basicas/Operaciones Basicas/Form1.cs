@@ -20,8 +20,8 @@ namespace Operaciones_Basicas
 
         private void btn_Suma_Click(object sender, EventArgs e)
         {
-            numero1 = Convert.ToInt32(txt_numero1.Text);
-            numero2 = Convert.ToInt32(txt_numero2.Text);
+            numero1 = Convert.ToSingle(txt_numero1.Text);
+            numero2 = Convert.ToSingle(txt_numero2.Text);
 
             resultado = numero1 + numero2;
 
@@ -30,8 +30,8 @@ namespace Operaciones_Basicas
 
         private void btn_Resta_Click(object sender, EventArgs e)
         {
-            numero1 = Convert.ToInt32(txt_numero1.Text);
-            numero2 = Convert.ToInt32(txt_numero2.Text);
+            numero1 = Convert.ToSingle(txt_numero1.Text);
+            numero2 = Convert.ToSingle(txt_numero2.Text);
 
             resultado = numero1 - numero2;
 
@@ -40,8 +40,8 @@ namespace Operaciones_Basicas
 
         private void btn_Mult_Click(object sender, EventArgs e)
         {
-            numero1 = Convert.ToInt32(txt_numero1.Text);
-            numero2 = Convert.ToInt32(txt_numero2.Text);
+            numero1 = Convert.ToSingle(txt_numero1.Text);
+            numero2 = Convert.ToSingle(txt_numero2.Text);
 
             resultado = numero1 * numero2;
 
@@ -50,9 +50,8 @@ namespace Operaciones_Basicas
 
         private void btn_Div_Click(object sender, EventArgs e)
         {
-            numero1 = Convert.ToInt32(txt_numero1.Text);
-
-            numero2 = Convert.ToInt32(txt_numero2.Text);
+            numero1 = Convert.ToSingle(txt_numero1.Text);
+            numero2 = Convert.ToSingle(txt_numero2.Text);
 
             if (numero2 == 0)
             {

@@ -45,16 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Triangulos_Angulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Triangulos_Angulos.Designer.cs">
+      <DependentUpon>Triangulos_Angulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Triangulos_Lados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Triangulos_Lados.Designer.cs">
+      <DependentUpon>Triangulos_Lados.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Triangulos_Angulos.resx">
+      <DependentUpon>Triangulos_Angulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Triangulos_Lados.resx">
+      <DependentUpon>Triangulos_Lados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

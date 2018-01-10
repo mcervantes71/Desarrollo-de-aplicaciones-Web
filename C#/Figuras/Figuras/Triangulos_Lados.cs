@@ -3,13 +3,13 @@ using System.Windows.Forms;
 
 namespace Figuras
 {
-    public partial class Form1 : Form
+    public partial class Triangulos_Lados : Form
     {
         public int lado1;
         public int lado2;
         public int lado3;
 
-        public Form1()
+        public Triangulos_Lados()
         {
             InitializeComponent();
 
