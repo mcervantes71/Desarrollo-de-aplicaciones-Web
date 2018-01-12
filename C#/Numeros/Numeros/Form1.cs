@@ -17,18 +17,18 @@ namespace Numeros
             InitializeComponent();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             String mensaje = "";
-            int factor = Convert.ToInt32(comboBox1.SelectedItem);
-            int limite = Convert.ToInt32(comboBox2.SelectedItem);
+            int numero = Convert.ToInt32(comboBox1.SelectedItem);
+            int total = 1;
 
-            for(int i = 1; i <= limite; i++)
+            for(int i = 1; i <= numero; i++)
             {
-                mensaje += factor + " x " + i + " = " + (i * factor) + "\n";
+                total *= i;
             }
 
-            MessageBox.Show(mensaje, "Tablas de Multiplicar");
+            MessageBox.Show(total.ToString(), "Tablas de Multiplicar");
         }
     }
 }
