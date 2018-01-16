@@ -24,15 +24,15 @@ namespace Figuras
             angulo2 = Convert.ToInt32(txt_ang2.Text);
             angulo3 = Convert.ToInt32(txt_ang3.Text);
 
-            if (angulo1 < 90 && angulo2 < 90 && angulo2 < 90)
+            if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90)
             {
                 MessageBox.Show("Es un triángulo Acutángulo", "Triángulo");
             }
-            else if(angulo1 == 90 || angulo2 == 90 || angulo2 == 90)
+            else if(angulo1 == 90 || angulo2 == 90 || angulo3 == 90)
             {
                 MessageBox.Show("Es un triángulo Rectángulo", "Triángulo");
             }
-            else if (angulo1 > 90 || angulo2 > 90 || angulo2 > 90)
+            else if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90)
             {
                 MessageBox.Show("Es un triángulo Obtusángulo", "Triángulo");
             }
