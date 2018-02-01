@@ -1,6 +1,12 @@
 $icon-size: 55px;
 $dark-overlay: rgba(0, 0, 0, 0.7);
+
 $white: #fff;
+$light_gray: #eee;
+$dark_gray: #444;
+$black: #000;
+
+/**************************************************/
 
 body{
     overflow-x: hidden;
@@ -15,7 +21,7 @@ body{
     }
 
     .nav-item.active{
-        border-left: 3px solid #444;
+        border-left: 3px solid $dark_gray;
     }
 }
 
@@ -69,7 +75,29 @@ body{
     background-position:  0 -300px;
     text-align: center;
     color: $white;
+    
     a{
         color: $white;
+    }
+}
+
+footer#main-footer{
+    background: $black;
+    color: $white;
+}
+
+#page-header{
+    height: 200px;
+    background: url('../img/image1.jpg');
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: $white;
+    border-bottom: 1px solid $light_gray;
+    padding-top: 50px;
+}
+
+#about{
+    img{
+        margin-top: -50px;
     }
 }

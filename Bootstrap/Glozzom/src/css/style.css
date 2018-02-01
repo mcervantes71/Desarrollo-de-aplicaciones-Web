@@ -1,3 +1,4 @@
+/**************************************************/
 body {
   overflow-x: hidden; }
 
@@ -56,3 +57,19 @@ body {
   color: #fff; }
   #video-play a {
     color: #fff; }
+
+footer#main-footer {
+  background: #000;
+  color: #fff; }
+
+#page-header {
+  height: 200px;
+  background: url("../img/image1.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px solid #eee;
+  padding-top: 50px; }
+
+#about img {
+  margin-top: -50px; }
