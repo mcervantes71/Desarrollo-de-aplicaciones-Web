@@ -3,6 +3,7 @@ $dark-overlay: rgba(0, 0, 0, 0.7);
 
 $white: #fff;
 $light_gray: #eee;
+$gray: #333;
 $dark_gray: #444;
 $black: #000;
 
@@ -75,7 +76,7 @@ body{
     background-position:  0 -300px;
     text-align: center;
     color: $white;
-    
+
     a{
         color: $white;
     }
@@ -99,5 +100,20 @@ footer#main-footer{
 #about{
     img{
         margin-top: -50px;
+    }
+}
+
+#faq{
+    .card{
+        border: $dark_gray;
+        a{
+            color: $white;
+            text-decoration: none;
+
+        }
+    }
+
+    .card-body, .card-header{
+        background: $gray;
     }
 }
