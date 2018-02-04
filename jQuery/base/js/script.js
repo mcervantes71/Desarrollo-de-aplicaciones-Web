@@ -78,12 +78,53 @@
 //    $(".red-box, .blue-box, .green-box").empty();
 //});
 /* * * * * * * * * * * * * * * * * * * * * * * * */
-//$(function(){
+// $(function(){
 //    console.log($("#special_link").attr("href"))
 //    $("#special_link").attr("href", "http://www.google.com");
-//    $("input:checkbox").prop("checked");  //will return true or false
-//    $("input:text").val();
+//    console.log($("input:checkbox").prop("checked"));  //will return true or false
+//    console.log($("input:text").val());
 //    $("input:text").val("Peter");
+// });
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+// $(function(){
+//    console.log($(".red-box").css("width"));
+//    console.log($(".red-box").width());
+//    $(".red-box").css("background-color", "red");
+//    $(".red-box").css("font-size", "50px");
+//    $(".red-box").css("width","+=20");
+//    var properties = $(".red-box").css(["font-size", "color", "background-color"]);
+//    console.log(properties);
+//    console.log(properties["font-size"]);
+//
+//    $(".red-box").css("width",function(){
+//        return "100px";
+//    })
+// });
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    $("a").addClass("fancy-link");
+//    $("p:first").addClass("large emphasize");
+//
+//    $("li li").addClass(function(index){
+//        $(this).addClass("index-" + index);
+//    });
+
+//    $("div").addClass(function(index, currentClass){
+//        if(currentClass === "dummy")
+//        {
+//            return "red-box";
+//        }
+//    });
+//
+//    $(".red-box").removeClass("red-box").addClass("green-box");
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    console.log($("p:first").text());
+//    console.log($("p:first").html());
+//
+//    $("p:first").text("<strong>Hello World</strong>");
+//    $("p:first").html("<strong>Hello World</strong>");
 //});
 /* * * * * * * * * * * * * * * * * * * * * * * * */
 // $(function(){
@@ -159,3 +200,117 @@
 // $(function(){
 //     $(".lightbox").delay(500).fadeIn(1000);
 // });
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    $("#btn").click(function(event){
+//        console.log(event);
+//        console.log("Hello World");
+//
+//        $(".red-box").click();
+//    });
+//
+//    $(".red-box").click(function(){
+//        $(this).fadeTo(500, 0.5);
+//    });
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    $("#btn").hover(function(event){
+//        console.log(event);
+//        console.log("Hello World");
+//    });
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    $(".blue-box").mouseenter(function(event){
+//        console.log(event);
+//        $(this).stop().fadeTo(500, 0.5);
+//    });
+//
+//    $(".blue-box").mouseleave(function(event){
+//        console.log(event);
+//        $(this).stop().fadeTo(500, 1);
+//    });
+//
+//    //hover(handlerIn, handlerOut)
+//    $(".blue-box").hover(function(event){
+//        console.log(event);
+//        $(this).stop().fadeTo(500, 0.5);
+//    }, function(event){
+//        console.log(event);
+//        $(this).stop().fadeTo(500, 1);
+//    });
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    var ARROW_LEFT = 37;
+//    var ARROW_RIGHT = 39;
+//
+//    $("html").keydown(function(event){
+//        console.log(event.which);
+//
+//        if(event.which == ARROW_LEFT)
+//        {
+//            $(".dummy").stop().animate({
+//                "margin-left": "-=10"
+//            }, 50);
+//        }
+//
+//        if(event.which == ARROW_RIGHT)
+//        {
+//            $(".dummy").stop().animate({
+//                "margin-left": "+=10"
+//            }, 50);
+//        }
+//    });
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    $("html").on("click keydown", function(event){
+//        console.log(event);
+//        console.log("event");
+//    });
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//    function myEvent(){
+//        console.log("Mouse was clicked");
+//    }
+//$(function(){
+//    function logEvent(){
+//        console.log("Mouse was clicked");
+//    }
+//
+//    $("html").on("click", myEvent);
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    $("p").click(function(){
+//        $(this).slideUp();
+//    });
+//
+//    $("#content").append("<p>This is a dynamically added paragraph.</p>");
+
+//Delegated events
+//    $("#content").on("click", "p", function(){
+//        $(this).slideUp();
+//    });
+//
+//    $("#content").append("<p>This is a dynamically added paragraph.</p>");
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//    //Passing Additional Data to Events
+//    $("#btn").click(
+//        {username: "Martin",
+//        domain: "martin-cervantes.net"},
+//        function(event){
+//        greetUser(event.data);
+//    });
+//
+//    function greetUser(userdata){
+//       username = userdata.username || "Anonymous";
+//        domain = userdata.domain || "nothing.com";
+//
+//        alert("Welcome back " + username + " from " + domain + "!");
+//    }
+//});

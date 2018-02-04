@@ -27,3 +27,17 @@ body{
 h1{
     color: #000;
 }
+
+.lightbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 30%;
+    height: 60%;
+    padding: 15% 35% 25% 35%;
+    color: #000000;
+    background-color: rgba(200, 100, 0, 0.9);
+    text-align: center;
+    text-shadow: #333 0 1px 0;
+}

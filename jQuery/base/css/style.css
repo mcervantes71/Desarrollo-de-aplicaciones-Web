@@ -18,7 +18,7 @@
     height: 80px;
     margin: 10px 10px 10px 0;
     padding: 10px;
-    color: #ffffff;
+    color: white;
     background-color: #880000;
 }
 
@@ -28,7 +28,7 @@
     height: 80px;
     margin: 10px 10px 10px 0;
     padding: 10px;
-    color: #ffffff;
+    color: white;
     background-color: #008800;
 }
 
@@ -38,8 +38,18 @@
     height: 80px;
     margin: 10px 10px 10px 0;
     padding: 10px;
-    color: #ffffff;
+    color: white;
     background-color: #000088;
+}
+
+.dummy{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    color: white;
+    background-color: yellow;
 }
 
 .large{
