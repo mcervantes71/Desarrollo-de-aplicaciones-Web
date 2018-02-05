@@ -314,3 +314,49 @@
 //        alert("Welcome back " + username + " from " + domain + "!");
 //    }
 //});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+//$(function(){
+//   var inputs = $("input:text, input:password, textarea");
+//
+//   inputs.focus(function(){
+//      $(this).css("box-shadow", "0 0 4px 0");
+//   });
+//
+//   inputs.blur(function(){
+//       $(this).css("box-shadow", "none");
+//   });
+//});
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+// $(function(){
+//     $("input:checkbox").change(function(){
+//         var isChecked = $(this).is(":checked");
+//
+//         console.log(isChecked);
+//
+//         if(isChecked)
+//         {
+//             $(this).add("label[for='agree']").css("box-shadow", "0 0 4px green");
+//         }
+//         else
+//         {
+//             $(this).add("label[for='agree']").css("box-shadow", "0 0 4px red");
+//         }
+//     });
+//
+//     $("input:text").change(function(){
+//         console.log($(this).val());
+//     });
+// });
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+// $(function(){
+//     $("#form1").submit(function(event){
+//         var textarea = $("#message");
+//
+//         if(textarea.val().trim() == "")
+//         {
+//             $(textarea).css("box-shadow", "0 0 4px red");
+//             event.preventDefault();
+//         }
+//
+//     })
+// });
