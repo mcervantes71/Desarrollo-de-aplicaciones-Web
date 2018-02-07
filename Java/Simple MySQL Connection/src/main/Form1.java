@@ -8,6 +8,7 @@ package main;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
@@ -50,10 +51,25 @@ public class Form1 extends javax.swing.JFrame {
         });
 
         jButton2.setText("Consulta");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Borrar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Actualizar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("Nuevo");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -144,6 +160,96 @@ public class Form1 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "MySQL", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+        String mensaje = "";
+        
+        try
+        {
+            String conexionURL = "jdbc:mysql://localhost:3306/escuela";
+            String user =  "Admin";
+            String password = "123456";
+            
+            Connection conexion = DriverManager.getConnection(conexionURL, user, password);
+            
+            String comando = "SELECT * FROM alumnos";
+            
+            Statement statement = conexion.createStatement();
+            
+            ResultSet resultSet = statement.executeQuery(comando);
+            
+            while (resultSet.next())
+            {
+                int no_control = resultSet.getInt("no_control");
+                String nombre = resultSet.getString("nombre");
+                String apaterno = resultSet.getString("apaterno");
+                String amaterno = resultSet.getString("amaterno");
+
+                mensaje += no_control + "\t" + nombre + "\t" + apaterno + "\t" + amaterno + "\n";
+            }
+            
+            JOptionPane.showMessageDialog(null, mensaje,"MySQL",JOptionPane.INFORMATION_MESSAGE);
+            
+            conexion.close();
+        }
+        catch(SQLException e)
+        {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "MySQL", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        try
+        {
+            String conexionURL = "jdbc:mysql://localhost:3306/escuela";
+            String user =  "Admin";
+            String password = "123456";
+            
+            Connection conexion = DriverManager.getConnection(conexionURL, user, password);
+            
+            String comando = "DELETE FROM alumnos WHERE nombre = ?";
+            
+            PreparedStatement preparedStmt = conexion.prepareStatement(comando);
+            preparedStmt.setString(1, "Martin");
+
+            preparedStmt.executeUpdate();
+            
+            JOptionPane.showMessageDialog(null, "Registro Borrado","MySQL",JOptionPane.INFORMATION_MESSAGE);
+            
+            conexion.close();
+        }
+        catch(SQLException e)
+        {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "MySQL", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        try
+        {
+            String conexionURL = "jdbc:mysql://localhost:3306/escuela";
+            String user =  "Admin";
+            String password = "123456";
+            
+            Connection conexion = DriverManager.getConnection(conexionURL, user, password);
+            
+            String comando = "UPDATE alumnos SET no_control = 91645 WHERE nombre = ?";
+            
+            PreparedStatement preparedStmt = conexion.prepareStatement(comando);
+            preparedStmt.setString(1, "Martin");
+
+            preparedStmt.executeUpdate();
+            
+            JOptionPane.showMessageDialog(null, "Registro Actualizado","MySQL",JOptionPane.INFORMATION_MESSAGE);
+            
+            conexion.close();
+        }
+        catch(SQLException e)
+        {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "MySQL", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
