@@ -360,3 +360,41 @@
 //
 //     })
 // });
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+// $(function(){
+//     $("code").load("js/script.js");
+//
+//     $("code").load("js/otro.php",function(response, status){
+//         if(status == "error")
+//         {
+//             alert("Could not find file");
+//         }
+//         else
+//         {
+//             console.log(response);
+//         }
+//     });
+// });
+/* * * * * * * * * * * * * * * * * * * * * * * * */
+$(function(){
+    var flickrURL = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+    $.getJSON(flickrURL,{
+        tags: "sun, beach",
+        tagmode: "any",
+        format: "json"
+    }).done(function(data){
+        console.log(data);
+        $.each(data.items, function(index, item){
+            console.log(item);
+            $("<img>").attr("src", item.media.m).appendTo("#flickr");
+
+            if(index == 4)
+            {
+                return false;
+            }
+        });
+    }).fail(function(){
+        alert("Ajax call failed.");
+    });
+});
