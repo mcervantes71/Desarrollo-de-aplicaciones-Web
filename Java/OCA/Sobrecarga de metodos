@@ -1,0 +1,7 @@
+Sobrecarga de Metodos
+cuando hay sobrecarga multiple del metodo, java busca la coincidencia mas parecida de la siguiente manera:
+  - Coincidencia exacta en el tipo.
+  - Coincidencia del tipo de la Super Clase.
+  - Conviritendo a un tipo primitivo mas grande.
+  - Convirtiendo a un tipo autoboxed.
+  - Argumentos variables.

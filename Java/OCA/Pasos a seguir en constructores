@@ -1,0 +1,5 @@
+1. Se declaran las variables del constructor en el stack.
+2. Si hay una llamada explicita a this(), se llama recursivamente y brincamos al paso 5.
+3. Se llama recursivamente al super() implicito o explicito.
+4. Ejecutamos las inicializaciones explicitas de los atributos.
+5. Ejecutar el cuerpo del constructor actual.
