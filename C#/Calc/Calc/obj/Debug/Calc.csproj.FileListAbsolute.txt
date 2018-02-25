@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\bin\Debug\Calc.exe.config
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\bin\Debug\Calc.exe
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\bin\Debug\Calc.pdb
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.csprojResolveAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.Form1.resources
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.csproj.GenerateResource.Cache
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.exe
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Calc\Calc\obj\Debug\Calc.pdb
