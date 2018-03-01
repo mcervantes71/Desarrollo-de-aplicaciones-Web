@@ -9,6 +9,10 @@ public class _10_Multidimensional_Arrays
         // 2d array
         int[][] array = new int[2][4]; 		// 2 rows and 4 columns
         int anotherArray[][] = new int[2][4];	 
+        
+        int[][] scores = new int[5][];
+        Object[][][] cubies = new Object[3][0][5];
+        java.util.Date[]date[] = new java.util.Date[2][];
 
         int[] myIntArray[] = new int[2][4];		// confusing
 
