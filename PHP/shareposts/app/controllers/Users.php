@@ -1,19 +1,22 @@
 <?php
     class Users extends Controller
     {
-        public function __constructor()
-        {
-            $this->userModel = $this->model('User');
+        public function __construct(){
+        $this->userModel = $this->model('User');
         }
 
         public function register()
         {
-            // Check for posts
+            // Check for POST
             if($_SERVER['REQUEST_METHOD'] == 'POST')
             {
+                // Process form
+
+                // Sanitize POST data
                 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-                $data = [
+                // Init data
+                $data =[
                     'name' => trim($_POST['name']),
                     'email' => trim($_POST['email']),
                     'password' => trim($_POST['password']),
@@ -24,49 +27,56 @@
                     'confirm_password_error' => ''
                 ];
 
+                // Validate Name
                 if(empty($data['name']))
                 {
-                    $data['name_error'] = 'Please enter name';
+                    $data['name_error'] = 'Pleae enter name';
                 }
 
+                // Validate Email
                 if(empty($data['email']))
                 {
-                    $data['email_error'] = 'Please enter email';
+                    $data['email_error'] = 'Pleae enter email';
                 }
-                else if($this->userModal->findUserByEmail($data['email']))
+                else if($this->userModel->findUserByEmail($data['email']))
                 {
-                    $data['email_error'] = 'Email was already registered';
+                    $data['email_error'] = 'Email is already taken';
                 }
 
+                // Validate Password
                 if(empty($data['password']))
                 {
-                    $data['password_error'] = 'Please enter password';
+                    $data['password_error'] = 'Pleae enter password';
                 }
                 else if(strlen($data['password']) < 6)
                 {
                     $data['password_error'] = 'Password must be at least 6 characters';
                 }
 
+                // Validate Confirm Password
                 if(empty($data['confirm_password']))
                 {
-                    $data['confirm_password_error'] = 'Please enter confirm password';
+                    $data['confirm_password_error'] = 'Pleae confirm password';
                 }
                 else if($data['password'] != $data['confirm_password'])
                 {
-                    $data['confirm_password_error'] = 'Password do not match';
+                    $data['confirm_password_error'] = 'Passwords do not match';
                 }
 
-                if(empty($data['name_error'])
-                && empty($data['email_error'])
+                // Make sure errors are empty
+                if(empty($data['email_error'])
+                && empty($data['name_error'])
                 && empty($data['password_error'])
                 && empty($data['confirm_password_error']))
                 {
+                    // Validated
                     die('SUCCESS');
                 }
             }
             else
             {
-                $data = [
+                // Init data
+                $data =[
                     'name' => '',
                     'email' => '',
                     'password' => '',
@@ -78,51 +88,63 @@
                 ];
             }
 
+            // Load view
             $this->view('users/register', $data);
         }
 
         public function login()
         {
-            // Check for posts
+            // Check for POST
             if($_SERVER['REQUEST_METHOD'] == 'POST')
             {
+                // Process form
+                // Sanitize POST data
                 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-                $data = [
+                // Init data
+                $data =[
                     'email' => trim($_POST['email']),
                     'password' => trim($_POST['password']),
                     'email_error' => '',
                     'password_error' => '',
                 ];
 
+                // Validate Email
                 if(empty($data['email']))
                 {
-                    $data['email_error'] = 'Please enter email';
+                    $data['email_error'] = 'Pleae enter email';
                 }
 
+                // Validate Password
                 if(empty($data['password']))
                 {
                     $data['password_error'] = 'Please enter password';
                 }
 
-                if(empty($data['email_error'])
-                && empty($data['password_error']))
+                // Make sure errors are empty
+                if(empty($data['email_error']) && empty($data['password_error']))
                 {
+                    // Validated
                     die('SUCCESS');
+                }
+                else
+                {
+                    // Load view with errors
+                    $this->view('users/login', $data);
                 }
             }
             else
             {
-                //echo 'load form';
-                $data = [
+                // Init data
+                $data =[
                     'email' => '',
                     'password' => '',
                     'email_error' => '',
                     'password_error' => '',
                 ];
-            }
 
-            $this->view('users/login', $data);
+                // Load view
+                $this->view('users/login', $data);
+            }
         }
     }
-?>

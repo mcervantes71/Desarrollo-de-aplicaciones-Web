@@ -3,23 +3,24 @@
     {
         private $db;
 
-        public function __constructor()
+        public function __construct()
         {
             $this->db = new Database;
         }
 
+        // Find user by email
         public function findUserByEmail($email)
         {
-            $this->db->query('SELECT * FROM User WHERE user_email = :email');
-
+            $this->db->query('SELECT * FROM Users WHERE user_email = :email');
+            
             $this->db->bind(':email', $email);
 
-            $row = $this->single();
+            $row = $this->db->single();
 
+            // Check row
             if($this->db->rowCount() > 0)
                 return true;
             else
                 return false;
         }
     }
-?>

@@ -4,7 +4,7 @@
     // URL Root
     define('URL_ROOT', 'http://shareposts.000webhostapp.com/shareposts');
     // Site Name
-    define('SITE_NAME', 'Share Posts');
+    define('SITE_NAME', 'SharePosts');
     // App Version
     define('APP_VERSION', '1.0.0');
 
