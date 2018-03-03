@@ -1,8 +1,9 @@
 <?php
     class Users extends Controller
     {
-        public function __construct(){
-        $this->userModel = $this->model('User');
+        public function __construct()
+        {
+            $this->userModel = $this->model('User');
         }
 
         public function register()
@@ -30,13 +31,13 @@
                 // Validate Name
                 if(empty($data['name']))
                 {
-                    $data['name_error'] = 'Pleae enter name';
+                    $data['name_error'] = 'Please enter name';
                 }
 
                 // Validate Email
                 if(empty($data['email']))
                 {
-                    $data['email_error'] = 'Pleae enter email';
+                    $data['email_error'] = 'Please enter email';
                 }
                 else if($this->userModel->findUserByEmail($data['email']))
                 {
@@ -46,7 +47,7 @@
                 // Validate Password
                 if(empty($data['password']))
                 {
-                    $data['password_error'] = 'Pleae enter password';
+                    $data['password_error'] = 'Please enter password';
                 }
                 else if(strlen($data['password']) < 6)
                 {
@@ -56,7 +57,7 @@
                 // Validate Confirm Password
                 if(empty($data['confirm_password']))
                 {
-                    $data['confirm_password_error'] = 'Pleae confirm password';
+                    $data['confirm_password_error'] = 'Please confirm password';
                 }
                 else if($data['password'] != $data['confirm_password'])
                 {
@@ -64,13 +65,23 @@
                 }
 
                 // Make sure errors are empty
-                if(empty($data['email_error'])
-                && empty($data['name_error'])
+                if(empty($data['name_error'])
+                && empty($data['email_error'])
                 && empty($data['password_error'])
                 && empty($data['confirm_password_error']))
                 {
-                    // Validated
-                    die('SUCCESS');
+                    // Hash Password
+                    $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+
+                    // Register Users
+                    if($this->userModel->register($data))
+                    {
+                        redirect('users/login');
+                    }
+                    else
+                    {
+                        die('Somethig went wrong');
+                    }
                 }
             }
             else
@@ -112,7 +123,7 @@
                 // Validate Email
                 if(empty($data['email']))
                 {
-                    $data['email_error'] = 'Pleae enter email';
+                    $data['email_error'] = 'Please enter email';
                 }
 
                 // Validate Password
