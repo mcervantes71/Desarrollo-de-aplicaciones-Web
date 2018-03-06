@@ -3,6 +3,9 @@
     {
         public function __construct()
         {
+            if(isLoggedIn())
+                redirect('posts');
+                
             $this->userModel = $this->model('User');
         }
 
@@ -71,11 +74,12 @@
                 && empty($data['confirm_password_error']))
                 {
                     // Hash Password
-                    $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+                    //$data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
 
                     // Register Users
                     if($this->userModel->register($data))
                     {
+                        flash('Register Success', 'You are registered and can log in');
                         redirect('users/login');
                     }
                     else
@@ -132,11 +136,35 @@
                     $data['password_error'] = 'Please enter password';
                 }
 
+                // Check for user/email
+                if($this->userModel->findUserByEmail($data['email']))
+                {
+                    // User found
+                }
+                else
+                {
+                    // User not found
+                    $data['email_error'] = 'No User Found';
+                }
+
                 // Make sure errors are empty
                 if(empty($data['email_error']) && empty($data['password_error']))
                 {
                     // Validated
-                    die('SUCCESS');
+                    // Check and set logged in user
+                    $loggedInUser = $this->userModel->login($data['email'], $data['password']);
+
+                    if($loggedInUser)
+                    {
+                        // Create Session
+                        $this->createUserSession($loggedInUser);
+                    }
+                    else
+                    {
+                        $data['password_error'] = 'Password incorrect';
+
+                        $this->view('users/login', $data);
+                    }
                 }
                 else
                 {
@@ -157,5 +185,25 @@
                 // Load view
                 $this->view('users/login', $data);
             }
+        }
+
+        public function createUserSession($user)
+        {
+            $_SESSION['user_id'] = $user->user_id;
+            $_SESSION['user_name'] = $user->user_name;
+            $_SESSION['user_email'] = $user->user_email;
+
+            redirect('posts');
+        }
+
+        public function logout()
+        {
+            unset($_SESSION['user_id']);
+            unset($_SESSION['user_name']);
+            unset($_SESSION['user_email']);
+
+            session_destroy();
+
+            redirect('users/login');
         }
     }
