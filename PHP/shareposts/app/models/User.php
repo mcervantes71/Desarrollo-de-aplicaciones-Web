@@ -14,9 +14,9 @@
             $this->db->query('INSERT INTO Users (user_name,
                                                  user_email,
                                                  user_password)
-                                     VALUES (:user_name,
-                                             :user_email,
-                                             :user_password)');
+                              VALUES (:user_name,
+                                      :user_email,
+                                      :user_password)');
 
             // Bind Values
             $this->db->bind(':user_name', $data['name']);
@@ -32,8 +32,11 @@
         // Login User
         public function login($email, $password)
         {
-            $this->db->query('SELECT * FROM Users WHERE user_email = :user_email');
+            $this->db->query('SELECT * 
+                              FROM Users 
+                              WHERE user_email = :user_email');
 
+            // Bind Values
             $this->db->bind(':user_email', $email);
 
             $row = $this->db->single();
@@ -54,8 +57,11 @@
         // Find user by email
         public function findUserByEmail($email)
         {
-            $this->db->query('SELECT * FROM Users WHERE user_email = :email');
+            $this->db->query('SELECT * 
+                              FROM Users 
+                              WHERE user_email = :email');
 
+            // Bind Values
             $this->db->bind(':email', $email);
 
             $row = $this->db->single();
