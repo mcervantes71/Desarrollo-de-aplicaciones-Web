@@ -9,4 +9,4 @@
     <li>PHP</li>
 </ul>
 
-<img src="programming-languages">
+<img src="programming-languages.jpg">
