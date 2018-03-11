@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=1024" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>impress.js | Herramienta de presentación basada en el poder de las transformaciones y transiciones de CSS3 en los navegadores modernos | por Bartek Szopka Bartaz</title>
+		
+		<meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+		<meta name="author" content="Bartek Szopka" />
+
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+		<link href="css/impress1.css" rel="stylesheet" />
+		
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	</head>
+	<body class="impress-not-supported">
+
+		<div class="fallback-message">
+			<p>Su navegador <b> no es compatible con las características requeridas </b> por impress.js, por lo que se le presenta una versión simplificada de esta presentación. </p>
+			<p>Para una mejor experiencia por favor, utilice la última versión de <b> Chrome </b>, <b> Safari </b> o <b> Firefox </b>.</p>
+		</div>
+
+<!------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------>
+		<div id="impress">
+			<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+				<q>¿No esta usted simplemente <b>aburrido</b> con todas esas presentaciones basadas en diapositivas?</q>
+			</div>
+
+			<div class="step slide" data-x="0" data-y="-1500">
+				<q>¿No crees que las presentaciones <strong> en los navegadores modernos </strong> no debe <strong> copiar los límites </strong> de los programas de diapositivas "clásicos"?</q>
+			</div>
+
+			<div class="step slide" data-x="1000" data-y="-1500">
+				<q>¿Quieres <strong> impresionar a tu público </strong> <strong> con la visualización estupenda </strong> de tu presentación?</q>
+			</div>
+
+			<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+				<span class="try">Entonces prueba usar:</span>
+				<h1>impress.js<sup>*</sup></h1>
+			</div>
+
+			<div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+				<p>Es una <strong>herramienta para hacer presentaciones</strong> <br/>
+				inspirado en <a href="http://prezi.com">prezi.com</a> <br/>
+				y basado en el <strong>poder de las nuevas caracteristicas de CSS3</strong> que se pueden lograr en los nuevos navegadores</p>
+			</div>
+
+			<div id="big" class="step" data-x="4000" data-y="2100" data-rotate="180" data-scale="6">
+				<p>visualiza <b>tus</b> <span class="thoughts">pensamientos</span></p>
+			</div>
+
+			<div id="tiny" class="step" data-x="3150" data-y="2425" data-z="-5000" data-rotate="300" data-scale="1">
+				<p>y <b>pequeñas</b> ideas</p>
+			</div>
+
+			<div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+				<p><b class="positioning">posicionando</b>, <b class="rotating"> rotando </b> y <b class="scaling"> escalando </b> tus ideas en un lienzo infinito</p>
+			</div>
+
+			<div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+				<p>el &uacute;nico <b>l&iacute;mite</b> es tu <b class="imagination">imaginaci&oacute;n</b></p>
+			</div>
+
+			<div id="source" class="step" data-x="6700" data-y="2000" data-rotate="20" data-scale="4">
+				<p>¿Quires saber m&aacute;s?</p>
+				<q><a href="http://github.com/bartaz/impress.js">usa la fuerza</a>, Luke!</q>
+			</div>
+
+			<div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+				<p>una cosa m&aacute;s...</p>
+			</div>
+
+			<div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+				<p>¿<span class="have">hab&iacute;as</span> <span class="noticed">notado</span> <span class="its">que es</span> <span class="in">en</span> <b>3D<sup>*</sup></b>?</p>
+				<span class="footnote">* Supera eso, prezi ;)</span>
+			</div>
+
+			<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+			</div>
+
+		</div>
+<!------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------>
+
+		<div class="hint">
+			<p>Utilice la barra espaciadora <br />o las teclas de flecha <br />para navegar</p>
+		</div>
+		
+		<script>
+		if ("ontouchstart" in document.documentElement)
+		{ 
+			document.querySelector(".hint").innerHTML = "<p>Toque a la izquierda o a la derecha para navegar</p>";
+		}
+		</script>
+
+		<script src="js/impress.js"></script>
+		<script>impress().init();</script>
+
+	</body>
+</html>
+
