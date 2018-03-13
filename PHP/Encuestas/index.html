@@ -15,7 +15,7 @@
         <form action="guardar.php" method="POST">
             <fieldset id="arriba">
                 <legend>Matricula:</legend>
-                <input type="number" name="matricula" required/>
+                <input name="matricula" type="number" required/>
             </fieldset>
             <fieldset id="arriba">
                 <legend>Cuatrimestre:</legend>
@@ -29,7 +29,7 @@
             </fieldset>
             <fieldset id="arriba">
                 <legend>Edad:</legend>
-                <input type="number" name="edad" required/>
+                <input name="edad" type="number" required/>
             </fieldset>
             <fieldset id="arriba">
                 <legend>Sexo:</legend>
@@ -69,7 +69,7 @@
             <table border="1">
                 <thead>
                     <tr id="headers">
-                        <th id="empty"></th>
+                        <th id="empty" rowspan="2"></th>
                         <th colspan="5">Redes Sociales</th>
                         <th colspan="5">Plataformas Educativas</th>
                         <th colspan="4">Aplicaciones</th>
@@ -77,11 +77,10 @@
                         <th colspan="3">Portales de Internet</th>
                     </tr>
                     <tr>
-                        <th id="empty"></th>
                         <th><div class="redes">Facebook</div></th>
                         <th><div class="redes">Badoo</div></th>
                         <th><div class="redes">Instagram</div></th>
-                        <th><div class="redes">Google+</div></th>
+                        <th><div class="redes">GoogleMas</div></th>
                         <th><div class="redes">Twitter</div></th>
                         <th><div class="redes">Schoology</div></th>
                         <th><div class="redes">Eduteka</div></th>
@@ -93,7 +92,7 @@
                         <th><div class="redes">Messenger</div></th>
                         <th><div class="redes">Softonic</div></th>
                         <th><div class="redes">Pandora</div></th>
-                        <th><div class="redes">Web2.0</div></th>
+                        <th><div class="redes">Web2_0</div></th>
                         <th><div class="redes">Wikipedia</div></th>
                         <th><div class="redes">Google</div></th>
                         <th><div class="redes">Windows</div></th>
@@ -104,11 +103,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1. Para comunicarme con amigos y familiares.</td>
+                        <td style="text-align:left">1. Para comunicarme con amigos y familiares.</td>
                         <td><input type="checkbox" name="Facebook1" /></td>
                         <td><input type="checkbox" name="Badoo1" /></td>
                         <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
+                        <td><input type="checkbox" name="GoogleMas1" /></td>
                         <td><input type="checkbox" name="Twitter1" /></td>
                         <td><input type="checkbox" name="Schoology1" /></td>
                         <td><input type="checkbox" name="Eduteka1" /></td>
@@ -120,7 +119,7 @@
                         <td><input type="checkbox" name="Messenger1" /></td>
                         <td><input type="checkbox" name="Softonic1" /></td>
                         <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
+                        <td><input type="checkbox" name="Web2_01" /></td>
                         <td><input type="checkbox" name="Wikipedia1" /></td>
                         <td><input type="checkbox" name="Google1" /></td>
                         <td><input type="checkbox" name="Windows1" /></td>
@@ -129,358 +128,373 @@
                         <td><input type="checkbox" name="Yahoo1" /></td>
                     </tr>
                     <tr>
-                        <td>2. Para comunicarse con maestros.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">2. Para comunicarse con maestros.</td>
+                        <td><input type="checkbox" name="Facebook2" /></td>
+                        <td><input type="checkbox" name="Badoo2" /></td>
+                        <td><input type="checkbox" name="Instagram2" /></td>
+                        <td><input type="checkbox" name="GoogleMas2" /></td>
+                        <td><input type="checkbox" name="Twitter2" /></td>
+                        <td><input type="checkbox" name="Schoology2" /></td>
+                        <td><input type="checkbox" name="Eduteka2" /></td>
+                        <td><input type="checkbox" name="Moodle2" /></td>
+                        <td><input type="checkbox" name="Claroline2" /></td>
+                        <td><input type="checkbox" name="Edmodo2" /></td>
+                        <td><input type="checkbox" name="Whastapp2" /></td>
+                        <td><input type="checkbox" name="Spotify2" /></td>
+                        <td><input type="checkbox" name="Messenger2" /></td>
+                        <td><input type="checkbox" name="Softonic2" /></td>
+                        <td><input type="checkbox" name="Pandora2" /></td>
+                        <td><input type="checkbox" name="Web2_02" /></td>
+                        <td><input type="checkbox" name="Wikipedia2" /></td>
+                        <td><input type="checkbox" name="Google2" /></td>
+                        <td><input type="checkbox" name="Windows2" /></td>
+                        <td><input type="checkbox" name="YouTube2" /></td>
+                        <td><input type="checkbox" name="MSN2" /></td>
+                        <td><input type="checkbox" name="Yahoo2" /></td>
                     </tr>
                     <tr>
-                        <td>3. Para comunicarse con coma&ntilde;eros de clase.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">3. Para comunicarse con coma&ntilde;eros de clase.</td>
+                        <td><input type="checkbox" name="Facebook3" /></td>
+                        <td><input type="checkbox" name="Badoo3" /></td>
+                        <td><input type="checkbox" name="Instagram3" /></td>
+                        <td><input type="checkbox" name="GoogleMas3" /></td>
+                        <td><input type="checkbox" name="Twitter3" /></td>
+                        <td><input type="checkbox" name="Schoology3" /></td>
+                        <td><input type="checkbox" name="Eduteka3" /></td>
+                        <td><input type="checkbox" name="Moodle3" /></td>
+                        <td><input type="checkbox" name="Claroline3" /></td>
+                        <td><input type="checkbox" name="Edmodo3" /></td>
+                        <td><input type="checkbox" name="Whastapp3" /></td>
+                        <td><input type="checkbox" name="Spotify3" /></td>
+                        <td><input type="checkbox" name="Messenger3" /></td>
+                        <td><input type="checkbox" name="Softonic3" /></td>
+                        <td><input type="checkbox" name="Pandora3" /></td>
+                        <td><input type="checkbox" name="Web2_03" /></td>
+                        <td><input type="checkbox" name="Wikipedia3" /></td>
+                        <td><input type="checkbox" name="Google3" /></td>
+                        <td><input type="checkbox" name="Windows3" /></td>
+                        <td><input type="checkbox" name="YouTube3" /></td>
+                        <td><input type="checkbox" name="MSN3" /></td>
+                        <td><input type="checkbox" name="Yahoo3" /></td>
                     </tr>
                     <tr>
-                        <td>4. Para intercambiar archivos.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">4. Para intercambiar archivos.</td>
+                        <td><input type="checkbox" name="Facebook4" /></td>
+                        <td><input type="checkbox" name="Badoo4" /></td>
+                        <td><input type="checkbox" name="Instagram4" /></td>
+                        <td><input type="checkbox" name="GoogleMas4" /></td>
+                        <td><input type="checkbox" name="Twitter4" /></td>
+                        <td><input type="checkbox" name="Schoology4" /></td>
+                        <td><input type="checkbox" name="Eduteka4" /></td>
+                        <td><input type="checkbox" name="Moodle4" /></td>
+                        <td><input type="checkbox" name="Claroline4" /></td>
+                        <td><input type="checkbox" name="Edmodo4" /></td>
+                        <td><input type="checkbox" name="Whastapp4" /></td>
+                        <td><input type="checkbox" name="Spotify4" /></td>
+                        <td><input type="checkbox" name="Messenger4" /></td>
+                        <td><input type="checkbox" name="Softonic4" /></td>
+                        <td><input type="checkbox" name="Pandora4" /></td>
+                        <td><input type="checkbox" name="Web2_04" /></td>
+                        <td><input type="checkbox" name="Wikipedia4" /></td>
+                        <td><input type="checkbox" name="Google4" /></td>
+                        <td><input type="checkbox" name="Windows4" /></td>
+                        <td><input type="checkbox" name="YouTube4" /></td>
+                        <td><input type="checkbox" name="MSN4" /></td>
+                        <td><input type="checkbox" name="Yahoo4" /></td>
                     </tr>
                     <tr>
-                        <td>5. Para intercambiar informaci&oacute;n.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">5. Para intercambiar informaci&oacute;n.</td>
+                        <td><input type="checkbox" name="Facebook5" /></td>
+                        <td><input type="checkbox" name="Badoo5" /></td>
+                        <td><input type="checkbox" name="Instagram5" /></td>
+                        <td><input type="checkbox" name="GoogleMas5" /></td>
+                        <td><input type="checkbox" name="Twitter5" /></td>
+                        <td><input type="checkbox" name="Schoology5" /></td>
+                        <td><input type="checkbox" name="Eduteka5" /></td>
+                        <td><input type="checkbox" name="Moodle5" /></td>
+                        <td><input type="checkbox" name="Claroline5" /></td>
+                        <td><input type="checkbox" name="Edmodo5" /></td>
+                        <td><input type="checkbox" name="Whastapp5" /></td>
+                        <td><input type="checkbox" name="Spotify5" /></td>
+                        <td><input type="checkbox" name="Messenger5" /></td>
+                        <td><input type="checkbox" name="Softonic5" /></td>
+                        <td><input type="checkbox" name="Pandora5" /></td>
+                        <td><input type="checkbox" name="Web2_05" /></td>
+                        <td><input type="checkbox" name="Wikipedia5" /></td>
+                        <td><input type="checkbox" name="Google5" /></td>
+                        <td><input type="checkbox" name="Windows5" /></td>
+                        <td><input type="checkbox" name="YouTube5" /></td>
+                        <td><input type="checkbox" name="MSN5" /></td>
+                        <td><input type="checkbox" name="Yahoo5" /></td>
                     </tr>
                     <tr>
-                        <td>6. Para env&iacute;os multimedia.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">6. Para env&iacute;os multimedia.</td>
+                        <td><input type="checkbox" name="Facebook6" /></td>
+                        <td><input type="checkbox" name="Badoo6" /></td>
+                        <td><input type="checkbox" name="Instagram6" /></td>
+                        <td><input type="checkbox" name="GoogleMas6" /></td>
+                        <td><input type="checkbox" name="Twitter6" /></td>
+                        <td><input type="checkbox" name="Schoology6" /></td>
+                        <td><input type="checkbox" name="Eduteka6" /></td>
+                        <td><input type="checkbox" name="Moodle6" /></td>
+                        <td><input type="checkbox" name="Claroline6" /></td>
+                        <td><input type="checkbox" name="Edmodo6" /></td>
+                        <td><input type="checkbox" name="Whastapp6" /></td>
+                        <td><input type="checkbox" name="Spotify6" /></td>
+                        <td><input type="checkbox" name="Messenger6" /></td>
+                        <td><input type="checkbox" name="Softonic6" /></td>
+                        <td><input type="checkbox" name="Pandora6" /></td>
+                        <td><input type="checkbox" name="Web2_06" /></td>
+                        <td><input type="checkbox" name="Wikipedia6" /></td>
+                        <td><input type="checkbox" name="Google6" /></td>
+                        <td><input type="checkbox" name="Windows6" /></td>
+                        <td><input type="checkbox" name="YouTube6" /></td>
+                        <td><input type="checkbox" name="MSN6" /></td>
+                        <td><input type="checkbox" name="Yahoo6" /></td>
                     </tr>
                     <tr>
-                        <td>7. Para realizar tareas y/o material de estudio.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">7. Para realizar tareas y/o material de estudio.</td>
+                        <td><input type="checkbox" name="Facebook7" /></td>
+                        <td><input type="checkbox" name="Badoo7" /></td>
+                        <td><input type="checkbox" name="Instagram7" /></td>
+                        <td><input type="checkbox" name="GoogleMas7" /></td>
+                        <td><input type="checkbox" name="Twitter7" /></td>
+                        <td><input type="checkbox" name="Schoology7" /></td>
+                        <td><input type="checkbox" name="Eduteka7" /></td>
+                        <td><input type="checkbox" name="Moodle7" /></td>
+                        <td><input type="checkbox" name="Claroline7" /></td>
+                        <td><input type="checkbox" name="Edmodo7" /></td>
+                        <td><input type="checkbox" name="Whastapp7" /></td>
+                        <td><input type="checkbox" name="Spotify7" /></td>
+                        <td><input type="checkbox" name="Messenger7" /></td>
+                        <td><input type="checkbox" name="Softonic7" /></td>
+                        <td><input type="checkbox" name="Pandora7" /></td>
+                        <td><input type="checkbox" name="Web2_07" /></td>
+                        <td><input type="checkbox" name="Wikipedia7" /></td>
+                        <td><input type="checkbox" name="Google7" /></td>
+                        <td><input type="checkbox" name="Windows7" /></td>
+                        <td><input type="checkbox" name="YouTube7" /></td>
+                        <td><input type="checkbox" name="MSN7" /></td>
+                        <td><input type="checkbox" name="Yahoo7" /></td>
                     </tr>
                     <tr>
-                        <td>8. Para realizar ex&aacute;menes.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">8. Para realizar ex&aacute;menes.</td>
+                        <td><input type="checkbox" name="Facebook8" /></td>
+                        <td><input type="checkbox" name="Badoo8" /></td>
+                        <td><input type="checkbox" name="Instagram8" /></td>
+                        <td><input type="checkbox" name="GoogleMas8" /></td>
+                        <td><input type="checkbox" name="Twitter8" /></td>
+                        <td><input type="checkbox" name="Schoology8" /></td>
+                        <td><input type="checkbox" name="Eduteka8" /></td>
+                        <td><input type="checkbox" name="Moodle8" /></td>
+                        <td><input type="checkbox" name="Claroline8" /></td>
+                        <td><input type="checkbox" name="Edmodo8" /></td>
+                        <td><input type="checkbox" name="Whastapp8" /></td>
+                        <td><input type="checkbox" name="Spotify8" /></td>
+                        <td><input type="checkbox" name="Messenger8" /></td>
+                        <td><input type="checkbox" name="Softonic8" /></td>
+                        <td><input type="checkbox" name="Pandora8" /></td>
+                        <td><input type="checkbox" name="Web2_08" /></td>
+                        <td><input type="checkbox" name="Wikipedia8" /></td>
+                        <td><input type="checkbox" name="Google8" /></td>
+                        <td><input type="checkbox" name="Windows8" /></td>
+                        <td><input type="checkbox" name="YouTube8" /></td>
+                        <td><input type="checkbox" name="MSN8" /></td>
+                        <td><input type="checkbox" name="Yahoo8" /></td>
                     </tr>
                     <tr>
-                        <td>9. Para realizar pr&aacute;cticas.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">9. Para realizar pr&aacute;cticas.</td>
+                        <td><input type="checkbox" name="Facebook9" /></td>
+                        <td><input type="checkbox" name="Badoo9" /></td>
+                        <td><input type="checkbox" name="Instagram9" /></td>
+                        <td><input type="checkbox" name="GoogleMas9" /></td>
+                        <td><input type="checkbox" name="Twitter9" /></td>
+                        <td><input type="checkbox" name="Schoology9" /></td>
+                        <td><input type="checkbox" name="Eduteka9" /></td>
+                        <td><input type="checkbox" name="Moodle9" /></td>
+                        <td><input type="checkbox" name="Claroline9" /></td>
+                        <td><input type="checkbox" name="Edmodo9" /></td>
+                        <td><input type="checkbox" name="Whastapp9" /></td>
+                        <td><input type="checkbox" name="Spotify9" /></td>
+                        <td><input type="checkbox" name="Messenger9" /></td>
+                        <td><input type="checkbox" name="Softonic9" /></td>
+                        <td><input type="checkbox" name="Pandora9" /></td>
+                        <td><input type="checkbox" name="Web2_09" /></td>
+                        <td><input type="checkbox" name="Wikipedia9" /></td>
+                        <td><input type="checkbox" name="Google9" /></td>
+                        <td><input type="checkbox" name="Windows9" /></td>
+                        <td><input type="checkbox" name="YouTube9" /></td>
+                        <td><input type="checkbox" name="MSN9" /></td>
+                        <td><input type="checkbox" name="Yahoo9" /></td>
                     </tr>
                     <tr>
-                        <td>10. Para enviar de tareas.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">10. Para enviar de tareas.</td>
+                        <td><input type="checkbox" name="Facebook10" /></td>
+                        <td><input type="checkbox" name="Badoo10" /></td>
+                        <td><input type="checkbox" name="Instagram10" /></td>
+                        <td><input type="checkbox" name="GoogleMas10" /></td>
+                        <td><input type="checkbox" name="Twitter10" /></td>
+                        <td><input type="checkbox" name="Schoology10" /></td>
+                        <td><input type="checkbox" name="Eduteka10" /></td>
+                        <td><input type="checkbox" name="Moodle10" /></td>
+                        <td><input type="checkbox" name="Claroline10" /></td>
+                        <td><input type="checkbox" name="Edmodo10" /></td>
+                        <td><input type="checkbox" name="Whastapp10" /></td>
+                        <td><input type="checkbox" name="Spotify10" /></td>
+                        <td><input type="checkbox" name="Messenger10" /></td>
+                        <td><input type="checkbox" name="Softonic10" /></td>
+                        <td><input type="checkbox" name="Pandora10" /></td>
+                        <td><input type="checkbox" name="Web2_010" /></td>
+                        <td><input type="checkbox" name="Wikipedia10" /></td>
+                        <td><input type="checkbox" name="Google10" /></td>
+                        <td><input type="checkbox" name="Windows10" /></td>
+                        <td><input type="checkbox" name="YouTube10" /></td>
+                        <td><input type="checkbox" name="MSN10" /></td>
+                        <td><input type="checkbox" name="Yahoo10" /></td>
                     </tr>
                     <tr>
-                        <td>11. Para trabajos en equipo.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">11. Para trabajos en equipo.</td>
+                        <td><input type="checkbox" name="Facebook11" /></td>
+                        <td><input type="checkbox" name="Badoo11" /></td>
+                        <td><input type="checkbox" name="Instagram11" /></td>
+                        <td><input type="checkbox" name="GoogleMas11" /></td>
+                        <td><input type="checkbox" name="Twitter11" /></td>
+                        <td><input type="checkbox" name="Schoology11" /></td>
+                        <td><input type="checkbox" name="Eduteka11" /></td>
+                        <td><input type="checkbox" name="Moodle11" /></td>
+                        <td><input type="checkbox" name="Claroline11" /></td>
+                        <td><input type="checkbox" name="Edmodo11" /></td>
+                        <td><input type="checkbox" name="Whastapp11" /></td>
+                        <td><input type="checkbox" name="Spotify11" /></td>
+                        <td><input type="checkbox" name="Messenger11" /></td>
+                        <td><input type="checkbox" name="Softonic11" /></td>
+                        <td><input type="checkbox" name="Pandora11" /></td>
+                        <td><input type="checkbox" name="Web2_011" /></td>
+                        <td><input type="checkbox" name="Wikipedia11" /></td>
+                        <td><input type="checkbox" name="Google11" /></td>
+                        <td><input type="checkbox" name="Windows11" /></td>
+                        <td><input type="checkbox" name="YouTube11" /></td>
+                        <td><input type="checkbox" name="MSN11" /></td>
+                        <td><input type="checkbox" name="Yahoo11" /></td>
                     </tr>
                     <tr>
-                        <td>12. Como apoyo a las clases.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">12. Como apoyo a las clases.</td>
+                        <td><input type="checkbox" name="Facebook12" /></td>
+                        <td><input type="checkbox" name="Badoo12" /></td>
+                        <td><input type="checkbox" name="Instagram12" /></td>
+                        <td><input type="checkbox" name="GoogleMas12" /></td>
+                        <td><input type="checkbox" name="Twitter12" /></td>
+                        <td><input type="checkbox" name="Schoology12" /></td>
+                        <td><input type="checkbox" name="Eduteka12" /></td>
+                        <td><input type="checkbox" name="Moodle12" /></td>
+                        <td><input type="checkbox" name="Claroline12" /></td>
+                        <td><input type="checkbox" name="Edmodo12" /></td>
+                        <td><input type="checkbox" name="Whastapp12" /></td>
+                        <td><input type="checkbox" name="Spotify12" /></td>
+                        <td><input type="checkbox" name="Messenger12" /></td>
+                        <td><input type="checkbox" name="Softonic12" /></td>
+                        <td><input type="checkbox" name="Pandora12" /></td>
+                        <td><input type="checkbox" name="Web2_012" /></td>
+                        <td><input type="checkbox" name="Wikipedia12" /></td>
+                        <td><input type="checkbox" name="Google12" /></td>
+                        <td><input type="checkbox" name="Windows12" /></td>
+                        <td><input type="checkbox" name="YouTube12" /></td>
+                        <td><input type="checkbox" name="MSN12" /></td>
+                        <td><input type="checkbox" name="Yahoo12" /></td>
                     </tr>
                     <tr>
-                        <td>13. Para ver y/o descargar videos.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">13. Para ver y/o descargar videos.</td>
+                        <td><input type="checkbox" name="Facebook13" /></td>
+                        <td><input type="checkbox" name="Badoo13" /></td>
+                        <td><input type="checkbox" name="Instagram13" /></td>
+                        <td><input type="checkbox" name="GoogleMas13" /></td>
+                        <td><input type="checkbox" name="Twitter13" /></td>
+                        <td><input type="checkbox" name="Schoology13" /></td>
+                        <td><input type="checkbox" name="Eduteka13" /></td>
+                        <td><input type="checkbox" name="Moodle13" /></td>
+                        <td><input type="checkbox" name="Claroline13" /></td>
+                        <td><input type="checkbox" name="Edmodo13" /></td>
+                        <td><input type="checkbox" name="Whastapp13" /></td>
+                        <td><input type="checkbox" name="Spotify13" /></td>
+                        <td><input type="checkbox" name="Messenger13" /></td>
+                        <td><input type="checkbox" name="Softonic13" /></td>
+                        <td><input type="checkbox" name="Pandora13" /></td>
+                        <td><input type="checkbox" name="Web2_013" /></td>
+                        <td><input type="checkbox" name="Wikipedia13" /></td>
+                        <td><input type="checkbox" name="Google13" /></td>
+                        <td><input type="checkbox" name="Windows13" /></td>
+                        <td><input type="checkbox" name="YouTube13" /></td>
+                        <td><input type="checkbox" name="MSN13" /></td>
+                        <td><input type="checkbox" name="Yahoo13" /></td>
                     </tr>
                     <tr>
-                        <td>14. Para escuchar y/o descarcar m&uacute;sica.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">14. Para escuchar y/o descarcar m&uacute;sica.</td>
+                        <td><input type="checkbox" name="Facebook14" /></td>
+                        <td><input type="checkbox" name="Badoo14" /></td>
+                        <td><input type="checkbox" name="Instagram14" /></td>
+                        <td><input type="checkbox" name="GoogleMas14" /></td>
+                        <td><input type="checkbox" name="Twitter14" /></td>
+                        <td><input type="checkbox" name="Schoology14" /></td>
+                        <td><input type="checkbox" name="Eduteka14" /></td>
+                        <td><input type="checkbox" name="Moodle14" /></td>
+                        <td><input type="checkbox" name="Claroline14" /></td>
+                        <td><input type="checkbox" name="Edmodo14" /></td>
+                        <td><input type="checkbox" name="Whastapp14" /></td>
+                        <td><input type="checkbox" name="Spotify14" /></td>
+                        <td><input type="checkbox" name="Messenger14" /></td>
+                        <td><input type="checkbox" name="Softonic14" /></td>
+                        <td><input type="checkbox" name="Pandora14" /></td>
+                        <td><input type="checkbox" name="Web2_014" /></td>
+                        <td><input type="checkbox" name="Wikipedia14" /></td>
+                        <td><input type="checkbox" name="Google14" /></td>
+                        <td><input type="checkbox" name="Windows14" /></td>
+                        <td><input type="checkbox" name="YouTube14" /></td>
+                        <td><input type="checkbox" name="MSN14" /></td>
+                        <td><input type="checkbox" name="Yahoo14" /></td>
                     </tr>
                     <tr>
-                        <td>15. Para entretenimiento, diversi&oacute;n y ocio.</td>
-                        <td><input type="checkbox" name="Facebook1" /></td>
-                        <td><input type="checkbox" name="Badoo1" /></td>
-                        <td><input type="checkbox" name="Instagram1" /></td>
-                        <td><input type="checkbox" name="Google+1" /></td>
-                        <td><input type="checkbox" name="Twitter1" /></td>
-                        <td><input type="checkbox" name="Schoology1" /></td>
-                        <td><input type="checkbox" name="Eduteka1" /></td>
-                        <td><input type="checkbox" name="Moodle1" /></td>
-                        <td><input type="checkbox" name="Claroline1" /></td>
-                        <td><input type="checkbox" name="Edmodo1" /></td>
-                        <td><input type="checkbox" name="Whastapp1" /></td>
-                        <td><input type="checkbox" name="Spotify1" /></td>
-                        <td><input type="checkbox" name="Messenger1" /></td>
-                        <td><input type="checkbox" name="Softonic1" /></td>
-                        <td><input type="checkbox" name="Pandora1" /></td>
-                        <td><input type="checkbox" name="Web2.01" /></td>
-                        <td><input type="checkbox" name="Wikipedia1" /></td>
-                        <td><input type="checkbox" name="Google1" /></td>
-                        <td><input type="checkbox" name="Windows1" /></td>
-                        <td><input type="checkbox" name="YouTube1" /></td>
-                        <td><input type="checkbox" name="MSN1" /></td>
-                        <td><input type="checkbox" name="Yahoo1" /></td>
+                        <td style="text-align:left">15. Para entretenimiento, diversi&oacute;n y ocio.</td>
+                        <td><input type="checkbox" name="Facebook15" /></td>
+                        <td><input type="checkbox" name="Badoo15" /></td>
+                        <td><input type="checkbox" name="Instagram15" /></td>
+                        <td><input type="checkbox" name="GoogleMas15" /></td>
+                        <td><input type="checkbox" name="Twitter15" /></td>
+                        <td><input type="checkbox" name="Schoology15" /></td>
+                        <td><input type="checkbox" name="Eduteka15" /></td>
+                        <td><input type="checkbox" name="Moodle15" /></td>
+                        <td><input type="checkbox" name="Claroline15" /></td>
+                        <td><input type="checkbox" name="Edmodo15" /></td>
+                        <td><input type="checkbox" name="Whastapp15" /></td>
+                        <td><input type="checkbox" name="Spotify15" /></td>
+                        <td><input type="checkbox" name="Messenger15" /></td>
+                        <td><input type="checkbox" name="Softonic15" /></td>
+                        <td><input type="checkbox" name="Pandora15" /></td>
+                        <td><input type="checkbox" name="Web2_015" /></td>
+                        <td><input type="checkbox" name="Wikipedia15" /></td>
+                        <td><input type="checkbox" name="Google15" /></td>
+                        <td><input type="checkbox" name="Windows15" /></td>
+                        <td><input type="checkbox" name="YouTube15" /></td>
+                        <td><input type="checkbox" name="MSN15" /></td>
+                        <td><input type="checkbox" name="Yahoo15" /></td>
                     </tr>
                     <tr>
-                        <td>16. Otros</td>
-                        <td colspan="22"><label>Especifique:</label><input type="text" name="otro" value="0" /></td>
+                        <td style="text-align:left">16. Otro</td>
+                        <td colspan="22" style="text-align:left"><label>Especifique:</label><input type="text" name="otro" value="0" /></td>
+                    </tr>
+                    <tr id="headers">
+                        <th id="empty" rowspan="2">Total de horas diarias</th>
+                        <th colspan="5">Redes Sociales</th>
+                        <th colspan="5">Plataformas Educativas</th>
+                        <th colspan="4">Aplicaciones</th>
+                        <th colspan="5">Comunidades Virtuales</th>
+                        <th colspan="3">Portales de Internet</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><input name="total_redes" type="number" value="0" required/></td>
+                        <td colspan="5"><input name="total_plataformas" type="number" value="0" required/></td>
+                        <td colspan="4"><input name="total_apps" type="number" value="0" required/></td>
+                        <td colspan="5"><input name="total_comunidades" type="number" value="0" required/></td>
+                        <td colspan="3"><input name="total_internet" type="number" value="0" required/></td>
                     </tr>
                 </tbody>
             </table>
