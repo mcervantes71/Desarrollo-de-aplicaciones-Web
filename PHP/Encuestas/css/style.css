@@ -1,0 +1,69 @@
+h1{
+    text-align:center;
+}
+
+p{
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 15px;
+}
+
+fieldset{
+    margin: 0 0 20px;
+}
+
+#arriba{
+    display: inline;
+    width: 21%;
+}
+
+#carreras{
+    width: 94%;
+}
+
+#dispositivos{
+    width: 94%;
+}
+
+table{
+    empty-cells:hide;
+    margin:20px 0px;
+    border-collapse: collapse;
+}
+
+th{
+    height:110px;
+    vertical-align:bottom;
+}
+
+#headers>th{
+    max-width: 22px;
+    height: auto;
+    background-color: lightgray;
+    vertical-align: middle;
+}
+
+#empty{
+    background-color: white !important;
+}
+
+.redes{
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    max-width: 25px;
+}
+
+input[type=submit]{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
