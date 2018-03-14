@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MyForm.resources
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\Simple SQL Server Connection.csproj.GenerateResource.Cache
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\Simple SQL Server Connection.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Martin Cervantes\Desktop\Programming\C#\Simple SQL Server Connection\WindowsFormsApp1\obj\Debug\Simple SQL Server Connection.csprojResolveAssemblyReference.cache
