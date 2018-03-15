@@ -428,9 +428,9 @@
                     $Windows15, $YouTube15, $MSN15, $Yahoo15,
                     '$otro',
                     $total_redes, $total_plataformas, $total_apps, $total_comunidades, $total_internet)";
-echo $comando."<br /><br />";
+//echo $comando."<br /><br />";
         if($conexion->query($comando) === TRUE)
-            echo "Registro Guardado";
+            echo "Registro Guardado<h1>Muchas Gracias, La encuesta ha terminado</h1><a href='index.html'>Volver a capturar cuestionario</a>";
         else
             die("Error: ".$conexion->error);
 
@@ -439,5 +439,5 @@ echo $comando."<br /><br />";
 
     $conexion = null;
 
-    header("Location:index.html");
+
 ?>
