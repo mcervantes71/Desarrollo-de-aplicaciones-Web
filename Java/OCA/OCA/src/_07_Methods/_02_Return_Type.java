@@ -2,56 +2,56 @@ package _07_Methods;
 
 public class _02_Return_Type
 {
-public void jump() {} // return type void
-public void jump2() { // return type void
-    return; // return is redundant
-}
-
-public String jump3() { return ""; } //
-
-// public String jump4() {} // does not compile, no return statement
-
-// public jump5() {}
-
-String jump6(int a)
-{
-    if(a == 5)
-    {
-// return "";
+    public void jump() {} // return type void
+    public void jump2() { // return type void
+        return; // return is redundant
     }
 
-    return "abc";
-}
+    public String jump3() { return ""; } //
 
-int getInt()
-{
-    return 9;
-}
+    // public String jump4() {} // does not compile, no return statement
 
-int getLong()
-{
-    return (int)9L;
-}
+    // public jump5() {}
 
-int expanded()
-{
-// int temp = 10;
-// return temp;
-    return 10;
-}
+    String jump6(int a)
+    {
+        if(a == 5)
+        {
+    // return "";
+        }
 
-boolean isTrue()
-{
-// return 5 < 10;
-    return 5 == 5;
-}
+        return "abc";
+    }
 
-public void test() {}
-// public void 2test() {}
-// public void public() {}
+    int getInt()
+    {
+        return 9;
+    }
 
-public void $test() {}
-public void _test() {}
+    int getLong()
+    {
+        return (int)9L;
+    }
 
-// public void() {}
+    int expanded()
+    {
+    // int temp = 10;
+    // return temp;
+        return 10;
+    }
+
+    boolean isTrue()
+    {
+    // return 5 < 10;
+        return 5 == 5;
+    }
+
+    public void test() {}
+    // public void 2test() {}
+    // public void public() {}
+
+    public void $test() {}
+    public void _test() {}
+
+    // public void() {}
 }
