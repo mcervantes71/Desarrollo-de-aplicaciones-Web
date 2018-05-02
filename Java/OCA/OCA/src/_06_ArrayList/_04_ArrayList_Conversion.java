@@ -22,8 +22,8 @@ public class _04_ArrayList_Conversion
 
         String[] petsArray = {"dog", "cat", "parrot"};
         // List<String> petsList = Arrays.asList(petsArray);
-        List<String> petsList = Arrays.asList(petsArray); // returns fixed size list
-        System.out.println(petsList.size());
+        List<String> petsList = Arrays.asList(petsArray); // 3 returns fixed size list
+        System.out.println(petsList.size());              // 3
 
         petsList.set(0, "bird");
         System.out.println(petsList);
