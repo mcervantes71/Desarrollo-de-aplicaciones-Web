@@ -1,0 +1,76 @@
+﻿<Window x:Class="Buttons_Demo_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Buttons_Demo_WPF"
+        mc:Ignorable="d"
+        Title="Buttons" Height="450" Width="800">
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button 
+            Grid.Row="0" 
+            Grid.Column="0" 
+            x:Name="OrdinaryButton" 
+            Height="50" 
+            Width="250" 
+            VerticalAlignment="Center" 
+            Click="Button_Click" 
+            Content="Ordinary Button"/>
+        <RepeatButton 
+            Grid.Row="0" 
+            Grid.Column="1" 
+            x:Name="RepeatButton" 
+            Height="50" 
+            Width="250" 
+            VerticalAlignment="Center" 
+            Click="RepeatButton_Click" 
+            Content="Repeat Button"/>
+        <ToggleButton 
+            Grid.Row="1" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2"  
+            Height="50" 
+            Width="250" 
+            VerticalAlignment="Center"
+            Content="Toggle Button"  
+            Checked="ToggleButton_Click"/>
+        <CheckBox 
+            Grid.Row="2"
+            Grid.Column="0"
+            x:Name="CheckBox"
+            Height="50"
+            Width="250"
+            VerticalAlignment="Center"
+            IsThreeState="True"
+            Checked="ToggleButton_Checked"
+            Unchecked="ToggleButton_Unchecked"
+            Indeterminate="ToggleButton_Indeterminate"
+            Content="CheckBox"/>
+        <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <RadioButton 
+                x:Name="RadioButton1"
+                Content="You can select me"
+                Height="50"
+                Width="250"
+                IsThreeState="False"
+                Checked="ToggleButton_Checked"
+                Unchecked="ToggleButton_Unchecked"/>
+            <RadioButton 
+                x:Name="RadioButton2"
+                Content="Or select me"
+                Height="50"
+                Width="250"
+                Checked="ToggleButton_Checked"
+                Unchecked="ToggleButton_Unchecked"/>
+        </StackPanel>
+    </Grid>
+</Window>
