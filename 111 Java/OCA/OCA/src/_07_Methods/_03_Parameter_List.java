@@ -27,11 +27,11 @@ public class _03_Parameter_List
         return (a + b + c + d) / 4.0;
     }
 
-    //    void test {} // does not compile no brackets
+    // void test {} // does not compile no brackets
 
-    //    void test(int a; int b) {} // does not compile
+    // void test(int a; int b) {} // does not compile
 
     void test(int a, int b) {}
 
-    //    void test2(int a); // missing method body, does not compile  
+    // void test2(int a); // missing method body, does not compile  
 }
