@@ -1,0 +1,15 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\bin\Debug\WPF Check and Radio Demo.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\bin\Debug\WPF Check and Radio Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\bin\Debug\WPF Check and Radio Demo.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo_MarkupCompile.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo_MarkupCompile.lref
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo.g.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF_Check_and_Radio_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Check and Radio Demo\WPF Check and Radio Demo\obj\Debug\WPF Check and Radio Demo.pdb
