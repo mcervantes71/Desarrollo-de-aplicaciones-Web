@@ -12,16 +12,67 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <h1>BootStrap Basics</h1>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello, World!</h1>
+                 <p class="text-justify">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate, eligendi obcaecati ratione debitis consequuntur inventore cumque ab labore et atque magni porro laborum, voluptate enim vitae rem. Eaque labore vero distinctio qui error tempora neque amet consequatur consequuntur voluptas tempore similique, illo laudantium cumque voluptate ad dignissimos quaerat esse!
+                 </p>
+                 <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more.</a></p>
+            </div>
 
-        <button name="button" class="btn btn-success btn-sm" type="button">CLICK ME</button>
+            <h1>BootStrap Basics</h1>
 
-        <button name="button" class="btn btn-success btn-sm active" type="button">CLICK ME</button>
+            <button name="button" class="btn btn-success btn-sm" type="button">CLICK ME</button>
 
-        <button name="button" class="btn btn-success btn-sm disabled" type="button">CLICK ME</button>
+            <button name="button" class="btn btn-success btn-sm active" type="button">CLICK ME</button>
 
-        <a class="btn btn-success" href="https://www.getbootstrap.com">BootStrap Docs</a>
+            <button name="button" class="btn btn-success btn-sm disabled" type="button">CLICK ME</button>
 
+            <a class="btn btn-success" href="https://www.getbootstrap.com">BootStrap Docs</a>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-3 rounded">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link2</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <form class="my-3">
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="inputFile">Example file input</label>
+                    <input type="file" class="form-control-file" id="inputFile">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="inputCheck">
+                    <label class="form-check-label" for="inputCheck">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
