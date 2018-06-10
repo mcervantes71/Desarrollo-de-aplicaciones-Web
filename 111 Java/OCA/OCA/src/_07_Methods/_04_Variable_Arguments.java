@@ -20,7 +20,7 @@ public class _04_Variable_Arguments
         jump(2, 3);
         jump(4, 5, 6, 7);
         jump(1, new int[]{4, 5, 6}); // redundant array creation
-    // jump(1, null);                // null pointer exception
+    // jump(1, null);  // null pointer exception
 
         run();
         run(11, 22, 33, 44, 55, 66, 77, 88, 99);
