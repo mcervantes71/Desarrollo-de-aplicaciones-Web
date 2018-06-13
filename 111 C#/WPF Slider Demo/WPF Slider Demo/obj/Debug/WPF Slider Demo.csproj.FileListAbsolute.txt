@@ -1,0 +1,15 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo_MarkupCompile.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo_MarkupCompile.lref
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\bin\Debug\WPF Slider Demo.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\bin\Debug\WPF Slider Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\bin\Debug\WPF Slider Demo.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo.g.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF_Slider_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF Slider Demo\WPF Slider Demo\obj\Debug\WPF Slider Demo.pdb

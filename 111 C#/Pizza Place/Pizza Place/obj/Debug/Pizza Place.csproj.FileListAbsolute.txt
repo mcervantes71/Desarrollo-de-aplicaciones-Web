@@ -1,0 +1,9 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\bin\Debug\Pizza Place.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\bin\Debug\Pizza Place.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\bin\Debug\Pizza Place.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\obj\Debug\Pizza_Place.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\obj\Debug\Pizza_Place.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\obj\Debug\Pizza Place.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\obj\Debug\Pizza Place.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\obj\Debug\Pizza Place.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pizza Place\Pizza Place\obj\Debug\Pizza Place.pdb

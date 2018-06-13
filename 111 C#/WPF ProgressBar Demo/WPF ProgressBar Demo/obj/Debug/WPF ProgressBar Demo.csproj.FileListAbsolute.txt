@@ -1,0 +1,14 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo_MarkupCompile.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo_MarkupCompile.lref
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\bin\Debug\WPF ProgressBar Demo.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\bin\Debug\WPF ProgressBar Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\bin\Debug\WPF ProgressBar Demo.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo.g.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF_ProgressBar_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\WPF ProgressBar Demo\WPF ProgressBar Demo\obj\Debug\WPF ProgressBar Demo.pdb
