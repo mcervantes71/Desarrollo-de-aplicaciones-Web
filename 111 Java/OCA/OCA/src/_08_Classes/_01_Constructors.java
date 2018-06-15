@@ -1,7 +1,7 @@
 package _08_Classes;
 
-class Dog {
-
+class Dog
+{
     private String color;
 
     // public Dog(String color) {
@@ -9,7 +9,8 @@ class Dog {
     //    this.color = color;
     // }
 
-    public void printColor() {
+    public void printColor()
+    {
         System.out.println("color= " + color);
     }
 
@@ -17,26 +18,28 @@ class Dog {
     // public void Dog() {} // not constructor since it has return type
 }
 
-class Cat {
+class Cat
+{
     private String color;
     private int height;
     private int length;
 
-    public Cat(int length, int theHeight) {
+    public Cat(int length, int theHeight)
+    {
         // length = this.length;
         this.length = length;
         height = theHeight;
         color = "white";
     }
 
-    public void printInfo() {
+    public void printInfo()
+    {
         System.out.println("Cat length= " + this.length + " height= " + height + " color= " + color);
     }
 }
 
 public class _01_Constructors
 {
-
     public static void main(String[] args)
     {
         // Dog dog = new Dog("gray");
