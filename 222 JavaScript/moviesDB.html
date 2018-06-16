@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies DB</title>
+    </head>
+    <body>
+        <script>
+            var movies = [{title:"In Bruge",
+                           rating: 5,
+                           hasWatched: true},
+                          {title:"Frozen",
+                           rating: 4.5,
+                           hasWatched: false},
+                          {title:"Mad Max",
+                           rating: 5,
+                           hasWatched: true},
+                          {title:"Les Misables",
+                           rating: 3,
+                           hasWatched: false}];
+
+            movies.forEach(function(movie){
+                if(movie.hasWatched){
+                    console.log("You have watched \"" + movie.title + "\" - " + movie.rating + " starts");
+                }
+                else {
+                    console.log("You have not watched \"" + movie.title + "\" - " + movie.rating + " starts");
+                }
+            });
+        </script>
+    </body>
+</html>

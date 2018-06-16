@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select and Manipulate DOM</title>
+    </head>
+    <body>
+        <h1>My header</h1>
+        <script>
+            var body = document.querySelector("body");
+            var isBlue = false;
+
+            setInterval(function(){
+                if(isBlue){
+                    body.style.background = "white";
+                } else {
+                    body.style.background = "blue";
+                }
+
+                isBlue = !isBlue;
+            }, 1000);
+        </script>
+    </body>
+</html>
