@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Score Keeper</title>
+        <style>
+            .win{
+                color: green;
+            }
+            .lose{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><span id="pointsDisplay1">0</span> - <span id="pointsDisplay2">0</span></h1>
+        <p>Playing to: 5</p>
+        <button type="button" id="one">Player One</button>
+        <button type="button" id="two">Player Two</button>
+        <button type="button" id="reset">Reset</button>
+        <script>
+            let button1 = document.querySelector("#one");
+            let display1 = document.getElementById("pointsDisplay1");
+
+            let button2 = document.querySelector("#two");
+            let display2 = document.getElementById("pointsDisplay2");
+
+            let reset = document.querySelector("#reset");
+
+            let points1 = 0;
+            let points2 = 0;
+            let winningScore = 5;
+            let gameOver = false;
+
+            button1.addEventListener("click", function(){
+                if(!gameOver){
+                    points1++;
+
+                    if(points1 === winningScore){
+                        display1.classList.add("win");
+                        display2.classList.add("lose");
+                        gameOver = true;
+                    }
+                }
+
+                refreshScore();
+            });
+
+            button2.addEventListener("click", function(){
+                if(!gameOver){
+                    points2++;
+
+                    if(points2 === winningScore){
+                        display2.classList.add("win");
+                        display1.classList.add("lose");
+                        gameOver = true;
+                    }
+                }
+
+                refreshScore();
+            });
+            
+            reset.addEventListener("click", function(){
+                points1 = 0;
+                points2 = 0;
+                gameOver = false;
+
+                display1.classList = "";
+                display2.classList = "";
+
+                refreshScore();
+            });
+
+            function refreshScore(){
+                var h1 = document.querySelector("h1");
+
+                h1.innerHTML = `<span id="display1">${points1}</span> - <span id="display2">${points2}</span>`;
+            }
+        </script>
+    </body>
+</html>
