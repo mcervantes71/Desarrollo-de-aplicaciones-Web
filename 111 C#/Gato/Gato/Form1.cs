@@ -22,22 +22,44 @@ namespace Gato
                 (button3.Text == "O" && button6.Text == "O" && button9.Text == "O") ||
                 (button1.Text == "O" && button5.Text == "O" && button9.Text == "O") ||
                 (button3.Text == "O" && button5.Text == "O" && button7.Text == "O"))
-                MessageBox.Show("Tenemos un ganador");
+                {
+                    Deshabilitar();
+                    MessageBox.Show("Tenemos un ganador");
+                }
 
             if ((button1.Text == "X" && button2.Text == "X" && button3.Text == "X") ||
-               (button4.Text == "X" && button5.Text == "X" && button6.Text == "X") ||
-               (button7.Text == "X" && button8.Text == "X" && button9.Text == "X") ||
-               (button1.Text == "X" && button4.Text == "X" && button7.Text == "X") ||
-               (button2.Text == "X" && button5.Text == "X" && button8.Text == "X") ||
-               (button3.Text == "X" && button6.Text == "X" && button9.Text == "X") ||
-               (button1.Text == "X" && button5.Text == "X" && button9.Text == "X") ||
-               (button3.Text == "X" && button5.Text == "X" && button7.Text == "X"))
-                MessageBox.Show("Tenemos un ganador");
+                (button4.Text == "X" && button5.Text == "X" && button6.Text == "X") ||
+                (button7.Text == "X" && button8.Text == "X" && button9.Text == "X") ||
+                (button1.Text == "X" && button4.Text == "X" && button7.Text == "X") ||
+                (button2.Text == "X" && button5.Text == "X" && button8.Text == "X") ||
+                (button3.Text == "X" && button6.Text == "X" && button9.Text == "X") ||
+                (button1.Text == "X" && button5.Text == "X" && button9.Text == "X") ||
+                (button3.Text == "X" && button5.Text == "X" && button7.Text == "X"))
+                {
+                    Deshabilitar();
+                    MessageBox.Show("Tenemos un ganador");
+                }
 
             if (turno == "O")
                 turno = "X";
             else
                 turno = "O";
+        }
+
+        void Habilitar()
+        {
+            foreach (Control c in this.Controls)
+                if (c is Button)
+                    if (c.Text != "Reset")
+                        c.Enabled = true;
+        }
+
+        void Deshabilitar()
+        {
+            foreach (Control c in this.Controls)
+                if (c is Button)
+                    if (c.Text != "Reset")
+                        c.Enabled = false;
         }
 
 
@@ -60,6 +82,8 @@ namespace Gato
                 if (c is Button)
                     if (c.Text != "Reset")
                         c.Text = "";
+
+            Habilitar();
         }
     }
 }
