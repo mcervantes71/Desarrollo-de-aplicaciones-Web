@@ -9,83 +9,13 @@ let squares = document.querySelectorAll(".square");
 let dMessage = document.querySelector("#message");
 let dColor = document.querySelector("#color");
 
-// dColor.textContent = pickedColor;
 init();
 
 
 btn_reset.addEventListener("click", function()
 {
     reset();
-    // colors = randomColors(numSquares);
-    //
-    // pickedColor = pickColor();
-    //
-    // dColor.textContent = pickedColor;
-    //
-    // for(var i = 0; i < squares.length; i++)
-    //     squares[i].style.backgroundColor = colors[i];
-    //
-    // h1.style.backgroundColor = "steelblue";
-    //
-    // message.textContent = "";
-    //
-    // btn_reset.textContent = "New Colors";
-
-    // btn_easy.classList.remove("selected");
-    // btn_hard.classList.add("selected");
 });
-
-// btn_easy.addEventListener("click", function()
-// {
-//     btn_easy.classList.add("selected");
-//     btn_hard.classList.remove("selected");
-//
-//     numSquares = 3;
-//     colors = randomColors(numSquares);
-//
-//     pickedColor = pickColor();
-//
-//     dColor.textContent = pickedColor;
-//
-//     for(var i = 0; i < squares.length; i++)
-//         if(colors[i])
-//             squares[i].style.backgroundColor = colors[i];
-//         else
-//             squares[i].style.display = "none";
-//
-//     h1.style.backgroundColor = "steelblue";
-//
-//     message.textContent = "";
-//
-//     btn_reset.textContent = "New Colors";
-// });
-//
-// btn_hard.addEventListener("click", function()
-// {
-//     btn_easy.classList.remove("selected");
-//     btn_hard.classList.add("selected");
-//
-//     numSquares = 6;
-//     colors = randomColors(numSquares);
-//
-//     pickedColor = pickColor();
-//
-//     dColor.textContent = pickedColor;
-//
-//     for(var i = 0; i < squares.length; i++)
-//     {
-//         squares[i].style.backgroundColor = colors[i];
-//         squares[i].style.display = "block";
-//     }
-//
-//     h1.style.backgroundColor = "steelblue";
-//
-//     message.textContent = "";
-//
-//     btn_reset.textContent = "New Colors";
-// });
-
-
 
 function init()
 {
