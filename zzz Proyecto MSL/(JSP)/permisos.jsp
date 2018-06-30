@@ -11,8 +11,8 @@
         <title>Permisos</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -26,7 +26,7 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="permisos.jsp">Permisos</a>
-                    </li>  
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -42,11 +42,11 @@
                     String conexionURL = "jdbc:mysql://localhost:3306/hr";
                     String user = "Admin";
                     String password = "123456";
-                    
+
                     Class.forName("com.mysql.jdbc.Driver");
-                    
+
                     Connection conexion = DriverManager.getConnection(conexionURL, user, password);
-                    
+
                     String  comando = "SELECT R.leave_request_id, " +
                                           "E.first_name, " +
                                           "E.last_name, " +
@@ -56,11 +56,11 @@
                                       "FROM Employees AS E " +
                                       "INNER JOIN Leave_requests AS R " +
                                       "ON E.employee_id = R.employee_id;";
-                    
+
                     Statement declaracion =  conexion.createStatement();
-                    
+
                     ResultSet resultado = declaracion.executeQuery(comando);
-                    
+
                     out.println("<table class='table'>" +
                                     "<thead>" +
                                         "<tr>" +
@@ -75,9 +75,9 @@
                                         "</tr>" +
                                     "</thead>" +
                                     "<tbody>");
-                    
+
                     String fila;
-                    
+
                     while(resultado.next())
                     {
                         fila = "<tr>" +
@@ -86,9 +86,9 @@
                                     "<td>" + resultado.getString("last_name") + "</td>" +
                                     "<td><center>" + resultado.getInt("number_of_days") + "</center></td>" +
                                     "<td>" + resultado.getString("type_of_leave") + "</td>";
-                        
+
                         String status = resultado.getString("status");
-                        
+
                         switch(status)
                         {
                             case "0":
@@ -127,12 +127,12 @@
                                              "</tr>";
                                 break;
                         }
-                        
+
                         out.println(fila);
                     }
-                    
+
                     out.println("</tbody></table>");
-                    
+
                     declaracion.close();
                     conexion.close();
                 }
@@ -141,9 +141,9 @@
                     out.println("Error: " + e.getMessage());
                 }
             %>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
         </div>
     </body>
 </html>
