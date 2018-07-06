@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sopa_Letras", "Sopa_Letras\Sopa_Letras.csproj", "{FA426557-873D-4846-908B-06D124FB0372}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA426557-873D-4846-908B-06D124FB0372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA426557-873D-4846-908B-06D124FB0372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA426557-873D-4846-908B-06D124FB0372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA426557-873D-4846-908B-06D124FB0372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {673D54CC-A993-44FD-ADCE-6D7BD0D92DB0}
+	EndGlobalSection
+EndGlobal

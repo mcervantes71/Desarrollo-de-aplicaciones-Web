@@ -50,6 +50,7 @@
             this.lb_strike = new System.Windows.Forms.Label();
             this.lb_inning = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_teamA
@@ -100,33 +101,37 @@
             this.btn_outs.TabIndex = 0;
             this.btn_outs.Text = "Outs";
             this.btn_outs.UseVisualStyleBackColor = true;
+            this.btn_outs.Click += new System.EventHandler(this.Outs_Click);
             // 
             // btn_score
             // 
-            this.btn_score.Location = new System.Drawing.Point(122, 157);
+            this.btn_score.Location = new System.Drawing.Point(116, 137);
             this.btn_score.Name = "btn_score";
-            this.btn_score.Size = new System.Drawing.Size(75, 23);
+            this.btn_score.Size = new System.Drawing.Size(75, 50);
             this.btn_score.TabIndex = 1;
-            this.btn_score.Text = "Score";
+            this.btn_score.Text = "Score\r\nTeam A";
             this.btn_score.UseVisualStyleBackColor = true;
+            this.btn_score.Click += new System.EventHandler(this.Score_Click);
             // 
             // btn_balls
             // 
-            this.btn_balls.Location = new System.Drawing.Point(89, 279);
+            this.btn_balls.Location = new System.Drawing.Point(89, 344);
             this.btn_balls.Name = "btn_balls";
             this.btn_balls.Size = new System.Drawing.Size(63, 60);
             this.btn_balls.TabIndex = 2;
             this.btn_balls.Text = "Ball";
             this.btn_balls.UseVisualStyleBackColor = true;
+            this.btn_balls.Click += new System.EventHandler(this.Ball_Click);
             // 
             // btn_strike
             // 
-            this.btn_strike.Location = new System.Drawing.Point(89, 345);
+            this.btn_strike.Location = new System.Drawing.Point(89, 279);
             this.btn_strike.Name = "btn_strike";
             this.btn_strike.Size = new System.Drawing.Size(63, 60);
             this.btn_strike.TabIndex = 3;
             this.btn_strike.Text = "Strikes";
             this.btn_strike.UseVisualStyleBackColor = true;
+            this.btn_strike.Click += new System.EventHandler(this.Strikes_Click);
             // 
             // lb_outs
             // 
@@ -142,7 +147,7 @@
             // 
             this.lb_ball.AutoSize = true;
             this.lb_ball.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ball.Location = new System.Drawing.Point(183, 288);
+            this.lb_ball.Location = new System.Drawing.Point(183, 353);
             this.lb_ball.Name = "lb_ball";
             this.lb_ball.Size = new System.Drawing.Size(37, 41);
             this.lb_ball.TabIndex = 11;
@@ -152,7 +157,7 @@
             // 
             this.lb_strike.AutoSize = true;
             this.lb_strike.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_strike.Location = new System.Drawing.Point(183, 353);
+            this.lb_strike.Location = new System.Drawing.Point(183, 287);
             this.lb_strike.Name = "lb_strike";
             this.lb_strike.Size = new System.Drawing.Size(37, 41);
             this.lb_strike.TabIndex = 12;
@@ -178,11 +183,22 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Inning";
             // 
+            // btn_Reset
+            // 
+            this.btn_Reset.Location = new System.Drawing.Point(243, 427);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(75, 23);
+            this.btn_Reset.TabIndex = 15;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.UseVisualStyleBackColor = true;
+            this.btn_Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 450);
+            this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_inning);
             this.Controls.Add(this.lb_strike);
@@ -209,5 +225,6 @@
         private System.Windows.Forms.Label lb_strike;
         private System.Windows.Forms.Label lb_inning;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_Reset;
     }
 }
