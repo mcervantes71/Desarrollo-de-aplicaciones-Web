@@ -49,7 +49,21 @@ namespace Sopa_Letras
 
         private void Reset_Click(object sender, EventArgs e)
         {
+            foreach(Control ctrl in Controls)
+            {
+                if(ctrl is Button && ctrl.Text != "Reset")
+                {
+                    ctrl.BackColor = System.Drawing.SystemColors.Control;
+                    ctrl.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    ctrl.ForeColor = System.Drawing.SystemColors.ControlText;
+                }
+                else if(ctrl is Label)
+                {
+                    ctrl.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                }
+            }
 
+            letras.Clear();
         }
     }
 }
