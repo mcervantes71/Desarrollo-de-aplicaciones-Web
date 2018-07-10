@@ -1,0 +1,44 @@
+﻿<Window x:Class="Wpf_ComboBox_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:Wpf_ComboBox_Demo"
+        mc:Ignorable="d"
+        Title="ComboBox" Height="450" Width="800">
+    <StackPanel>
+        <ComboBox x:Name="Dates" 
+                  Width="120" 
+                  Height="30" 
+                  Margin="12" 
+                  FontSize="16" 
+                  DisplayMemberPath="DayOfWeek"
+                  SelectionChanged="Dates_OnSelectChange">
+            <system:DateTime>3/15/2018</system:DateTime>
+            <system:DateTime>3/16/2018</system:DateTime>
+            <system:DateTime>3/17/2018</system:DateTime>
+        </ComboBox>
+        <ComboBox IsEditable="True" 
+                  Width="120"
+                  Height="30"
+                  Margin="12"
+                  FontSize="16">
+            <StackPanel Orientation="Horizontal"
+                        TextSearch.Text="Fowler">
+                <Image Source="Images/Fowler.jpg" Width="100" Height="100" RenderOptions.BitmapScalingMode="HighQuality" Margin="10" />
+                <TextBlock Text="This is Martin Fowler" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        TextSearch.Text="Fowler">
+                <Image Source="Images/Seemann.jpg" Width="100" Height="100" RenderOptions.BitmapScalingMode="HighQuality" Margin="10" />
+                <TextBlock Text="This is Mark Seemann" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        TextSearch.Text="Fowler">
+                <Image Source="Images/UncleBob.jpg" Width="100" Height="100" RenderOptions.BitmapScalingMode="HighQuality" Margin="10" />
+                <TextBlock Text="This is Uncle Bob" />
+            </StackPanel>            
+        </ComboBox>
+    </StackPanel>
+</Window>
