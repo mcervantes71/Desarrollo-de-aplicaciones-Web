@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Simple_SQL_Server_Connection
@@ -18,7 +11,7 @@ namespace Simple_SQL_Server_Connection
             InitializeComponent();
         }
 
-        private void conexion_Click(object sender, EventArgs e)
+        private void connect_Click(object sender, EventArgs e)
         {
             string connetionString = null;
 
@@ -32,7 +25,7 @@ namespace Simple_SQL_Server_Connection
             {
                 connection.Open();
 
-                MessageBox.Show("Successful Connection", "Connection Open ! ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Successful", "Database Connection", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 connection.Close();
             }
@@ -42,7 +35,7 @@ namespace Simple_SQL_Server_Connection
             }
         }
 
-        private void nuevo_Click(object sender, EventArgs e)
+        private void insert_Click(object sender, EventArgs e)
         {
             string connetionString = null;
 
@@ -56,7 +49,7 @@ namespace Simple_SQL_Server_Connection
 
             String query;
 
-            query = "INSERT INTO Alumnos VALUES(123, 'Martin Cervantes')";
+            query = "INSERT INTO Alumnos VALUES(123, 'Martin', 'Cervantes', 'Palomo')";
 
             try
             {
@@ -78,7 +71,7 @@ namespace Simple_SQL_Server_Connection
             }
         }
 
-        private void consultas_Click(object sender, EventArgs e)
+        private void select_Click(object sender, EventArgs e)
         {
             string connetionString = null;
 
@@ -92,7 +85,7 @@ namespace Simple_SQL_Server_Connection
 
             String query;
 
-            query = "SELECT * FROM Alumnos WHERE alumno_id = 123";
+            query = "SELECT * FROM Alumnos WHERE no_control = 123";
 
             SqlDataReader dataReader;
 
@@ -104,11 +97,15 @@ namespace Simple_SQL_Server_Connection
 
                 dataReader = command.ExecuteReader();
 
+                string data = "No Control| Nombre  | A.Paterno  | A.Materno\n";
+
                 while (dataReader.Read())
                 {
-                    MessageBox.Show(dataReader.GetValue(0) + " - " + dataReader.GetValue(1),"Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    data += dataReader.GetValue(0) + "\t| " + dataReader.GetValue(1) + "\t| " + dataReader.GetValue(2) + " | " + dataReader.GetValue(3) + "\n";
                 }
-                
+
+                MessageBox.Show(data, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 command.Dispose();
 
                 connection.Close();
@@ -119,7 +116,7 @@ namespace Simple_SQL_Server_Connection
             }
         }
 
-        private void borrar_Click(object sender, EventArgs e)
+        private void delete_Click(object sender, EventArgs e)
         {
             string connetionString = null;
 
@@ -133,7 +130,7 @@ namespace Simple_SQL_Server_Connection
 
             String query;
 
-            query = "DELETE FROM Alumnos WHERE alumno_id = 123";
+            query = "DELETE FROM Alumnos WHERE no_control = 123";
 
             try
             {
@@ -155,7 +152,7 @@ namespace Simple_SQL_Server_Connection
             }
         }
 
-        private void actualizar_Click(object sender, EventArgs e)
+        private void update_Click(object sender, EventArgs e)
         {
             string connetionString = null;
 
@@ -169,7 +166,7 @@ namespace Simple_SQL_Server_Connection
 
             String query;
 
-            query = "UPDATE Alumnos SET alumno_nombre = 'Ramiro Rodriguez' WHERE alumno_id = 123";
+            query = "UPDATE Alumnos SET nombre = 'Ramiro' WHERE no_control = 123";
 
             try
             {
