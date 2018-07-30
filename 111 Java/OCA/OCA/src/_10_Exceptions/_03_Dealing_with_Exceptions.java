@@ -1,6 +1,6 @@
-package _09_Date_Time;
+package _10_Exceptions;
 
-public class _01_
+public class _03_Dealing_with_Exceptions
 {
     public static void main(String[] args)
     {
