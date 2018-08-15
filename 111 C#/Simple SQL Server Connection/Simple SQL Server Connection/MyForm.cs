@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Simple_SQL_Server_Connection
@@ -9,6 +11,58 @@ namespace Simple_SQL_Server_Connection
         public MyForm()
         {
             InitializeComponent();
+        }
+
+
+        public void MyForm_Load(object sender, EventArgs e)
+        {
+            Load_DataGrid();
+        }
+
+        public void Load_DataGrid()
+        {
+            string connetionString = null;
+
+            connetionString = "Server=localhost\\SQLEXPRESS;Database=Escuela;Trusted_Connection=True;";
+
+            SqlConnection connection;
+
+            connection = new SqlConnection(connetionString);
+
+            SqlCommand command;
+
+            String query;
+
+            query = "SELECT * FROM Alumnos";
+
+            try
+            {
+                connection.Open();
+
+                command = new SqlCommand(query, connection);
+
+                SqlDataAdapter da = new SqlDataAdapter(command);
+
+                DataTable dataTable = new DataTable();
+
+                da.Fill(dataTable);
+
+                dataGrid.DataSource = dataTable;
+
+                dataTable.Columns[0].ColumnName = "No Control";
+                dataTable.Columns[1].ColumnName = "aaa";
+                dataTable.Columns[1].ColumnName = "Nombre";
+                dataTable.Columns[2].ColumnName = "A. Paterno";
+                dataTable.Columns[3].ColumnName = "A. Materno";
+
+                command.Dispose();
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Can not open connection ! ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void connect_Click(object sender, EventArgs e)
@@ -69,6 +123,8 @@ namespace Simple_SQL_Server_Connection
             {
                 MessageBox.Show(ex.ToString(), "Can not open connection ! ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            Load_DataGrid();
         }
 
         private void select_Click(object sender, EventArgs e)
@@ -85,7 +141,7 @@ namespace Simple_SQL_Server_Connection
 
             String query;
 
-            query = "SELECT * FROM Alumnos WHERE no_control = 123";
+            query = "SELECT * FROM Alumnos";
 
             SqlDataReader dataReader;
 
@@ -150,6 +206,8 @@ namespace Simple_SQL_Server_Connection
             {
                 MessageBox.Show(ex.ToString(), "Can not open connection ! ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            Load_DataGrid();
         }
 
         private void update_Click(object sender, EventArgs e)
@@ -186,6 +244,13 @@ namespace Simple_SQL_Server_Connection
             {
                 MessageBox.Show(ex.ToString(), "Can not open connection ! ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            Load_DataGrid();
+        }
+
+        private void dataGrid_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine(dataGrid.CurrentRow.Cells[1].Value.ToString());
         }
     }
 }

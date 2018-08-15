@@ -33,6 +33,8 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_connect = new System.Windows.Forms.Button();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_insert
@@ -100,12 +102,28 @@
             this.btn_connect.UseVisualStyleBackColor = false;
             this.btn_connect.Click += new System.EventHandler(this.connect_Click);
             // 
+            // dataGrid
+            // 
+            this.dataGrid.AllowUserToAddRows = false;
+            this.dataGrid.AllowUserToDeleteRows = false;
+            this.dataGrid.AllowUserToResizeRows = false;
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(79, 204);
+            this.dataGrid.MultiSelect = false;
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.ReadOnly = true;
+            this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGrid.Size = new System.Drawing.Size(450, 196);
+            this.dataGrid.TabIndex = 6;
+            this.dataGrid.Click += new System.EventHandler(this.dataGrid_Click);
+            // 
             // MyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(630, 259);
+            this.ClientSize = new System.Drawing.Size(630, 427);
+            this.Controls.Add(this.dataGrid);
             this.Controls.Add(this.btn_connect);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_delete);
@@ -113,6 +131,8 @@
             this.Controls.Add(this.btn_insert);
             this.Name = "MyForm";
             this.Text = "Simple SQL Server Conection";
+            this.Load += new System.EventHandler(this.MyForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,6 +143,7 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_connect;
+        private System.Windows.Forms.DataGridView dataGrid;
     }
 }
 
