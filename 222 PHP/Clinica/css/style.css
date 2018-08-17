@@ -6,21 +6,6 @@ table {
     max-width: 100px;
 }
 
-#medicamentos {
-    max-width: 90%;
-}
-
-#fecha {
-    max-width: 90%;
-}
-#trauma_datos {
-    max-width: 90%;
-}
-
-#tiempo {
-    max-width: 30%;
-}
-
 .footer-copyleft {
     color: white;
     margin-top: 50px;
