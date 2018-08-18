@@ -5,7 +5,7 @@
     <title>Iniciar Sesi&oacute;n</title>
 	<link rel = "shortcut icon" href = "http://v2.iconizer.net/files/Nuvola/orig/package_edutainment.png" />
 	<link rel = "icon" type = "image/ico" href = "http://v2.iconizer.net/files/Nuvola/orig/package_edutainment.png" />
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -36,14 +36,14 @@
 		</div>
 	</div>
 
-    <script src = "js/index.js"></script>
+    <script src = "js/script.js"></script>
 
 	<script>
 		function validacion_login()
-		{ 
+		{
 			var us = document.forms["login-form"]["usuario"].value;
 			var con = document.forms["login-form"]["contrasena"].value;
-			
+
 			if( us == null || us.length == 0 || /^\s+$/.test(us) || isNaN(us))
 			{
 				alert("Error Usuario");
@@ -62,7 +62,7 @@
 			var ap = document.forms["register-form"]["paterno"].value;
 			var am = document.forms["register-form"]["materno"].value;
 			var co = document.forms["register-form"]["correo"].value;
-			
+
 			if( nocon == null || nocon.length == 0 || /^\s+$/.test(nocon) || isNaN(nocon))
 			{
 				alert("Error N\xFAmero de Control");
