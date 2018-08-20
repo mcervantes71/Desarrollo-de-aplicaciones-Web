@@ -11,7 +11,6 @@ public class Nodo
         siguiente = null;        
     }
     
-    
     public void setSiguiente(Nodo siguiente)
     {
         this.siguiente = siguiente;

@@ -9,8 +9,8 @@ public class Estacionamiento
     static Pilas Dos = new Pilas();
     static Pilas Tres = new Pilas();
     static Pilas Aux = new Pilas();
-    static Cola A = new Cola();
-    static Cola B = new Cola();
+    static Colas A = new Colas();
+    static Colas B = new Colas();
     static int opcion = 0, pila=1;
 
     public static void main(String[] args) 
@@ -28,20 +28,6 @@ public class Estacionamiento
         while(opcion != 3) 
         {
             casos();
-        }
-    }
-
-    public static void menu() 
-    {
-        System.out.println("Acción a realizar");
-        System.out.println("1) Meter un carro al estacionamiento\n2) Sacar un carro del estacionamiento\n3) Salir");
-        opcion = teclado.nextInt();
-        
-        if (opcion <= 1 || opcion >= 3) 
-        {
-            ver();     
-            System.out.println("Selecciona una de las opciones");
-            menu();
         }
     }
 
@@ -78,6 +64,31 @@ public class Estacionamiento
         }
         menu();
     }
+    
+    public static int crearAuto ()
+    {
+        int no_auto;
+        
+        System.out.println("Introduce en numero del auto a ingresar");
+        no_auto = teclado.nextInt();
+        
+        return no_auto;
+    }
+    
+    public static void estacionarAuto() 
+    {
+        int selectCola = (int)(Math.random() * 2);
+        int selectPila = (int)(Math.random() * 3);
+        
+        if (selectCola == 0)
+        {
+            seleccion(A, selectPila);
+        }
+        else
+        {
+            seleccion(B, selectPila);
+        }
+    }
 
     public static void Llegada() 
     {
@@ -106,16 +117,6 @@ public class Estacionamiento
             }
         }
     }
-    
-    public static int crearAuto ()
-    {
-        int no_auto;
-        
-        System.out.println("Introduce en numero del auto a ingresar");
-        no_auto = teclado.nextInt();
-        
-        return no_auto;
-    }
 
     public static void llegadaInicial() 
     {
@@ -124,92 +125,28 @@ public class Estacionamiento
             Llegada();
         }
     }
-
-    public static void ver() 
-    {
-        System.out.println("------------------------");
-        mostrar();
-        
-        System.out.println("Pila Auxiliar");
-        Aux.show();
-        
-        System.out.println("\nCola Fila A");
-        A.Mostrar();
-        
-        System.out.println("\nCola Fila B");
-        B.Mostrar();
-    }
     
-    public static void estacionarAuto() 
+    public static void menu() 
     {
-        int selectCola = (int)(Math.random() * 2);
-        int selectPila = (int)(Math.random() * 3);
+        System.out.println("Acción a realizar");
+        System.out.println("1) Meter un carro al estacionamiento\n2) Sacar un carro del estacionamiento\n3) Salir");
+        opcion = teclado.nextInt();
         
-        if (selectCola == 0)
+        if (opcion <= 1 || opcion >= 3) 
         {
-            seleccion(A, selectPila);
-        }
-        else
-        {
-            seleccion(B, selectPila);
+            ver();     
+            System.out.println("Selecciona una de las opciones");
+            menu();
         }
     }
     
-    public static void seleccion(Cola A, int selectPila) 
-    {
-        switch(selectPila)
-        {
-            case  1:
-                if(Uno.contar() > 3) 
-                {
-                    estacionarAuto();
-                    A.Extraer();
-                    Uno.push(A.R.getValor());
-                }
-                break;
-            case 2:
-                if(Dos.contar() > 3) 
-                {
-                    estacionarAuto();
-
-                } 
-                else 
-                {
-                    Dos.push(A.R.getValor());
-                    A.Extraer();
-                }
-                 break;
-            case 3:
-                if(Tres.contar() > 3) 
-                {
-                    estacionarAuto();
-                } 
-                else 
-                {
-                    Tres.push(A.R.getValor());
-                    A.Extraer();
-                }
-                break;
-        }
-    }
-
-    public static void sacar()
-    {
-        System.out.println("\n\nQue número de auto decesas sacar)");
-        int no_auto = teclado.nextInt();
-                           
-        sacando(no_auto, Aux, 1);
-        ver();     
-        System.out.println("El carro fue entregado");
-    }
-
     public static void mostrar() 
     {
         Pilas Aux = new Pilas();
         Pilas x = new Pilas();
         Aux = Uno;
         
-        while(Aux.R != null) 
+        while(Aux.Raiz != null) 
         {
             x.push(Aux.up());
             Aux.pop();
@@ -221,7 +158,7 @@ public class Estacionamiento
         Pilas y = new Pilas();
         Aux = Dos;
         
-        while(Aux.R != null) 
+        while(Aux.Raiz != null) 
         {
             y.push(Aux.up());
             Aux.pop();
@@ -233,7 +170,7 @@ public class Estacionamiento
         Pilas z = new Pilas();
         Aux = Tres;
         
-        while(Aux.R != null) 
+        while(Aux.Raiz != null) 
         {
             z.push(Aux.up());
             Aux.pop();
@@ -242,23 +179,33 @@ public class Estacionamiento
         System.out.println("Pila Tres");
         z.show();
 
-        while(x.R != null) 
+        while(x.Raiz != null) 
         {
             Uno.push(x.up());
             x.pop();
         }
         
-        while(y.R != null) 
+        while(y.Raiz != null) 
         {
             Dos.push(y.up());
             y.pop();
         }
         
-        while(z.R != null) 
+        while(z.Raiz != null) 
         {
             Tres.push(z.up());
             z.pop();
         }
+    }
+    
+    public static void sacar()
+    {
+        System.out.println("\n\nQue número de auto decesas sacar)");
+        int no_auto = teclado.nextInt();
+                           
+        sacando(no_auto, Aux, 1);
+        ver();     
+        System.out.println("El carro fue entregado");
     }
     
     public static void sacando(int no_auto, Pilas Aux, int num)
@@ -278,7 +225,7 @@ public class Estacionamiento
                 if(num == 2) P = Dos;
                 if(num == 3) P = Tres;
                 
-                while(no_auto == (P.R.getValor())) 
+                while(no_auto == (P.Raiz.getValor())) 
                 {
                     Aux.push(P.up());
                     P.pop();
@@ -287,7 +234,7 @@ public class Estacionamiento
                 P.pop();
                 ver();
 
-                while (Aux.R != null) 
+                while (Aux.Raiz != null) 
                 {
                     P.push(Aux.up());
                     Aux.pop();
@@ -296,7 +243,7 @@ public class Estacionamiento
             }
             catch (Exception ex)
             {
-                while (Aux.R != null) 
+                while (Aux.Raiz != null) 
                 {
                     P.push(Aux.up());
                     Aux.pop();
@@ -306,5 +253,58 @@ public class Estacionamiento
                     sacando(no_auto, Aux, num + 1);
             }
         }
+    }
+    
+    public static void seleccion(Colas A, int selectPila) 
+    {
+        switch(selectPila)
+        {
+            case  1:
+                if(Uno.contar() > 3) 
+                {
+                    estacionarAuto();
+                    A.Extraer();
+                    Uno.push(A.Raiz.getValor());
+                }
+                break;
+            case 2:
+                if(Dos.contar() > 3) 
+                {
+                    estacionarAuto();
+
+                } 
+                else 
+                {
+                    Dos.push(A.Raiz.getValor());
+                    A.Extraer();
+                }
+                 break;
+            case 3:
+                if(Tres.contar() > 3) 
+                {
+                    estacionarAuto();
+                } 
+                else 
+                {
+                    Tres.push(A.Raiz.getValor());
+                    A.Extraer();
+                }
+                break;
+        }
+    }
+
+    public static void ver() 
+    {
+        System.out.println("------------------------");
+        mostrar();
+        
+        System.out.println("Pila Auxiliar");
+        Aux.show();
+        
+        System.out.println("\nCola Fila A");
+        A.Mostrar();
+        
+        System.out.println("\nCola Fila B");
+        B.Mostrar();
     }
 }

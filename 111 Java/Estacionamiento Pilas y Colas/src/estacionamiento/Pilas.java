@@ -2,16 +2,38 @@ package estacionamiento;
 
 public class Pilas 
 {
-    Nodo R = null;
+    Nodo Raiz;
+    
+    public Pilas()
+    {
+        Raiz = null;
+    }
+    
+    public static void main(String[] args) {
+        Pilas pila = new Pilas();
+        
+        pila.push(99);
+        
+        System.out.println(pila.up());
+        
+        pila.push(10);
+        
+        pila.push(22);
+        
+        System.out.println(pila.contar());
+        System.out.println(pila.up());
+        
+        pila.show();
+    }
     
     public int contar()
     {
-        Nodo A = R;
+        Nodo nodoAux = Raiz;
         int i = 0;
         
-        while(A != null)
+        while(nodoAux != null)
         {               
-            A = A.getSiguiente();
+            nodoAux = nodoAux.getSiguiente();
             i++;
         }
         
@@ -20,51 +42,51 @@ public class Pilas
     
     public void pop()
     {
-        Nodo A = R;
+        Nodo nodoAux = Raiz;
         
-        if (R == null)
+        if (Raiz == null)
         {
             System.out.println("La pila esta vacia");
         }
         else
         {
-            R = R.getSiguiente();
-            A.setSiguiente(null);
+            Raiz = Raiz.getSiguiente();
+            nodoAux.setSiguiente(null);
         }
     }
     
     public void push(int valor)
     {
         
-        Nodo T = new Nodo(valor);
+        Nodo nodo = new Nodo(valor);
         
-        if (R == null)
+        if (Raiz == null)
         {
-            R = T;
+            Raiz = nodo;
         }
         else
         {  
-            T.setSiguiente(R);
-            R = T;
+            nodo.setSiguiente(Raiz);
+            Raiz = nodo;
         }
     }
      
     public void show()
     {
-        Nodo A = R;
+        Nodo nodoAux = Raiz;
                  
-        if (R != null)
+        if (Raiz != null)
         {
-            while (A != null)
+            while (nodoAux != null)
             {   
-                A = A.getSiguiente();
+                nodoAux = nodoAux.getSiguiente();
             }
         }
     }
      
     public int up()
     {
-        return R.getValor();
+        return Raiz.getValor();
     }
 }
 

@@ -1,18 +1,24 @@
 package estacionamiento;
 
-public class Cola 
+public class Colas 
 {
-    Nodo R = null;
-    Nodo RA = null;
+    Nodo Raiz;
+    Nodo raizAux;
+    
+    public Colas()
+    {
+        Raiz = null;
+        raizAux = null;
+    }
     
     public int Contar()
     {
-        Nodo A = R;
+        Nodo nodoAux = Raiz;
         int i = 0;
         
-        while (A != null)
+        while (nodoAux != null)
         {               
-            A = A.getSiguiente();
+            nodoAux = nodoAux.getSiguiente();
             i++;
         }
         
@@ -21,41 +27,41 @@ public class Cola
     
     public void Extraer()
     {
-        Nodo A = R;
-        if (R == null)
+        Nodo nodoAux = Raiz;
+        if (Raiz == null)
         {
             System. out. println("La Cola se encuentra vacia, no hay nada que extraer.");
         }
         else
         {  
-            R = R.getSiguiente();
-            A.setSiguiente(null);
+            Raiz = Raiz.getSiguiente();
+            nodoAux.setSiguiente(null);
         }
     }
     
     public void ExtPrioridad(int valor)
     {
-        Nodo RA = null;
+        Nodo nodoRaizAux = null;
        
-        if(R != null)
+        if(Raiz != null)
         {
-            if(R.getValor() == valor)
+            if(Raiz.getValor() == valor)
             {
-                R = R.getSiguiente();
+                Raiz = Raiz.getSiguiente();
             }
             else
             {
-                while(R != null)
+                while(Raiz != null)
                 {
-                    Nodo T = new Nodo(R.getValor());
+                    Nodo T = new Nodo(Raiz.getValor());
                 
-                    if(RA == null)
+                    if(nodoRaizAux == null)
                     {        
-                        RA = T;
+                        nodoRaizAux = T;
                     }
                     else
                     {
-                        Nodo A = RA;
+                        Nodo A = nodoRaizAux;
                         
                         while(A.getSiguiente()!= null)
                             A = A.getSiguiente();
@@ -64,36 +70,35 @@ public class Cola
                             
                     }
                         
-                    R = R.getSiguiente(); 
+                    Raiz = Raiz.getSiguiente(); 
                        
                 }
                 
-                R = R.getSiguiente(); 
+                Raiz = Raiz.getSiguiente(); 
                 
                 
-                while(R != null)
+                while(Raiz != null)
                 {
-                    Nodo T = new Nodo(R.getValor());
+                    Nodo T = new Nodo(Raiz.getValor());
                     
-                    if(RA == null)
+                    if(nodoRaizAux == null)
                     {
-                        RA = T;
+                        nodoRaizAux = T;
                     }    
                     else
                     {
-                        Nodo A = RA;
+                        Nodo A = nodoRaizAux;
                         
                         while(A.getSiguiente() != null)
                             A = A.getSiguiente();
                         
                         A.setSiguiente(T);
-                            
                     }
                         
-                    R = R.getSiguiente(); 
+                    Raiz = Raiz.getSiguiente(); 
                 }
                 
-                R = RA;
+                Raiz = nodoRaizAux;
             }
             
             System.out.println("Se extrae el nodo de la cola.\n");
@@ -107,35 +112,35 @@ public class Cola
     
     public void Insertar(int valor)
     {
-        Nodo T = new Nodo(valor);
+        Nodo nodo = new Nodo(valor);
         
-        if(R == null)
+        if(Raiz == null)
         {
-            R = T;
+            Raiz = nodo;
         }
         else
         {
-            Nodo A = R;
+            Nodo nodoAux = Raiz;
             
-            while(A.getSiguiente()!= null)
-                A = A.getSiguiente();
+            while(nodoAux.getSiguiente()!= null)
+                nodoAux = nodoAux.getSiguiente();
             
-            A.setSiguiente(T);
+            nodoAux.setSiguiente(nodo);
         }
         
-        System.out.println("Agregar un vehiculo: " + T.getValor());
+        System.out.println("Agregar un vehiculo: " + nodo.getValor());
     }
         
     public void Mostrar()
     {
-        Nodo A = R;
-        if (A != null)
+        Nodo nodoAux = Raiz;
+        if (nodoAux != null)
         {   
             int i = 1;
-            while(A != null)
+            while(nodoAux != null)
             { 
-                 System.out.println("\t\t" + A.getValor());
-                 A = A.getSiguiente();
+                 System.out.println("\t\t" + nodoAux.getValor());
+                 nodoAux = nodoAux.getSiguiente();
                  i++;
             }
         }        
