@@ -8,330 +8,370 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <a class="brand-logo" href="https://www.google.com"><i class="material-icons logo">healing</i>Med-Pro</a>
+                    <a class="sidenav-trigger hide-on-med-and-up" data-target="mobile" href=""><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-small-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="mobile" class="sidenav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
         <div class="container">
             <form action="index.html" method="post">
-                <h3>Historial cl&iacute;nico</h3>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="nombre" name="nombre" class="validate" type="text" >
-                        <label for="nombre">Nombre:</label>
-                    </div>
+            <ul class="collapsible">
+                <li class="active">
+                    <div class="collapsible-header white-text green"><i class="material-icons">done</i>Historial Cl&iacute;nico</div>
+                    <div class="collapsible-body row">
+                        <div class="input-field col s6">
+                            <input id="nombre" name="nombre" class="validate" type="text" >
+                            <label for="nombre">Nombre:</label>
+                        </div>
 
-                    <div class="input-field col s2">
-                        <input id="edad" name="edad" type="number">
-                        <label for="edad">Edad:</label>
-                    </div>
+                        <div class="input-field col s2">
+                            <input id="edad" name="edad" type="number">
+                            <label for="edad">Edad:</label>
+                        </div>
 
-                    <div class="input-field col s4">
-                        <select>
-                            <option value="" disabled selected>Elija una opci&oacute;n</option>
-                            <option value="M">Masculino</option>
-                            <option value="F">Femenino</option>
-                        </select>
-                        <label>Sexo:</label>
+                        <div class="input-field col s4">
+                            <select>
+                                <option value="" disabled selected>Elija una opci&oacute;n</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                            </select>
+                            <label>Sexo:</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="direccion">Direcci&oacute;n:</label>
+                            <input id="direccion" name="direccion" type="text">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="telefono">Tel&eacute;fono:</label>
+                            <input id="telefono" name="telefono" type="text">
+                        </div>
                     </div>
-                    <div class="input-field col s6">
-                        <label for="direccion">Direcci&oacute;n:</label>
-                        <input id="direccion" name="direccion" type="text">
+                </li>
+                <li>
+                    <div class="collapsible-header yellow"><i class="material-icons">error</i>Antecedentes Personales No Patol&oacute;gicos</div>
+                    <div class="collapsible-body row">
+                        <div class="input-field col s6">
+                            <label for="lugar_nacmiento">Lugar de nacimiento:</label>
+                            <input id="lugar_nacmiento" name="lugar_nacmiento" type="text">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="ocupacion">Ocupaci&oacute;n:</label>
+                            <input id="ocupacion" name="ocupacion" type="text">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="escolaridad">Escolaridad:</label>
+                            <input id="escolaridad" name="escolaridad" type="text">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="adicciones">Adicciones:</label>
+                            <input id="adicciones" name="adicciones" type="text">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="alcoholismo">Alcoholismo:</label>
+                            <input id="alcoholismo" name="alcoholismo" type="text">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="vacunacion">Vacunaci&oacute;n:</label>
+                            <input id="vacunacion" name="vacunacion" type="text">
+                        </div>
                     </div>
-                    <div class="input-field col s6">
-                        <label for="telefono">Tel&eacute;fono:</label>
-                        <input id="telefono" name="telefono" type="text">
-                    </div>
-                </div>
-                <h3>Antecedentes personales no patol&oacute;gicos</h3>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for="lugar_nacmiento">Lugar de nacimiento:</label>
-                        <input id="lugar_nacmiento" name="lugar_nacmiento" type="text">
-                    </div>
-                    <div class="input-field col s6">
-                        <label for="ocupacion">Ocupaci&oacute;n:</label>
-                        <input id="ocupacion" name="ocupacion" type="text">
-                    </div>
-                    <div class="input-field col s6">
-                        <label for="escolaridad">Escolaridad:</label>
-                        <input id="escolaridad" name="escolaridad" type="text">
-                    </div>
-                    <div class="input-field col s6">
-                        <label for="adicciones">Adicciones:</label>
-                        <input id="adicciones" name="adicciones" type="text">
-                    </div>
-                    <div class="input-field col s6">
-                        <label for="alcoholismo">Alcoholismo:</label>
-                        <input id="alcoholismo" name="alcoholismo" type="text">
-                    </div>
-                    <div class="input-field col s6">
-                        <label for="vacunacion">Vacunaci&oacute;n:</label>
-                        <input id="vacunacion" name="vacunacion" type="text">
-                    </div>
-                </div>
-                <h3>Antecedentes heredofamiliares</h3>
-                <table class="highlight">
-                    <thead>
-                        <th>Familiar</th>
-                        <th colspan="2">Vivo</th>
-                        <th colspan="2">Sano</th>
-                        <th>Enfermedad</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th><label for="abuelo_paterno">Abuelo Paterno</label></th>
-                            <td><p><label><input id="vivo1" name="vivo1" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="vivo1" name="vivo1" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><p><label><input id="sano1" name="sano1" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano1" name="sano1" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad1" name="enfermedad1" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                        <tr>
-                            <th><label for="abuela_paterna">Abuela Paterna</label></th>
-                            <td><p><label><input id="vivo2" name="vivo2" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="vivo2" name="vivo2" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><p><label><input id="sano2" name="sano2" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano2" name="sano2" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad2" name="enfermedad2" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                        <tr>
-                            <th><label for="abuelo_materno">Abuelo Materno</label></th>
-                            <td><p><label><input id="vivo3" name="vivo3" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="vivo3" name="vivo3" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><p><label><input id="sano3" name="sano3" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano3" name="sano3" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad3" name="enfermedad3" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                        <tr>
-                            <th><label for="abuela_materna">Abuela Materna</label></th>
-                            <td><p><label><input id="vivo4" name="vivo4" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="vivo4" name="vivo4" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><p><label><input id="sano4" name="sano4" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano4" name="sano4" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad4" name="enfermedad4" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                        <tr>
-                            <th><label for="padre">Padre</label></th>
-                            <td><p><label><input id="vivo5" name="vivo5" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="vivo5" name="vivo5" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><p><label><input id="sano5" name="sano5" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano5" name="sano5" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad5" name="enfermedad5" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                        <tr>
-                            <th><label for="madre">Madre</label></th>
-                            <td><p><label><input id="vivo6" name="vivo6" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="vivo6" name="vivo6" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><p><label><input id="sano6" name="sano6" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano6" name="sano6" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad6" name="enfermedad6" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                        <tr>
-                            <th><label for="hermanos">Hermanos</label></th>
-                            <td colspan="2"><div class="input-field"><input id="numero" name="numero" type="number" placeholder="Cantidad" ></div></td>
-                            <td><p><label><input id="sano7" name="sano7" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
-                            <td><p><label><input id="sano7" name="sano7" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
-                            <td><div class="input-field"><input id="enfermedad7" name="enfermedad7" type="text" placeholder="Enfermedad" ></div></td>
-                        </tr>
-                    </tbody>
-                </table>
+                </li>
+                <li>
+                    <div class="collapsible-header grey lighten-3"><i class="material-icons">edit</i>Antecedentes Heredofamiliares</div>
+                    <div class="collapsible-body">
+                        <table class="highlight">
+                            <thead>
+                                <th>Familiar</th>
+                                <th colspan="2">Vivo</th>
+                                <th colspan="2">Sano</th>
+                                <th>Enfermedad</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><label for="abuelo_paterno">Abuelo Paterno</label></th>
+                                    <td><p><label><input id="vivo1" name="vivo1" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="vivo1" name="vivo1" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><p><label><input id="sano1" name="sano1" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano1" name="sano1" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad1" name="enfermedad1" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="abuela_paterna">Abuela Paterna</label></th>
+                                    <td><p><label><input id="vivo2" name="vivo2" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="vivo2" name="vivo2" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><p><label><input id="sano2" name="sano2" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano2" name="sano2" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad2" name="enfermedad2" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="abuelo_materno">Abuelo Materno</label></th>
+                                    <td><p><label><input id="vivo3" name="vivo3" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="vivo3" name="vivo3" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><p><label><input id="sano3" name="sano3" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano3" name="sano3" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad3" name="enfermedad3" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="abuela_materna">Abuela Materna</label></th>
+                                    <td><p><label><input id="vivo4" name="vivo4" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="vivo4" name="vivo4" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><p><label><input id="sano4" name="sano4" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano4" name="sano4" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad4" name="enfermedad4" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="padre">Padre</label></th>
+                                    <td><p><label><input id="vivo5" name="vivo5" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="vivo5" name="vivo5" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><p><label><input id="sano5" name="sano5" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano5" name="sano5" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad5" name="enfermedad5" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="madre">Madre</label></th>
+                                    <td><p><label><input id="vivo6" name="vivo6" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="vivo6" name="vivo6" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><p><label><input id="sano6" name="sano6" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano6" name="sano6" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad6" name="enfermedad6" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                                <tr>
+                                    <th><label for="hermanos">Hermanos</label></th>
+                                    <td colspan="2"><div class="input-field"><input id="numero" name="numero" type="number" placeholder="Cantidad" ></div></td>
+                                    <td><p><label><input id="sano7" name="sano7" class="with-gap" type="radio" value="1" /><span>Si</span></label></p></td>
+                                    <td><p><label><input id="sano7" name="sano7" class="with-gap" type="radio" value="0" /><span>No</span></label></p></td>
+                                    <td><div class="input-field"><input id="enfermedad7" name="enfermedad7" type="text" placeholder="Enfermedad" ></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                <div class="input-field">
-                    <label for="otros1">Otros:</label>
-                    <input id="otros1" name="otros1" type="text" >
-                </div>
+                        <div class="input-field">
+                            <label for="otros1">Otros:</label>
+                            <input id="otros1" name="otros1" type="text" >
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey lighten-3"><i class="material-icons">edit</i>Antecedentes Personales Patol&oacute;gicos</div>
+                    <div class="collapsible-body row">
+                        <div class="col s1">
+                            <label for="alergicos">Al&eacute;rgicos</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="alegicos" name="alegicos" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="alegicos" name="alegicos" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field"><label for="medicamentos">Medicamentos:</label><input id="medicamentos" name="medicamentos" type="text" ></div>
+                        </div>
+                        <div class="col s5">
+                            <div class="input-field"><label for="alimentos">Alimentos:</label><input id="alimentos" name="alimentos" type="text" ></div>
+                        </div>
 
-                <h3>Antecedentes personales patol&oacute;gicos</h3>
-                <div class="row">
-                    <div class="col s1">
-                        <label for="alergicos">Al&eacute;rgicos</label>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="alegicos" name="alegicos" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="alegicos" name="alegicos" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
-                    </div>
-                    <div class="col s4">
-                        <div class="input-field"><label for="medicamentos">Medicamentos:</label><input id="medicamentos" name="medicamentos" type="text" ></div>
-                    </div>
-                    <div class="col s5">
-                        <div class="input-field"><label for="alimentos">Alimentos:</label><input id="alimentos" name="alimentos" type="text" ></div>
-                    </div>
+                        <div class="col s1">
+                            <label for="transfusionales">Transfusionales</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="trans" name="trans" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="trans" name="trans" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field"><label for="fecha">Fecha ultima transfusi&oacute;n:</label><input id="fecha" name="fecha" class="datepicker" type="text" ></div>
+                        </div>
+                        <div class="col s5">
+                            <div class="input-field"><label for="causas">Causas:</label><input id="causas" name="causas" type="text" ></div>
+                        </div>
 
-                    <div class="col s1">
-                        <label for="transfusionales">Transfusionales</label>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="trans" name="trans" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="trans" name="trans" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
-                    </div>
-                    <div class="col s4">
-                        <div class="input-field"><label for="fecha">Fecha ultima transfusi&oacute;n:</label><input id="fecha" name="fecha" class="datepicker" type="text" ></div>
-                    </div>
-                    <div class="col s5">
-                        <div class="input-field"><label for="causas">Causas:</label><input id="causas" name="causas" type="text" ></div>
-                    </div>
+                        <div class="col s1">
+                            <label for="quirurgicos">Quir&uacute;rgicos</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="quirurgicos" name="quirurgicos" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="quirurgicos" name="quirurgicos" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
+                        </div>
+                        <div class="col s9">
+                            <td colspan="2"><div class="input-field"><label for="desc">Describa:</label><input id="desc" name="desc" type="text" ></div>
+                        </div>
 
-                    <div class="col s1">
-                        <label for="quirurgicos">Quir&uacute;rgicos</label>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="quirurgicos" name="quirurgicos" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="quirurgicos" name="quirurgicos" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
-                    </div>
-                    <div class="col s9">
-                        <td colspan="2"><div class="input-field"><label for="desc">Describa:</label><input id="desc" name="desc" type="text" ></div>
-                    </div>
+                        <div class="col s1">
+                            <label for="traumaticos">Traum&aacute;ticos</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="trauma" name="trauma" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="trauma" name="trauma" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field"><label for="trauma_datos">Contusi&oacute;n/Fractura:</label><input id="trauma_datos" name="trauma_datos" type="text" ></div>
+                        </div>
+                        <div class="col s5">
+                            <div class="input-field"><label for="sitio">Sitio:</label><input id="sitio" name="sitio" type="text" ></div>
+                        </div>
 
-                    <div class="col s1">
-                        <label for="traumaticos">Traum&aacute;ticos</label>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="trauma" name="trauma" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="trauma" name="trauma" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
-                    </div>
-                    <div class="col s4">
-                        <div class="input-field"><label for="trauma_datos">Contusi&oacute;n/Fractura:</label><input id="trauma_datos" name="trauma_datos" type="text" ></div>
-                    </div>
-                    <div class="col s5">
-                        <div class="input-field"><label for="sitio">Sitio:</label><input id="sitio" name="sitio" type="text" ></div>
-                    </div>
+                        <div class="col s1">
+                            <label for="diabetes">Diabetes</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field"><label for="tiempo1">Tiempo:</label><input id="tiempo1" name="tiempo1" type="number" ></div>
+                        </div>
+                        <div class="input-field col s5">
+                            <select>
+                                <option value="" disabled selected>Elija una opci&oacute;n</option>
+                                <option value="1">Si</option>
+                                <option value="0">No</option>
+                            </select>
+                            <label>En Control:</label>
+                        </div>
 
-                    <div class="col s1">
-                        <label for="diabetes">Diabetes</label>
+                        <div class="col s1">
+                            <label for="hiper">Hipertensi&oacute;n Arterial</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field"><label for="tiempo2">Tiempo:</label><input id="tiempo2" name="tiempo2" type="number" ></div>
+                        </div>
+                        <div class="input-field col s8">
+                            <label for="otros2">Otros:</label>
+                            <input id="otros2" name="otros2" type="text" >
+                        </div>
                     </div>
-                    <div class="col s1">
-                        <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
+                </li>
+                <li>
+                    <div class="collapsible-header grey lighten-3"><i class="material-icons">edit</i>Padecimiento Actual</div>
+                    <div class="collapsible-body">
+                        <p class="grey-text">
+                            INTERROGATORIO POR APARATOS Y SISTEMAS (SINTOMASS GENERALES, PIEL Y FANERAS, CABEZA Y CUELLO, TORAX, ABDOMEN, PELVIS Y GENITALES, MUSCULO ESQUELETICO)
+                        </p>
+                        <div class="input-field">
+                            <label for="diagnostico">Padecimiento</label>
+                            <textarea id="padecimiento" name="padecimiento" class="materialize-textarea"></textarea>
+                        </div>
                     </div>
-                    <div class="col s1">
-                        <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
-                    </div>
-                    <div class="col s4">
-                        <div class="input-field"><label for="tiempo1">Tiempo:</label><input id="tiempo1" name="tiempo1" type="number" ></div>
-                    </div>
-                    <div class="input-field col s5">
-                        <select>
-                            <option value="" disabled selected>Elija una opci&oacute;n</option>
-                            <option value="1">Si</option>
-                            <option value="0">No</option>
-                        </select>
-                        <label>En Control:</label>
-                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey lighten-3"><i class="material-icons">edit</i>Exploraci&oacute;n F&iacute;sica por Aparatos y Sistemas</div>
+                    <div class="collapsible-body row">
+                        <div class="col s3">
+                            <p><label><input id="conciente" name="conciente" class="with-gap" type="radio" value="1" /><span>Conciente</span></label></p>
+                        </div>
+                        <div class="col s3">
+                            <p><label><input id="conciente" name="conciente" class="with-gap" type="radio" value="0" /><span>Inconciente</span></label></p>
+                        </div>
+                        <div class="col s3">
+                            <p><label><input id="orientado" name="orientado" class="with-gap" type="radio" value="1" /><span>Orientado</span></label></p>
+                        </div>
+                        <div class="col s3">
+                            <p><label><input id="orientado" name="orientado" class="with-gap" type="radio" value="0" /><span>Desorientado</span></label></p>
+                        </div>
 
-                    <div class="col s1">
-                        <label for="hiper">Hipertensi&oacute;n Arterial</label>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="1" /><span>Si</span></label></p>
-                    </div>
-                    <div class="col s1">
-                        <p><label><input id="diabetes" name="diabetes" class="with-gap" type="radio" value="0" /><span>No</span></label></p>
-                    </div>
-                    <div class="col s4">
-                        <div class="input-field"><label for="tiempo2">Tiempo:</label><input id="tiempo2" name="tiempo2" type="number" ></div>
-                    </div>
-                    <div class="input-field col s8">
-                        <label for="otros2">Otros:</label>
-                        <input id="otros2" name="otros2" type="text" >
-                    </div>
-                </div>
+                        <div class="col s3">
+                            <label for="aparenta">Edad Aparente a la Real</label>
+                        </div>
+                        <div class="col s3">
+                            <p><label><input id="aparenta" name="aparenta" class="with-gap" type="radio" value="0" /><span>Igual</span></label></p>
+                        </div>
+                        <div class="col s3">
+                            <p><label><input id="aparenta" name="aparenta" class="with-gap" type="radio" value="1" /><span>Mayor</span></label></p>
+                        </div>
+                        <div class="col s3">
+                            <p><label><input id="aparenta" name="aparenta" class="with-gap" type="radio" value="2" /><span>Menor</span></label></p>
+                        </div>
 
-                <h3>Padecimiento Actual</h3>
-                <p class="grey-text ">
-                    INTERROGATORIO POR APARATOS Y SISTEMAS (SINTOMASS GENERALES, PIEL Y FANERAS, CABEZA Y CUELLO, TORAX, ABDOMEN, PELVIS Y GENITALES, MUSCULO ESQUELETICO)
-                </p>
-                <div class="input-field">
-                    <textarea name="padecimiento" rows="10" cols="80"></textarea>
-                </div>
+                        <div class="col s3">
+                            <label for="malformaciones">Malformaciones Aparentes</label>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="malformaciones" name="malformaciones" class="with-gap" type="radio" value="0" /><span>Si</span></label></p>
+                        </div>
+                        <div class="col s1">
+                            <p><label><input id="malformaciones" name="malformaciones" class="with-gap" type="radio" value="1" /><span>No</span></label></p>
+                        </div>
+                        <div class="input-field col s7">
+                            <label for="tipo">Tipo:</label><input id="tipo" name="tipo" type="text" />
+                        </div>
+                        <div class="input-field col s4">
+                            <label for="tension">Tensi&oacute;n Arterial:</label><input id="tension" name="tension" type="text" />
+                        </div>
+                        <div class="input-field col s4">
+                            <label for="frec">Frecuencia Card&iacute;aca:</label><input id="frec" name="frec" type="text" />
+                        </div>
+                        <div class="input-field col s4">
+                            <label for="pulso">Pulso:</label><input id="pulso" name="pulso" type="text" />
+                        </div>
 
-                <h3>Exploracion Fisica por Aparatos y Sistemas</h3>
-                <div class="row">
-                    <div class="col s3">
-                        <p><label><input id="conciente" name="conciente" class="with-gap" type="radio" value="1" /><span>Conciente</span></label></p>
-                    </div>
-                    <div class="col s3">
-                        <p><label><input id="conciente" name="conciente" class="with-gap" type="radio" value="0" /><span>Inconciente</span></label></p>
-                    </div>
-                    <div class="col s3">
-                        <p><label><input id="orientado" name="orientado" class="with-gap" type="radio" value="1" /><span>Orientado</span></label></p>
-                    </div>
-                    <div class="col s3">
-                        <p><label><input id="orientado" name="orientado" class="with-gap" type="radio" value="0" /><span>Desorientado</span></label></p>
-                    </div>
+                        <div class="input-field col s4">
+                            <label for="frec_resp">Frecuencia Respiratoria:</label><input id="frec_resp" name="frec_resp" type="text" />
+                        </div>
+                        <div class="input-field col s4">
+                            <label for="temp">Temperatura:</label><input id="temp" name="temp" type="text" />
+                        </div>
 
-                    <div class="col s3">
-                        <label for="aparenta">Edad Aparente a la Real</label>
-                    </div>
-                    <div class="col s3">
-                        <p><label><input id="aparenta" name="aparenta" class="with-gap" type="radio" value="0" /><span>Igual</span></label></p>
-                    </div>
-                    <div class="col s3">
-                        <p><label><input id="aparenta" name="aparenta" class="with-gap" type="radio" value="1" /><span>Mayor</span></label></p>
-                    </div>
-                    <div class="col s3">
-                        <p><label><input id="aparenta" name="aparenta" class="with-gap" type="radio" value="2" /><span>Menor</span></label></p>
-                    </div>
+                        <div class="input-field col s8">
+                            <label for="musculo">Sistema Musculoesqueletico</label>
+                            <input id="musculo" name="musculo" type="text" />
+                        </div>
 
-                    <div class="col s3">
-                        <label for="malformaciones">Malformaciones Aparentes</label>
+                        <div class="input-field col s8">
+                            <label for="resultados">Resultados de Laboratorio</label>
+                            <input id="resultados" name="resultados" type="text" />
+                        </div>
                     </div>
-                    <div class="col s1">
-                        <p><label><input id="malformaciones" name="malformaciones" class="with-gap" type="radio" value="0" /><span>Si</span></label></p>
+                </li>
+                <li>
+                    <div class="collapsible-header grey lighten-3"><i class="material-icons">edit</i>Diagn&oacute;stico</div>
+                    <div class="collapsible-body">
+                        <div class="input-field">
+                            <label for="diagnostico">Diagn&oacute;stico</label>
+                            <textarea id="diagnostico" name="diagnostico" class="materialize-textarea"></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label for="pronostico">Pron&oacute;stico</label>
+                            <textarea id="pronostico" name="pronostico" class="materialize-textarea"></textarea>
+                        </div>
                     </div>
-                    <div class="col s1">
-                        <p><label><input id="malformaciones" name="malformaciones" class="with-gap" type="radio" value="1" /><span>No</span></label></p>
-                    </div>
-                    <div class="input-field col s7">
-                        <label for="tipo">Tipo:</label><input id="tipo" name="tipo" type="text" />
-                    </div>
-                    <div class="input-field col s4">
-                        <label for="tension">Tension Arterial:</label><input id="tension" name="tension" type="text" />
-                    </div>
-                    <div class="input-field col s4">
-                        <label for="frec">Frecuencia Cardiaca:</label><input id="frec" name="frec" type="text" />
-                    </div>
-                    <div class="input-field col s4">
-                        <label for="pulso">Pulso:</label><input id="pulso" name="pulso" type="text" />
-                    </div>
-
-                    <div class="input-field col s4">
-                        <label for="frec_resp">Frecuencia Respiratoria:</label><input id="frec_resp" name="frec_resp" type="text" />
-                    </div>
-                    <div class="input-field col s4">
-                        <label for="temp">Temperatura:</label><input id="temp" name="temp" type="text" />
-                    </div>
-
-                    <div class="input-field col s8">
-                        <label for="musculo">Sistema Musculoesqueletico</label>
-                        <input id="musculo" name="musculo" type="text" />
-                    </div>
-
-                    <div class="input-field col s8">
-                        <label for="resultados">Resultados de Laboratorio</label>
-                        <input id="resultados" name="resultados" type="text" />
-                    </div>
-                </div>
-
-                <h3>Diagnostico</h3>
-                <div class="input-field col s8">
-                    <label for="diagnostico">Diagnostico</label>
-                    <input id="diagnostico" name="diagnostico" type="text" />
-                </div>
-                <div class="input-field col s8">
-                    <label for="pronostico">Pronostico</label>
-                    <input id="pronostico" name="pronostico" type="text" />
-                </div>
-
-
+                </li>
+            </ul>
                 <button class="btn waves-effect waves-light" type="submit" name="action">Guardar<i class="material-icons right">save</i></button>
                 <button class="btn waves-effect waves-red red accent-2" >Cancelar<i class="material-icons right">cancel</i></button>
 
             </form>
         </div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
         <footer>
             <div class="footer-copyleft blue">
