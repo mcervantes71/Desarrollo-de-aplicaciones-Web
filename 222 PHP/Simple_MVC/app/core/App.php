@@ -7,8 +7,8 @@
 
     	public function __construct()
     	{
-    	    //$this->parseUrl();		// step 5
-    	    //print_r($this->parseUrl());	// step 8
+//$this->parseUrl();		// step 5
+//print_r($this->parseUrl());	// step 8
     	    $url = $this->parseUrl();
 // step 9
     	    if(file_exists('../app/controllers/' . $url[0] . '.php'))
@@ -42,7 +42,7 @@
     	{
     	    if(isset($_GET['url']))
     	    {
-    	        //echo $_GET['url'];		//step 5
+//echo $_GET['url'];		//step 5
     		    return $url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));  // step 8
     	    }
     	}
