@@ -4,8 +4,9 @@ html,body {
     height: 100%;
 }
 
-.logo {
-    
+#logo {
+    margin-left: 15px;
+    font-size: 40px;
 }
 
 .container {
