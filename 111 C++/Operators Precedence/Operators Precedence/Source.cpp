@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main()
+void main()
 {
     int a = 4;
     int b = 0;
@@ -65,5 +65,4 @@ int main()
     cout << ((i >= 6) || (chr == 65)) << endl;
 
     system("pause");
-    return 0;
 }

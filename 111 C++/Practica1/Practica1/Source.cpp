@@ -44,6 +44,5 @@ void main()
         cout << "Opcion incorrecta" << endl;
     }
 
-
     system("pause");
 }

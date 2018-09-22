@@ -2,12 +2,8 @@
 
 using namespace std;
 
-int main()
+void main()
 {
-    //
-    //Código Fuente de mi Programa
-    //
-
     int a = 97;
     char b = 'a';
     string c = "Hola";
@@ -26,5 +22,4 @@ int main()
     x = v * t + a * t * t / 2;
 
     system("pause");
-    return 0;
 }
