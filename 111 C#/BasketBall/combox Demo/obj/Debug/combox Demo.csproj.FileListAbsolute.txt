@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\bin\Debug\combox Demo.exe.config
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\bin\Debug\combox Demo.exe
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\bin\Debug\combox Demo.pdb
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox Demo.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox_Demo.Form1.resources
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox Demo.exe
+C:\Users\Martin Cervantes\Desktop\combox Demo\combox Demo\obj\Debug\combox Demo.pdb

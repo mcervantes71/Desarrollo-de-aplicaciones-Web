@@ -1,0 +1,15 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\bin\Debug\Wpf LIstBox Demo.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\bin\Debug\Wpf LIstBox Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\bin\Debug\Wpf LIstBox Demo.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo_MarkupCompile.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo_MarkupCompile.lref
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo.g.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf_LIstBox_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf LIstBox Demo\Wpf LIstBox Demo\obj\Debug\Wpf LIstBox Demo.pdb

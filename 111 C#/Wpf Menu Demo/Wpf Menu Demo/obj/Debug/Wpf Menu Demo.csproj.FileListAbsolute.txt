@@ -1,0 +1,15 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\bin\Debug\Wpf Menu Demo.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\bin\Debug\Wpf Menu Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\bin\Debug\Wpf Menu Demo.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo_MarkupCompile.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo_MarkupCompile.lref
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo.g.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf_Menu_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Menu Demo\Wpf Menu Demo\obj\Debug\Wpf Menu Demo.pdb

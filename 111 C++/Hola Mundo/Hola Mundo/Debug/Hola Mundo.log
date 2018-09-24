@@ -1,0 +1,3 @@
+﻿  HolaMundo.cpp
+c:\users\martin cervantes\downloads\programming\111 c++\hola mundo\hola mundo\holamundo.cpp(6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Hola Mundo.vcxproj -> C:\Users\Martin Cervantes\Downloads\Programming\111 C++\Hola Mundo\Debug\Hola Mundo.exe

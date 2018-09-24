@@ -1,0 +1,9 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\bin\Debug\Score_Keeper.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\bin\Debug\Score_Keeper.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\bin\Debug\Score_Keeper.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\obj\Debug\Score_Keeper.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\obj\Debug\Score_Keeper.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\obj\Debug\Score_Keeper.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\obj\Debug\Score_Keeper.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\obj\Debug\Score_Keeper.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Score_Keeper\Score_Keeper\obj\Debug\Score_Keeper.pdb

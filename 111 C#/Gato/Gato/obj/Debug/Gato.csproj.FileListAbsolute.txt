@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\bin\Debug\Gato.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\bin\Debug\Gato.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\bin\Debug\Gato.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Gato\Gato\obj\Debug\Gato.csprojAssemblyReference.cache

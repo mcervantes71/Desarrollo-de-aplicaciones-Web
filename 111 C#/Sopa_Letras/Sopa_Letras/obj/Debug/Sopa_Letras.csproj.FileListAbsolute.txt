@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\bin\Debug\Sopa_Letras.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\bin\Debug\Sopa_Letras.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\bin\Debug\Sopa_Letras.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Sopa_Letras\Sopa_Letras\obj\Debug\Sopa_Letras.csprojAssemblyReference.cache

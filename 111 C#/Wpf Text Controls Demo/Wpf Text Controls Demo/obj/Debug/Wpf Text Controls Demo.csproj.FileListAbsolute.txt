@@ -1,0 +1,15 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\bin\Debug\Wpf Text Controls Demo.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\bin\Debug\Wpf Text Controls Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\bin\Debug\Wpf Text Controls Demo.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo_MarkupCompile.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo_MarkupCompile.lref
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo.g.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf_Text_Controls_Demo.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf Text Controls Demo\Wpf Text Controls Demo\obj\Debug\Wpf Text Controls Demo.pdb

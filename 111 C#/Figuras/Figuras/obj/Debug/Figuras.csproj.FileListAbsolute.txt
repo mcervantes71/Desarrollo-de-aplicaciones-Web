@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\bin\Debug\Figuras.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\bin\Debug\Figuras.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\bin\Debug\Figuras.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.Triangulos_Lados.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Figuras\Figuras\obj\Debug\Figuras.pdb

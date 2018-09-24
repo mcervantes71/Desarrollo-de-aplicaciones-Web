@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\bin\Debug\Numeros.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\bin\Debug\Numeros.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\bin\Debug\Numeros.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Numeros\Numeros\obj\Debug\Numeros.pdb

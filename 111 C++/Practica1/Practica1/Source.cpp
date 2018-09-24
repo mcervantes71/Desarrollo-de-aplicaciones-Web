@@ -16,7 +16,7 @@ void main()
     cout << "Dime otro numero" << endl;
     cin >> num2;
 
-    cout << "1) Suma\n2)Resta\n3)Multiplicacion\n4)Division" << endl;
+    cout << "1) Suma\n2) Resta\n3) Multiplicacion\n4) Division" << endl;
     cin >> op;
 
     if (op == 1)
