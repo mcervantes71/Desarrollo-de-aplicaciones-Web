@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\martin cervantes\downloads\programming\111 c++\practica3\practica3\source.cpp(7): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Practica3.vcxproj -> C:\Users\Martin Cervantes\Downloads\Programming\111 C++\Practica3\Debug\Practica3.exe
