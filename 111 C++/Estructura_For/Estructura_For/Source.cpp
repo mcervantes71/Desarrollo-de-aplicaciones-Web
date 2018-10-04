@@ -4,9 +4,15 @@ using namespace std;
 
 void main()
 {
-    for (int i = 5; i <= 10000; i += 5)
+    int num, res = 0;
+
+    cout << "Dime un numero" << endl;
+    cin >> num;
+
+    for (int i = 1; i <= 10; i++)
     {
-        cout << i << endl;
+        res = num * i;
+        cout << num << " x " << i << " = " << res << endl;
     }
 
     system("pause");
