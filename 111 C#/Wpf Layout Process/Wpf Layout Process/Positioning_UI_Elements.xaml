@@ -1,0 +1,77 @@
+﻿<Window x:Class="Wpf_Layout_Process.Positioning_UI_Elements"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Layout_Process"
+        mc:Ignorable="d"
+        Title="Positioning_UI_Elements" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="12" Orientation="Vertical">
+            <Button BorderBrush="Blue" 
+                    Content="Hello"
+                    FontSize="24" 
+                    Width="90" 
+                    Height="45"
+                    Margin="6"  
+                    HorizontalContentAlignment="Left"
+                    HorizontalAlignment="Center"
+                    VerticalContentAlignment="Top"/>
+            <Button BorderBrush="Blue" 
+                    FontSize="24" 
+                    Content="Hello"
+                    Width="90" 
+                    Height="45" 
+                    Margin="6" 
+                    HorizontalContentAlignment="Right"
+                    HorizontalAlignment="Left"
+                    VerticalContentAlignment="Bottom"/>
+            <Button BorderBrush="Blue" 
+                    Content="Hello"
+                    FontSize="24" 
+                    Height="45" 
+                    Margin="6" 
+                    Padding="6"
+                    HorizontalContentAlignment="Left"
+                    HorizontalAlignment="Center"
+                    VerticalContentAlignment="Top"/>
+            <Button BorderBrush="Blue" 
+                    Content="Hello"
+                    FontSize="24" 
+                    Height="45" 
+                    Margin="6" 
+                    Padding="6"
+                    HorizontalAlignment="Stretch" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="12" Orientation="Horizontal">
+            <Button BorderBrush="Red" 
+                    Content="Hello" 
+                    FontSize="24" 
+                    Margin="6" 
+                    Padding="6" 
+                    VerticalAlignment="Center" />
+            <Button BorderBrush="Red" 
+                    Content="Hello" 
+                    FontSize="24" 
+                    Margin="6" 
+                    Padding="6" 
+                    VerticalAlignment="Top" />
+            <Button BorderBrush="Red" 
+                    Content="Hello" 
+                    FontSize="24" 
+                    Margin="6" 
+                    Padding="6" 
+                    VerticalAlignment="Bottom" />
+            <Button BorderBrush="Red" 
+                    Content="Hello" 
+                    FontSize="24" 
+                    Margin="6" 
+                    Padding="6" 
+                    VerticalAlignment="Stretch" />
+        </StackPanel>
+    </Grid>
+</Window>

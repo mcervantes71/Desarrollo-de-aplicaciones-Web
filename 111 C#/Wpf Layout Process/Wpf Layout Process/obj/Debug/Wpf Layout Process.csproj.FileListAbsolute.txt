@@ -1,0 +1,18 @@
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\bin\Debug\Wpf Layout Process.exe.config
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\bin\Debug\Wpf Layout Process.exe
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\bin\Debug\Wpf Layout Process.pdb
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process_MarkupCompile.cache
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process_MarkupCompile.lref
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process.g.resources
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf_Layout_Process.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process.exe
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process.pdb
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Wpf Layout Process.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\HorizontalStackPanel.g.cs
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Positioning_UI_Elements.g.cs
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\Positioning_UI_Elements.baml
+C:\Users\Martin Cervantes\Desktop\Wpf Layout Process\Wpf Layout Process\obj\Debug\HorizontalStackPanel.baml
