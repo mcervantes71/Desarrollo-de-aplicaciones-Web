@@ -1,0 +1,15 @@
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\bin\Debug\TrueOrFalse.exe.config
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\bin\Debug\TrueOrFalse.exe
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\bin\Debug\TrueOrFalse.pdb
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\App.g.cs
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse_MarkupCompile.cache
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse_MarkupCompile.lref
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\MainWindow.baml
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.g.resources
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.exe
+C:\Users\Martin Cervantes\Desktop\TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.pdb
