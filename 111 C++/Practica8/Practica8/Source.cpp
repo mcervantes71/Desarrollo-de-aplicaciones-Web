@@ -4,18 +4,22 @@ using namespace std;
 
 void main()
 {
-    int factor, limite, res;
+    int num, limite, res;
 
     cout << "Dime un numero " << endl;
-    cin >> factor;
+    cin >> num;
 
     cout << "Dime otro numero" << endl;
     cin >> limite;
     
-    for (int i = 1; i <= limite; i++)
+    int i = 1;
+
+    while(i <= limite)
     {
-        res = factor * i;
-        cout << factor << " x " << i << " = " << res << endl;
+        res = num * i;
+        cout << num << " x " << i << " = " << res << endl;
+
+        i++;
     }
 
     system("pause");
