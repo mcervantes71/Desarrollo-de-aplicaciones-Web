@@ -3,6 +3,7 @@
     $unidad = $_GET['u'];
     $trabajo = $_GET['t'];
 
+
     switch($alumno)
     {
         case 1:
@@ -83,8 +84,6 @@
     }
 
 
-
-
     if($unidad == 1 && $trabajo == 1) $nom_trabajo = "Conceptos b&aacute;sicos";
     else if($unidad == 1 && $trabajo == 2) $nom_trabajo = "Diagramas de flujo";
     else if($unidad == 1 && $trabajo == 3) $nom_trabajo = "Suma dos n&uacute;meros RAPTOR";
@@ -109,27 +108,6 @@
     else if($unidad == 3 && $trabajo == 13) $nom_trabajo = "Factor-Limite con While";
     else if($unidad == 3 && $trabajo == 14) $nom_trabajo = "IMC";
     else if($unidad == 3 && $trabajo == 15) $nom_trabajo = "Sueldo";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 $pagina = '<!DOCTYPE html>
@@ -157,7 +135,7 @@ $pagina = '<!DOCTYPE html>
                             </tr>
                         </thead>
                     </table>
-                    <form action="guardar.php" method="POST">
+                    <form action="guardar.php" method="POST" enctype="multipart/form-data" onsubmit="return validate()">
                         <div class="form-group">
                             <input name="a" class="form-control" type="hidden" value="'.$alumno.'">
                         </div>
@@ -168,17 +146,17 @@ $pagina = '<!DOCTYPE html>
                             <input name="t" class="form-control" type="hidden" value="'.$trabajo.'">
                         </div>
                         <div class="form-group">
-                            <label for="File1">Evidencia:</label>
-                            <input id="File1" name="File1" class="form-control-file" type="file">
+                            <label for="file1">Evidencia:</label>
+                            <input id="file1" name="file1" class="form-control-file" type="file">
                         </div>';
-                    if($unidad == 3)
-                        $pagina .= '<div class="form-group">
-                            <label for="File2">C&oacute;digo Fuente:</label>
-                            <input id="File2" name="File2" class="form-control-file" type="file">
+if($unidad == 3)
+    $pagina .= '<div class="form-group">
+                            <label for="file2">C&oacute;digo Fuente:</label>
+                            <input id="file2" name="file2" class="form-control-file" type="file">
                         </div>';
 
 
-                $pagina .= '<input class="btn btn-primary" type="submit" value="Enviar">
+$pagina .= '<input class="btn btn-primary" type="submit" value="Enviar">
                     </form>
                 </div>
             </div>
@@ -187,6 +165,28 @@ $pagina = '<!DOCTYPE html>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+            function validate(){
+                var file1 = document.getElementById("file1");
+
+                if(file1.value == "")
+                {
+                    alert("No se ha seleccionado el archivo 1");
+                    return false;
+                }';
+
+if($unidad == 3)
+    $pagina .= 'var file2 = document.getElementById("file2");
+
+                if(file2.value == "")
+                {
+                    alert("No se ha seleccionado el archivo 2");
+                    return false;
+                }';
+
+$pagina .= 'return true;
+            }
+        </script>
     </body>
 </html>';
 
