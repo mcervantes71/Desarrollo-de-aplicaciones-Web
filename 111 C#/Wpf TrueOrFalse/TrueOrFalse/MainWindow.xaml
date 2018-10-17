@@ -1,4 +1,5 @@
 ﻿<Window x:Class="TrueOrFalse.MainWindow"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,7 +14,7 @@
             <MenuItem Header="File">
                 <MenuItem x:Name="NewDB" Header="New" Click="NewDB_Click" />
                 <MenuItem x:Name="OpenDB" Header="Open" Click="OpenDB_Click" />
-                <MenuItem x:Name="SaveDB" Header="Save" Click="NewDB_Click" />
+                <MenuItem x:Name="SaveDB" Header="Save" Click="SaveDB_Click" />
                 <MenuItem x:Name="SaveDB_As" Header="Save As" Click="SaveDB_As_Click" />
                 <MenuItem x:Name="StartGame" Header="Start Game" Click="StartGame_Click" />
                 <Separator />
@@ -51,15 +52,22 @@
             <StackPanel Orientation="Horizontal"
                         VerticalAlignment="Center"
                         Grid.Column="1">
+                
                 <xctk:IntegerUpDown x:Name="StatementNumber"
-                                    Minumum="1"
+                                    Minimum="1"
                                     DefaultValue="1"
                                     Text="1"
                                     Margin="3"
-                                    ValueChanged="StatementNumber_OnValueChange"
+                                    ValueChanged="StatementNumber_OnValueChanged"
                                     Width="60" />
+                <CheckBox x:Name="TrueFalseMark"
+                          Click="TrueFalseMark_OnClick" />
+
 
             </StackPanel>
         </Grid>
+
+        <TextBox x:Name="StatementText" 
+                 TextChanged="StatementText_TextChanged"/>
     </DockPanel>
 </Window>
