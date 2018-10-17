@@ -59,7 +59,6 @@ namespace TrueOrFalse
                 StatementNumber.Value = 1;
                 StatementText.Text = string.Empty;
             }
-
         }
         
         private void OpenDB_Click(object sender, RoutedEventArgs e)
@@ -92,6 +91,12 @@ namespace TrueOrFalse
                 _trueFalse = new Persistance(sfd.FileName);
                 _trueFalse.Save();
             }
+        }
+
+        private void StartGame_Click(object sender, RoutedEvent e)
+        {
+            var gameWindow = new GameWindow(_trueFalse.Statement);
+            gameWindow.ShowDialog();
         }
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
