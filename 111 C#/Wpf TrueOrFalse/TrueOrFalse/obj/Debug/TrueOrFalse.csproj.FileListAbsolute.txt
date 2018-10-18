@@ -46,3 +46,4 @@ C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf TrueOrFalse\TrueOrFal
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.pdb
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf TrueOrFalse\TrueOrFalse\obj\Debug\TrueOrFalse.csprojAssemblyReference.cache
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf TrueOrFalse\TrueOrFalse\obj\Debug\GameWindow.g.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Wpf TrueOrFalse\TrueOrFalse\obj\Debug\GameWindow.baml

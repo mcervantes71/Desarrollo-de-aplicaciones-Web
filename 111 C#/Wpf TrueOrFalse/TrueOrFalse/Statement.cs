@@ -3,7 +3,7 @@
 namespace TrueOrFalse
 {
     [Serializable]
-    class Statement
+    public class Statement
     {
         public Statement()
         {

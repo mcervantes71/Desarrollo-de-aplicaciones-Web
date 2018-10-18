@@ -1,5 +1,4 @@
 ﻿using Microsoft.Win32;
-using System;
 using System.IO;
 using System.Reflection;
 using System.Windows;
@@ -11,12 +10,12 @@ namespace TrueOrFalse
     {
         
         private Persistance _trueFalse = new Persistance("database.xml");
-
+        
         public MainWindow()
         {
             InitializeComponent();
             
-            Loaded += (sender, arg) => SetCurrentState(1);
+            Loaded += (sender, arg) => { SetCurrentState(1); };
         }
         
         private void SetCurrentState(int index)
@@ -92,18 +91,13 @@ namespace TrueOrFalse
                 _trueFalse.Save();
             }
         }
-
-        private void StartGame_Click(object sender, RoutedEvent e)
-        {
-            var gameWindow = new GameWindow(_trueFalse.Statement);
-            gameWindow.ShowDialog();
-        }
-
+        
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
-            var sfd = new SaveFileDialog();
+            var gameWindow = new GameWindow(_trueFalse.Statements);
+            gameWindow.ShowDialog();
         }
-
+        
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();

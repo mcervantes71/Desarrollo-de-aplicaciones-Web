@@ -4,10 +4,10 @@ using System.Xml.Serialization;
 
 namespace TrueOrFalse
 {
-    class Persistance
+    public class Persistance
     {
         public string FilePath { get; }
-        public List<Statement> Statement { get; private set; } = new List<Statement>();
+        public List<Statement> Statements { get; private set; } = new List<Statement>();
 
         public Persistance(string filePath)
         {
@@ -16,21 +16,21 @@ namespace TrueOrFalse
 
         public void Add(Statement q)
         {
-            Statement.Add(q);
+            Statements.Add(q);
         }
 
         public void Remove(int index)
         {
-            Statement.RemoveAt(index);
+            Statements.RemoveAt(index);
         }
 
-        public Statement this[int index] => Statement[index];
+        public Statement this[int index] => Statements[index];
 
         public void Save()
         {
             XmlSerializer xmlFormat = new XmlSerializer(typeof(List<Statement>));
             Stream fStream = new FileStream(FilePath, FileMode.Create, FileAccess.Write);
-            xmlFormat.Serialize(fStream, Statement);
+            xmlFormat.Serialize(fStream, Statements);
             fStream.Close();
         }
 
@@ -38,15 +38,15 @@ namespace TrueOrFalse
         {
             XmlSerializer xmlFormat = new XmlSerializer(typeof(List<Statement>));
             Stream fStream = new FileStream(FilePath, FileMode.Open, FileAccess.Read);
-            Statement = (List<Statement>)xmlFormat.Deserialize(fStream);
+            Statements = (List<Statement>)xmlFormat.Deserialize(fStream);
             fStream.Close();
         }
 
-        public int Count => Statement.Count;
+        public int Count => Statements.Count;
 
         public void Change(int index, Statement q)
         {
-            Statement[index] = q;
+            Statements[index] = q;
         }
 
         public bool Exists(int index)
