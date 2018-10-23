@@ -2,10 +2,12 @@
 
 using namespace std;
 
-int cupo, tiempo, dia, cuota, total;
+int op, cupo = 0, tiempo, dia, cuota, total;
 
-void main()
+void Calcular()
 {
+    total = 0;
+
     cout << "Que dia es ?? 1) L-M-M  2) J-V  3) S-D" << endl;
     cin >> dia;
 
@@ -25,6 +27,33 @@ void main()
     total += (int)(tiempo / 60) * cuota;
 
     cout << "Total = " << total << endl;
+}
+
+void main()
+{
+    do {
+        cout << "1)Entrada 2)Salida" << endl;
+        cin >> op;
+
+        if (op == 1 && cupo < 10)
+        {
+            cout << "Puede pasar" << endl;
+            cupo++;
+        }
+        else if (op == 1 && cupo == 10)
+            cout << "No hay espacios libre" << endl;
+        else if (op == 2 && cupo == 0)
+            cout << "Error" << endl;
+        else if (op == 2 && cupo > 0)
+        {
+            Calcular();
+            cupo--;
+        }
+
+        cout << "Desea terminar el programa 1)Continuar 2)Salir" << endl;
+        cin >> op;
+
+    } while (op == 1);
     
     system("pause");
 }
