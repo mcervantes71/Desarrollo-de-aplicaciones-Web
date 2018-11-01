@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\martin cervantes\downloads\programming\111 c++\triangulos_angulos\triangulos_angulos\source.cpp(57): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Triangulos_Angulos.vcxproj -> C:\Users\Martin Cervantes\Downloads\Programming\111 C++\Triangulos_Angulos\Debug\Triangulos_Angulos.exe
