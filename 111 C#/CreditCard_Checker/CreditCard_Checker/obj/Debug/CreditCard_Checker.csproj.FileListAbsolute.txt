@@ -1,10 +1,10 @@
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\bin\Debug\CreditCard_Checker.exe.config
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\bin\Debug\CreditCard_Checker.exe
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\bin\Debug\CreditCard_Checker.pdb
-C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.csprojAssemblyReference.cache
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.Form1.resources
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.Properties.Resources.resources
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.csproj.GenerateResource.cache
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.csproj.CoreCompileInputs.cache
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.exe
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.Form2.resources
