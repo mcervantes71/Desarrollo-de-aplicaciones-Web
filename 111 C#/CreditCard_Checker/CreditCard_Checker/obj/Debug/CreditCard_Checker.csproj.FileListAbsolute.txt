@@ -8,3 +8,4 @@ C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\Credit
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.exe
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.pdb
 C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.Form2.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\CreditCard_Checker\CreditCard_Checker\obj\Debug\CreditCard_Checker.csprojAssemblyReference.cache
