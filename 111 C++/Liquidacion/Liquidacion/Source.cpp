@@ -2,26 +2,28 @@
 
 using namespace std;
 
+float dias_laborados, dias_aguinaldo = 30, salario_diario, proporcional_aguinaldo = 0;
+
+float salario_tope, prima_antiguedad = 0;
+int factor_antiguedad, años_trabajados, dias_por_año = 12;
+
+int dias_proporcional_vacaciones, proporcional_vacaciones, dias_vacaciones = 15;
+
 void Proporcional_Aguinaldo()
 {
-    float dias_laborados, dias_aguinaldo = 30, salario_diario, aguinaldo = 0;
-
     cout << "Cuantos fueron los dias laborados ??" << endl;
     cin >> dias_laborados;
 
     cout << "Cual es tu salario diario ??" << endl;
     cin >> salario_diario;
 
-    aguinaldo = dias_aguinaldo / 365 * dias_laborados * salario_diario;
+    proporcional_aguinaldo = dias_aguinaldo / 365 * dias_laborados * salario_diario;
 
-    cout << "Tu proporcional de aguinaldo es " << aguinaldo << endl;
+    cout << "Tu proporcional de aguinaldo es " << proporcional_aguinaldo << endl;
 }
 
 void Prima_Antiguedad()
 {
-    float salario_tope, prima_antiguedad = 0;
-    int factor_antiguedad, años_trabajados, dias_por_año = 12;
-
     cout << "Cual es el salario tope ??" << endl;
     cin >> salario_tope;
 
@@ -44,11 +46,20 @@ void Prima_Antiguedad()
     cout << "Prima de Antiguedad " << prima_antiguedad << endl;
 }
 
+void Proporcional_Vacaciones()
+{
+	dias_proporcional_vacaciones = dias_vacaciones / 365 * dias_laborados;
+	proporcional_vacaciones = dias_proporcional_vacaciones * salario_diario;
+
+}
+
 void main()
 {
-    //Proporcional_Aguinaldo();
+    Proporcional_Aguinaldo();
 
     Prima_Antiguedad();
+
+	Proporcional_Vacaciones();
 
     system("pause");
 }
