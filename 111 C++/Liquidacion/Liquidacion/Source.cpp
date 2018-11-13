@@ -9,6 +9,8 @@ int factor_antiguedad, años_trabajados, dias_por_año = 12;
 
 int dias_proporcional_vacaciones, proporcional_vacaciones, dias_vacaciones = 15;
 
+float indemnizacion;
+
 void Proporcional_Aguinaldo()
 {
     cout << "Cuantos fueron los dias laborados ??" << endl;
@@ -50,7 +52,11 @@ void Proporcional_Vacaciones()
 {
 	dias_proporcional_vacaciones = dias_vacaciones / 365 * dias_laborados;
 	proporcional_vacaciones = dias_proporcional_vacaciones * salario_diario;
+}
 
+void Indemnizacion()
+{
+	indemnizacion = salario_diario * 90;
 }
 
 void main()
@@ -60,6 +66,8 @@ void main()
     Prima_Antiguedad();
 
 	Proporcional_Vacaciones();
+
+	Indemnizacion();
 
     system("pause");
 }
