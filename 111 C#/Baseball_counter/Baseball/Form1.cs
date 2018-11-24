@@ -25,12 +25,21 @@ namespace Baseball
             InitializeComponent();
         }
 
+        public void Mostrar()
+        {
+            lb_teamA.Text = teamA.ToString();
+            lb_teamB.Text = teamB.ToString();
+            lb_inning.Text = inning.ToString();
+            lb_outs.Text = outs.ToString();
+            lb_strike.Text = strikes.ToString();
+            lb_ball.Text = ball.ToString();
+        }
+
         public void Outs_Counter()
         {
+            outs += 1;
 
-            if (outs < 2)
-                outs += 1;
-            else
+            if(outs == 3)
             {
                 outs = 0;
                 strikes = 0;
@@ -50,16 +59,14 @@ namespace Baseball
             }
         }
 
-        public void Mostrar()
+        private void Score_Click(object sender, EventArgs e)
         {
-            lb_teamA.Text = teamA.ToString();
-            lb_teamB.Text = teamB.ToString();
-            lb_inning.Text = inning.ToString();
-            lb_strike.Text = strikes.ToString();
-            lb_ball.Text = ball.ToString();
-            lb_outs.Text = outs.ToString();
+            if (local)
+                teamA += 1;
+            else
+                teamB += 1;
 
-
+            Mostrar();
         }
 
         private void Outs_Click(object sender, EventArgs e)
@@ -67,14 +74,13 @@ namespace Baseball
             Outs_Counter();
 
             Mostrar();
-
         }
 
         private void Strikes_Click(object sender, EventArgs e)
         {
-            if (strikes < 2)
-                strikes += 1;
-            else
+            strikes += 1;
+
+            if(strikes == 3)
             {
                 strikes = 0;
                 ball = 0;
@@ -86,23 +92,13 @@ namespace Baseball
 
         private void Ball_Click(object sender, EventArgs e)
         {
-            if (ball < 3)
-                ball += 1;
-            else
+            ball += 1;
+
+            if(ball == 4)
             {
                 strikes = 0;
                 ball = 0;
             }
-
-            Mostrar();
-        }
-
-        private void Score_Click(object sender, EventArgs e)
-        {
-            if (local)
-                teamA += 1;
-            else
-                teamB += 1;
 
             Mostrar();
         }
