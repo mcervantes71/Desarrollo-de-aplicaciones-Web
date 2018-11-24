@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\martin cervantes\desktop\formula_general\formula_general\source.cpp(10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\martin cervantes\desktop\formula_general\formula_general\source.cpp(12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\martin cervantes\desktop\formula_general\formula_general\source.cpp(18): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Formula_General.vcxproj -> C:\Users\Martin Cervantes\Desktop\Formula_General\Debug\Formula_General.exe
