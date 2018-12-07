@@ -36,7 +36,7 @@
 
         <nav class="navbar navbar-light fixed-top bg-light mb-3">
             <div class="container">
-                <a class="navbar-brand">H&M</a>
+                <a class="navbar-brand" href="lista.php">H&M</a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item text-muted">
                         <i class="fa fa-gift" aria-hidden="true"></i>

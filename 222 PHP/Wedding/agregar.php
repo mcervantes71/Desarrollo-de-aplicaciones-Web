@@ -16,7 +16,7 @@
 
             <h1 class="m-5 text-center border-bottom border-primary">Agregar Regalo</h1>
 
-            <form action="agregar1.php" method="POST">
+            <form class="needs-validation" action="agregar1.php" method="POST" novalidate>
                 <div class="row">
                     <div class="form-group col-lg-6 col-xs-12">
                         <label for="list">Lista</label>
@@ -35,7 +35,10 @@
 
                     <div class="form-group col-lg-6 col-xs-12">
                         <label for="name">Nombre:</label>
-                        <input id="name" name="name" class="form-control" type="text" placeholder="Ingresar Nombre" maxlength="20">
+                        <input id="name" name="name" class="form-control" type="text" placeholder="Ingresar Nombre" maxlength="20" required>
+                        <div class="invalid-feedback">
+                            Falta especificar el nombre del regalo.
+                        </div>
                     </div>
 
                     <div class="form-group col-lg-6 col-xs-12">

@@ -12,6 +12,20 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <nav class="navbar navbar-light fixed-top bg-light mb-3">
+            <div class="container">
+                <a class="navbar-brand">H&M</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-muted">
+                        <a href="index.php">
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            Mesa de Regalos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container pb-5">
 
             <h1 class="m-5 text-center border-bottom border-primary">Lista de Regalos</h1>
@@ -43,7 +57,7 @@
                                   <td>".$row["nombre"]."</td>
                                   <td class='text-center'>".$row["apartado"]."</td>
                                   <td>
-                                      <a class='m-1' title='Borrar' href='borrar.php?id=".$row["id_regalo"]."'>
+                                      <a class='m-1' title='Borrar' href='borrar.php?id=".$row["id_regalo"]."' onclick='return Confirmar()'>
                                           <i class='fa fa-trash' aria-hidden='true'></i>
                                       </a>
                                       <a class='m-1' title='Editar' href='modificar.php?id=".$row["id_regalo"]."'>
@@ -65,5 +79,6 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
