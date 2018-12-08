@@ -15,7 +15,7 @@
         <nav class="navbar navbar-light fixed-top bg-light mb-3">
             <div class="container">
                 <a class="navbar-brand">H&M</a>
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav m-auto">
                     <li class="nav-item text-muted">
                         <a href="index.php">
                             <i class="fa fa-gift" aria-hidden="true"></i>
@@ -26,7 +26,7 @@
             </div>
         </nav>
 
-        <div class="container pb-5">
+        <div class="container py-5">
 
             <h1 class="m-5 text-center border-bottom border-primary">Lista de Regalos</h1>
 
