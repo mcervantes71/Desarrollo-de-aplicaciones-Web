@@ -16,4 +16,4 @@ QUnit.test("Prueba funcion factorial", function(assert){
     assert.equal(factorial(6), 720, "Factorial de 6");
     assert.equal(factorial(7), 5040, "Factorial de 7");
     assert.equal(factorial(8), 40320, "Factorial de 8");
-})
+});
