@@ -1,138 +1,139 @@
 ﻿<!DOCTYPE html>
 <html>
-   <head>
-      <title>Pr&aacute;ctica 1 - Modificar HTML y CSS</title>
+    <head>
+        <title>Change List Style Type</title>
 
-      <style>
-         #espacio{
-            height:50px;
-            width:98%;
-         }
-      </style>
-   </head>
-   <body>
-      <div>
-          <ol>
-             <li>Mustang</li>
-             <li>Camaro</li>
-             <li>Firebird</li>
-             <li>Charger</li>
-             <li>Chalenger</li>
-          </ol>
-          <button onclick="changeLista(this, 'upper-alpha')">A May&uacute;scula</button>
-          <button onclick="changeLista(this, 'lower-alpha')">a Min&uacute;scula</button>
-          <button onclick="changeLista(this, 'upper-roman')">Romano</button>
-          <button onclick="changeLista(this, 'lower-roman')">romano</button>
-          <button onclick="changeLista(this, '')">N&uacute;mero</button>
-      </div>
-      <div>
-          <ol>
-             <li>Mustang</li>
-             <li>Camaro</li>
-             <li>Firebird</li>
-             <li>Charger</li>
-             <li>Chalenger</li>
-          </ol>
-          <button onclick="changeLista(this, 'upper-alpha')">A May&uacute;scula</button>
-          <button onclick="changeLista(this, 'lower-alpha')">a Min&uacute;scula</button>
-          <button onclick="changeLista(this, 'upper-roman')">Romano</button>
-          <button onclick="changeLista(this, 'lower-roman')">romano</button>
-          <button onclick="changeLista(this, '')">N&uacute;mero</button>
-      </div>
-      <div>
-          <ol>
-             <li>Mustang</li>
-             <li>Camaro</li>
-             <li>Firebird</li>
-             <li>Charger</li>
-             <li>Chalenger</li>
-          </ol>
-          <button onclick="changeLista(this, 'upper-alpha')">A May&uacute;scula</button>
-          <button onclick="changeLista(this, 'lower-alpha')">a Min&uacute;scula</button>
-          <button onclick="changeLista(this, 'upper-roman')">Romano</button>
-          <button onclick="changeLista(this, 'lower-roman')">romano</button>
-          <button onclick="changeLista(this, '')">N&uacute;mero</button>
-      </div>
+        <style>
+            #espacio{
+                height:50px;
+                width:98%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ol>
+                <li>Mustang</li>
+                <li>Camaro</li>
+                <li>Firebird</li>
+                <li>Charger</li>
+                <li>Chalenger</li>
+            </ol>
 
-      <br />
-      <div>
-          <ul>
-             <li>Silvia</li>
-             <li>RX-7</li>
-             <li>350z</li>
-             <li>Supra</li>
-             <li>Integra</li>
-          </ul>
-          <button onclick="changeVineta(this, 'square')">Cuadrado</button>
-          <button onclick="changeVineta(this, 'circle')">C&iacute;rculo</button>
-          <button onclick="changeVineta(this, 'disc')">Disco</button>
-      </div>
+            <button onclick="changeLista(this, 'upper-alpha')">A May&uacute;scula</button>
+            <button onclick="changeLista(this, 'lower-alpha')">a Min&uacute;scula</button>
+            <button onclick="changeLista(this, 'upper-roman')">Romano</button>
+            <button onclick="changeLista(this, 'lower-roman')">romano</button>
+            <button onclick="changeLista(this, '')">N&uacute;mero</button>
+        </div>
+        <div>
+            <ol>
+                <li>Mustang</li>
+                <li>Camaro</li>
+                <li>Firebird</li>
+                <li>Charger</li>
+                <li>Chalenger</li>
+            </ol>
+            <button onclick="changeLista(this, 'upper-alpha')">A May&uacute;scula</button>
+            <button onclick="changeLista(this, 'lower-alpha')">a Min&uacute;scula</button>
+            <button onclick="changeLista(this, 'upper-roman')">Romano</button>
+            <button onclick="changeLista(this, 'lower-roman')">romano</button>
+            <button onclick="changeLista(this, '')">N&uacute;mero</button>
+        </div>
+        <div>
+            <ol>
+                <li>Mustang</li>
+                <li>Camaro</li>
+                <li>Firebird</li>
+                <li>Charger</li>
+                <li>Chalenger</li>
+            </ol>
+            <button onclick="changeLista(this, 'upper-alpha')">A May&uacute;scula</button>
+            <button onclick="changeLista(this, 'lower-alpha')">a Min&uacute;scula</button>
+            <button onclick="changeLista(this, 'upper-roman')">Romano</button>
+            <button onclick="changeLista(this, 'lower-roman')">romano</button>
+            <button onclick="changeLista(this, '')">N&uacute;mero</button>
+        </div>
 
-      <div>
-          <ul>
-             <li>Silvia</li>
-             <li>RX-7</li>
-             <li>350z</li>
-             <li>Supra</li>
-             <li>Integra</li>
-          </ul>
-          <button onclick="changeVineta(this, 'square')">Cuadrado</button>
-          <button onclick="changeVineta(this, 'circle')">C&iacute;rculo</button>
-          <button onclick="changeVineta(this, 'disc')">Disco</button>
-      </div>
+        <br />
+        <div>
+            <ul>
+                <li>Silvia</li>
+                <li>RX-7</li>
+                <li>350z</li>
+                <li>Supra</li>
+                <li>Integra</li>
+            </ul>
+            <button onclick="changeVineta(this, 'square')">Cuadrado</button>
+            <button onclick="changeVineta(this, 'circle')">C&iacute;rculo</button>
+            <button onclick="changeVineta(this, 'disc')">Disco</button>
+        </div>
+
+        <div>
+            <ul>
+                <li>Silvia</li>
+                <li>RX-7</li>
+                <li>350z</li>
+                <li>Supra</li>
+                <li>Integra</li>
+            </ul>
+            <button onclick="changeVineta(this, 'square')">Cuadrado</button>
+            <button onclick="changeVineta(this, 'circle')">C&iacute;rculo</button>
+            <button onclick="changeVineta(this, 'disc')">Disco</button>
+        </div>
 
 
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-      <script>
-         function changeLista(element, type)
-         {
-             $(element).parent().find('ol').css('list-style-type', type);
-         }
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+            function changeLista(element, type)
+            {
+                $(element).parent().find('ol').css('list-style-type', type);
+            }
 
-         function changeVineta(element, type)
-         {
-             $(element).parent().find('ul').css('list-style-type', type);
-         }
+            function changeVineta(element, type)
+            {
+                $(element).parent().find('ul').css('list-style-type', type);
+            }
 
-         /*function number()
-         {
-            document.getElementById("lista").style.listStyleType = "";
-         }
+            /*function number()
+            {
+                document.getElementById("lista").style.listStyleType = "";
+            }
 
-         function A()
-         {
-            document.getElementById("lista").style.listStyleType = "upper-alpha";
-         }
+            function A()
+            {
+                document.getElementById("lista").style.listStyleType = "upper-alpha";
+            }
 
-         function a()
-         {
-            document.getElementById("lista").style.listStyleType = "lower-alpha";
-         }
+            function a()
+            {
+                document.getElementById("lista").style.listStyleType = "lower-alpha";
+            }
 
-         function I()
-         {
-            document.getElementById("lista").style.listStyleType = "upper-roman";
-         }
+            function I()
+            {
+                document.getElementById("lista").style.listStyleType = "upper-roman";
+            }
 
-         function i()
-         {
-            document.getElementById("lista").style.listStyleType = "lower-roman";
-         }
+            function i()
+            {
+                document.getElementById("lista").style.listStyleType = "lower-roman";
+            }
 
-         function disc()
-         {
-            document.getElementById("viñeta").style.listStyleType = "";
-         }
+            function disc()
+            {
+                document.getElementById("viñeta").style.listStyleType = "";
+            }
 
-         function square()
-         {
-            document.getElementById("viñeta").style.listStyleType = "square";
-         }
+            function square()
+            {
+                document.getElementById("viñeta").style.listStyleType = "square";
+            }
 
-         function circle()
-         {
-            document.getElementById("viñeta").style.listStyleType = "circle";
-        }*/
-      </script>
-   </body>
+            function circle()
+            {
+                document.getElementById("viñeta").style.listStyleType = "circle";
+            }*/
+        </script>
+    </body>
 </html>
