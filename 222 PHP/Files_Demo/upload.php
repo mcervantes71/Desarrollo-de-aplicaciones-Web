@@ -11,12 +11,12 @@
 
         if($check !== false)
         {
-            echo "File is an image - " . $check["mime"] . ".";
+            echo "File is an image - " . $check["mime"] . ".<br />";
             $uploadOk = 1;
         }
         else
         {
-            echo "File is not an image.";
+            echo "File is not an image.<br />";
             $uploadOk = 0;
         }
     }
@@ -24,7 +24,7 @@
     // Check if file already exists
     if (file_exists($target_file))
     {
-        echo "Sorry, file already exists.";
+        echo "Sorry, file already exists.<br />";
         $uploadOk = 0;
     }
 
