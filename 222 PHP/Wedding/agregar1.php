@@ -58,7 +58,7 @@
             if(mysqli_query($conexion, $query))
             {
                 echo "Registro Guardado";
-                header("Location:lista.php");
+                echo "<script>window.location.href='lista.php'</script>";
             }
             else
             {

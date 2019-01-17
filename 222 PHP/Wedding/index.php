@@ -1,7 +1,10 @@
 <?php
     require_once "conexion.php";
 
-    $list = $_POST["list"];
+    if(isset($_POST["list"]))
+        $list = $_POST["list"];
+    else
+        $list = 0;
 
     if($list == 0)
     {

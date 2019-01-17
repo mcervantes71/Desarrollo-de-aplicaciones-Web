@@ -17,7 +17,7 @@
     if(mysqli_query($conexion, $query))
     {
         echo "Quedo apartado el regalo";
-        header("Location:index.php");
+        echo "<script>window.location.href='index.php'</script>";
     }
     else
     {

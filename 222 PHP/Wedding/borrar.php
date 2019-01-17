@@ -16,7 +16,7 @@
         if(mysqli_query($conexion, $query))
         {
             echo "Registro Borrado";
-            header("Location:lista.php");
+            echo "<script>window.location.href='lista.php'</script>";
         }
         else
         {
