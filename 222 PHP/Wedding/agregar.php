@@ -16,7 +16,7 @@
 
             <h1 class="m-5 text-center border-bottom border-primary">Agregar Regalo</h1>
 
-            <form class="needs-validation" action="agregar1.php" method="POST" novalidate>
+            <form class="needs-validation" action="agregar1.php" method="POST" enctype="multipart/form-data" novalidate>
                 <div class="row">
                     <div class="form-group col-lg-6 col-xs-12">
                         <label for="list">Lista</label>
@@ -32,9 +32,9 @@
                     </div>
 
                     <div class="form-group col-lg-6 col-xs-12">
-                        <label for="file">Imagen:</label>
-                        <input id="file" name="file" class="form-control-file" type="file" required>
-                        <small id="fileHelp" class="form-text text-muted" >Max 3MB</small>
+                        <label for="picture">Imagen:</label>
+                        <input id="picture" name="picture" class="form-control-file" type="file" required>
+                        <small id="pictureHelp" class="form-text text-muted" >Max. 3 MB</small>
                         <div class="invalid-feedback">
                             Falta especificar la imagen del regalo.
                         </div>

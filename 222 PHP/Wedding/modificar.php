@@ -29,7 +29,7 @@
 
             <h1 class="m-5 text-center border-bottom border-primary">Modificar Regalo</h1>
 
-            <form action="modificar1.php" method="POST">
+            <form action="modificar1.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <input name="id" type="hidden" value="<?php echo $id; ?>">
                     <div class="form-group col-lg-6 col-xs-12">
@@ -46,9 +46,9 @@
                     </div>
 
                     <div class="form-group col-lg-6 col-xs-12">
-                        <label for="file">Imagen:</label>
-                        <input id="file" name="file" class="form-control-file" type="file">
-                        <small id="fileHelp" class="form-text text-muted" >Max 3MB</small>
+                        <label for="picture">Imagen:</label>
+                        <input id="picture" name="picture" class="form-control-file" type="file">
+                        <small id="pictureHelp" class="form-text text-muted" >Max. 3 MB</small>
                     </div>
 
                     <div class="form-group col-lg-6 col-xs-12">

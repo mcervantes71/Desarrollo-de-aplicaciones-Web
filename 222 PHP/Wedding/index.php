@@ -65,7 +65,7 @@
                         while($row = mysqli_fetch_assoc($result))
                         {
                             echo "<div class='card col-xl-3 col-lg-4 col-md-6 col-sm-12 pt-3 bg-light border border-primary'>
-                                      <img class='card-img-top' src='https://source.unsplash.com/random/300x200' alt=''>
+                                      <img class='card-img-top' src='" . $row["imagen"] . "' alt=''>
                                       <div class='card-body'>
                                           <h4 class='card-title'>".$row["nombre"]."</h4>
                                           <p class='card-text'>".$row["descripcion"]."</p>
