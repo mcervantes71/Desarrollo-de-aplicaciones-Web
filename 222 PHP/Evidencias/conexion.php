@@ -4,10 +4,8 @@
     $password = "123456";
     $dbname = "Evidencias";
 
-    $conexion = mysqli_connect($server, $user, $password, $dbname);
+    $conexion = new mysqli($server, $user, $password, $dbname);
 
-    if(!$conexion)
-    {
-        die("Error: ".mysqli_connect_error());
-    }
+    if($conexion->connect_error)
+        die("Error: " . $conexion->connect_error;
 ?>

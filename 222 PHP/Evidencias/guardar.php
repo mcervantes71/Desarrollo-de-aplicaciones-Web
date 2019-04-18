@@ -55,14 +55,15 @@
                                                  $unidad,
                                                  $trabajo,
                                                 '$target_file')";
-                if(mysqli_query($conexion, $query))
+
+                if($conexion->query($query) === TRUE)
                 {
                     echo "Registro Guardado";
                 }
                 else
                 {
                     echo "<br/><br/>$query<br/><br/>";
-                    die("Error: ".mysqli_error($conexion));
+                    die("Error: " . $conexion->error);
                 }
             }
             else

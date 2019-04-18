@@ -1,9 +1,9 @@
 <?php
 	$no_control = $_POST['usuario'];
 	$contrasena = sha1($_POST['contrasena']);
-	
+
 	require_once("conexion.php");
-	
+
 	if (!$conexion)
 	{
 		die("Error: " . mysqli_connect_error());
@@ -11,8 +11,11 @@
 	else
 	{
 		echo "Conexi&oacute;n exitosa<br /><br /> ";
-		
-		$query = "SELECT * FROM alumnos WHERE no_control =$no_control && contrasena = '$contrasena'";
+
+		$query = "SELECT *
+		          FROM alumnos
+				  WHERE no_control =$no_control
+				  AND contrasena = '$contrasena'";
 
 		$result = mysqli_query($conexion, $query);
 
@@ -27,7 +30,7 @@
 		{
 			echo "0 Registros";
 		}
-		
+
 		mysqli_close($conexion);
 	}
 ?>

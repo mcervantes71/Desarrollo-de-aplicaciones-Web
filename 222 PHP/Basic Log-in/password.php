@@ -2,19 +2,22 @@
 	//-----------
 	// URL  ?id=91645&hash=7c4a8d09ca3762af61e59520943dc26494f8941b
 	//-----------
-	
+
 	$no_control = $_GET['id'];
 	$contrasena = $_GET['hash'];
-	
+
 	require_once("conexion.php");
-		
+
 	if (!$conexion)
 	{
 		die("Error: " . mysqli_connect_error());
 	}
 	else
 	{
-		$query = "SELECT * FROM alumnos WHERE no_control =$no_control AND contrasena = '$contrasena';";
+		$query = "SELECT *
+		          FROM alumnos
+				  WHERE no_control =$no_control
+				  AND contrasena = '$contrasena';";
 
 		$result = mysqli_query($conexion, $query);
 
@@ -28,7 +31,7 @@
 				 <title>Contrase&ntilde;a</title>
 				 <link rel = "shortcut icon" href = "http://v2.iconizer.net/files/Nuvola/orig/package_edutainment.png" />
 				 <link rel = "icon" type = "image/ico" href = "http://v2.iconizer.net/files/Nuvola/orig/package_edutainment.png" />
-				 <link rel = "stylesheet" href = "css/style.css">	
+				 <link rel = "stylesheet" href = "css/style.css">
 			  </head>
 			  <body>
 				<div class = "login-page">
@@ -43,10 +46,10 @@
 				</div>
 				<script>
 					function validacion_login()
-					{ 
+					{
 						var con1 = document.forms["password-form"]["contrasena"].value;
 						var con2 = document.forms["password-form"]["contrasena1"].value;
-						
+
 						if(con1 == null || con1.length == 0 || /^\s+$/.test(con1))
 						{
 							alert("Error Contrase\xF1a");
@@ -66,7 +69,7 @@
 				</script>
 			  </body>
 			</html>
-		<?php		
+		<?php
 		}
 		else
 		{
@@ -74,7 +77,7 @@
 				  location.href = '/utcj/';
 				  </script>";
 		}
-		
+
 		mysqli_close($conexion);
 	}
 ?>

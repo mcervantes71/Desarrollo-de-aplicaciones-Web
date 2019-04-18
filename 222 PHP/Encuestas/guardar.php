@@ -364,78 +364,65 @@
     $total_comunidades = $_POST["total_comunidades"];
     $total_internet = $_POST["total_internet"];
 
-
-    $server = "mysql.hostinger.mx";
-    $user = "u752252448_admin";
-    $password = "dificil123";
-    $dbname = "u752252448_preg";
-
-    $conexion = new mysqli($server, $user, $password, $dbname);
-
-    if($conexion->error)
-    {
-        die("Error: ".$conexion->connect_error);
-    }
-    else
-    {
-        $comando = "INSERT INTO cuestionario2
-                    VALUES($matricula, $cuatrimestre, $edad, $sexo, $carrera,
-                    $computadora, $laptop, $tablet, $smart, $noTengo,
-                    $Facebook1, $Badoo1, $Instagram1, $GoogleMas1, $Twitter1, $Schoology1, $Eduteka1, $Moodle1, $Claroline1,
-                    $Edmodo1, $WhatsApp1, $Spotify1, $Messenger1, $Softonic1, $Pandora1, $Web2_01, $Wikipedia1, $Google1,
-                    $Windows1, $YouTube1, $MSN1, $Yahoo1,
-                    $Facebook2, $Badoo2, $Instagram2, $GoogleMas2, $Twitter2, $Schoology2, $Eduteka2, $Moodle2, $Claroline2,
-                    $Edmodo2, $WhatsApp2, $Spotify2, $Messenger2, $Softonic2, $Pandora2, $Web2_02, $Wikipedia2, $Google2,
-                    $Windows2, $YouTube2, $MSN2, $Yahoo2,
-                    $Facebook3, $Badoo3, $Instagram3, $GoogleMas3, $Twitter3, $Schoology3, $Eduteka3, $Moodle3, $Claroline3,
-                    $Edmodo3, $WhatsApp3, $Spotify3, $Messenger3, $Softonic3, $Pandora3, $Web2_03, $Wikipedia3, $Google3,
-                    $Windows3, $YouTube3, $MSN3, $Yahoo3,
-                    $Facebook4, $Badoo4, $Instagram4, $GoogleMas4, $Twitter4, $Schoology4, $Eduteka4, $Moodle4, $Claroline4,
-                    $Edmodo4, $WhatsApp4, $Spotify4, $Messenger4, $Softonic4, $Pandora4, $Web2_04, $Wikipedia4, $Google4,
-                    $Windows4, $YouTube4, $MSN4, $Yahoo4,
-                    $Facebook5, $Badoo5, $Instagram5, $GoogleMas5, $Twitter5, $Schoology5, $Eduteka5, $Moodle5, $Claroline5,
-                    $Edmodo5, $WhatsApp5, $Spotify5, $Messenger5, $Softonic5, $Pandora5, $Web2_05, $Wikipedia5, $Google5,
-                    $Windows5, $YouTube5, $MSN5, $Yahoo5,
-                    $Facebook6, $Badoo6, $Instagram6, $GoogleMas6, $Twitter6, $Schoology6, $Eduteka6, $Moodle6, $Claroline6,
-                    $Edmodo6, $WhatsApp6, $Spotify6, $Messenger6, $Softonic6, $Pandora6, $Web2_06, $Wikipedia6, $Google6,
-                    $Windows6, $YouTube6, $MSN6, $Yahoo6,
-                    $Facebook7, $Badoo7, $Instagram7, $GoogleMas7, $Twitter7, $Schoology7, $Eduteka7, $Moodle7, $Claroline7,
-                    $Edmodo7, $WhatsApp7, $Spotify7, $Messenger7, $Softonic7, $Pandora7, $Web2_07, $Wikipedia7, $Google7,
-                    $Windows7, $YouTube7, $MSN7, $Yahoo7,
-                    $Facebook8, $Badoo8, $Instagram8, $GoogleMas8, $Twitter8, $Schoology8, $Eduteka8, $Moodle8, $Claroline8,
-                    $Edmodo8, $WhatsApp8, $Spotify8, $Messenger8, $Softonic8, $Pandora8, $Web2_08, $Wikipedia8, $Google8,
-                    $Windows8, $YouTube8, $MSN8, $Yahoo8,
-                    $Facebook9, $Badoo9, $Instagram9, $GoogleMas9, $Twitter9, $Schoology9, $Eduteka9, $Moodle9, $Claroline9,
-                    $Edmodo9, $WhatsApp9, $Spotify9, $Messenger9, $Softonic9, $Pandora9, $Web2_09, $Wikipedia9, $Google9,
-                    $Windows9, $YouTube9, $MSN9, $Yahoo9,
-                    $Facebook10, $Badoo10, $Instagram10, $GoogleMas10, $Twitter10, $Schoology10, $Eduteka10, $Moodle10, $Claroline10,
-                    $Edmodo10, $WhatsApp10, $Spotify10, $Messenger10, $Softonic10, $Pandora10, $Web2_010, $Wikipedia10, $Google10,
-                    $Windows10, $YouTube10, $MSN10, $Yahoo10,
-                    $Facebook11, $Badoo11, $Instagram11, $GoogleMas11, $Twitter11, $Schoology11, $Eduteka11, $Moodle11, $Claroline11,
-                    $Edmodo11, $WhatsApp11, $Spotify11, $Messenger11, $Softonic11, $Pandora11, $Web2_011, $Wikipedia11, $Google11,
-                    $Windows11, $YouTube11, $MSN11, $Yahoo11,
-                    $Facebook12, $Badoo12, $Instagram12, $GoogleMas12, $Twitter12, $Schoology12, $Eduteka12, $Moodle12, $Claroline12,
-                    $Edmodo12, $WhatsApp12, $Spotify12, $Messenger12, $Softonic12, $Pandora12, $Web2_012, $Wikipedia12, $Google12,
-                    $Windows12, $YouTube12, $MSN12, $Yahoo12,
-                    $Facebook13, $Badoo13, $Instagram13, $GoogleMas13, $Twitter13, $Schoology13, $Eduteka13, $Moodle13, $Claroline13,
-                    $Edmodo13, $WhatsApp13, $Spotify13, $Messenger13, $Softonic13, $Pandora13, $Web2_013, $Wikipedia13, $Google13,
-                    $Windows13, $YouTube13, $MSN13, $Yahoo13,
-                    $Facebook14, $Badoo14, $Instagram14, $GoogleMas14, $Twitter14, $Schoology14, $Eduteka14, $Moodle14, $Claroline14,
-                    $Edmodo14, $WhatsApp14, $Spotify14, $Messenger14, $Softonic14, $Pandora14, $Web2_014, $Wikipedia14, $Google14,
-                    $Windows14, $YouTube14, $MSN14, $Yahoo14,
-                    $Facebook15, $Badoo15, $Instagram15, $GoogleMas15, $Twitter15, $Schoology15, $Eduteka15, $Moodle15, $Claroline15,
-                    $Edmodo15, $WhatsApp15, $Spotify15, $Messenger15, $Softonic15, $Pandora15, $Web2_015, $Wikipedia15, $Google15,
-                    $Windows15, $YouTube15, $MSN15, $Yahoo15,
-                    '$otro',
-                    $total_redes, $total_plataformas, $total_apps, $total_comunidades, $total_internet)";
+    require_once "conexion.php";
+    
+    $comando = "INSERT INTO cuestionario2
+                VALUES($matricula, $cuatrimestre, $edad, $sexo, $carrera,
+                $computadora, $laptop, $tablet, $smart, $noTengo,
+                $Facebook1, $Badoo1, $Instagram1, $GoogleMas1, $Twitter1, $Schoology1, $Eduteka1, $Moodle1, $Claroline1,
+                $Edmodo1, $WhatsApp1, $Spotify1, $Messenger1, $Softonic1, $Pandora1, $Web2_01, $Wikipedia1, $Google1,
+                $Windows1, $YouTube1, $MSN1, $Yahoo1,
+                $Facebook2, $Badoo2, $Instagram2, $GoogleMas2, $Twitter2, $Schoology2, $Eduteka2, $Moodle2, $Claroline2,
+                $Edmodo2, $WhatsApp2, $Spotify2, $Messenger2, $Softonic2, $Pandora2, $Web2_02, $Wikipedia2, $Google2,
+                $Windows2, $YouTube2, $MSN2, $Yahoo2,
+                $Facebook3, $Badoo3, $Instagram3, $GoogleMas3, $Twitter3, $Schoology3, $Eduteka3, $Moodle3, $Claroline3,
+                $Edmodo3, $WhatsApp3, $Spotify3, $Messenger3, $Softonic3, $Pandora3, $Web2_03, $Wikipedia3, $Google3,
+                $Windows3, $YouTube3, $MSN3, $Yahoo3,
+                $Facebook4, $Badoo4, $Instagram4, $GoogleMas4, $Twitter4, $Schoology4, $Eduteka4, $Moodle4, $Claroline4,
+                $Edmodo4, $WhatsApp4, $Spotify4, $Messenger4, $Softonic4, $Pandora4, $Web2_04, $Wikipedia4, $Google4,
+                $Windows4, $YouTube4, $MSN4, $Yahoo4,
+                $Facebook5, $Badoo5, $Instagram5, $GoogleMas5, $Twitter5, $Schoology5, $Eduteka5, $Moodle5, $Claroline5,
+                $Edmodo5, $WhatsApp5, $Spotify5, $Messenger5, $Softonic5, $Pandora5, $Web2_05, $Wikipedia5, $Google5,
+                $Windows5, $YouTube5, $MSN5, $Yahoo5,
+                $Facebook6, $Badoo6, $Instagram6, $GoogleMas6, $Twitter6, $Schoology6, $Eduteka6, $Moodle6, $Claroline6,
+                $Edmodo6, $WhatsApp6, $Spotify6, $Messenger6, $Softonic6, $Pandora6, $Web2_06, $Wikipedia6, $Google6,
+                $Windows6, $YouTube6, $MSN6, $Yahoo6,
+                $Facebook7, $Badoo7, $Instagram7, $GoogleMas7, $Twitter7, $Schoology7, $Eduteka7, $Moodle7, $Claroline7,
+                $Edmodo7, $WhatsApp7, $Spotify7, $Messenger7, $Softonic7, $Pandora7, $Web2_07, $Wikipedia7, $Google7,
+                $Windows7, $YouTube7, $MSN7, $Yahoo7,
+                $Facebook8, $Badoo8, $Instagram8, $GoogleMas8, $Twitter8, $Schoology8, $Eduteka8, $Moodle8, $Claroline8,
+                $Edmodo8, $WhatsApp8, $Spotify8, $Messenger8, $Softonic8, $Pandora8, $Web2_08, $Wikipedia8, $Google8,
+                $Windows8, $YouTube8, $MSN8, $Yahoo8,
+                $Facebook9, $Badoo9, $Instagram9, $GoogleMas9, $Twitter9, $Schoology9, $Eduteka9, $Moodle9, $Claroline9,
+                $Edmodo9, $WhatsApp9, $Spotify9, $Messenger9, $Softonic9, $Pandora9, $Web2_09, $Wikipedia9, $Google9,
+                $Windows9, $YouTube9, $MSN9, $Yahoo9,
+                $Facebook10, $Badoo10, $Instagram10, $GoogleMas10, $Twitter10, $Schoology10, $Eduteka10, $Moodle10, $Claroline10,
+                $Edmodo10, $WhatsApp10, $Spotify10, $Messenger10, $Softonic10, $Pandora10, $Web2_010, $Wikipedia10, $Google10,
+                $Windows10, $YouTube10, $MSN10, $Yahoo10,
+                $Facebook11, $Badoo11, $Instagram11, $GoogleMas11, $Twitter11, $Schoology11, $Eduteka11, $Moodle11, $Claroline11,
+                $Edmodo11, $WhatsApp11, $Spotify11, $Messenger11, $Softonic11, $Pandora11, $Web2_011, $Wikipedia11, $Google11,
+                $Windows11, $YouTube11, $MSN11, $Yahoo11,
+                $Facebook12, $Badoo12, $Instagram12, $GoogleMas12, $Twitter12, $Schoology12, $Eduteka12, $Moodle12, $Claroline12,
+                $Edmodo12, $WhatsApp12, $Spotify12, $Messenger12, $Softonic12, $Pandora12, $Web2_012, $Wikipedia12, $Google12,
+                $Windows12, $YouTube12, $MSN12, $Yahoo12,
+                $Facebook13, $Badoo13, $Instagram13, $GoogleMas13, $Twitter13, $Schoology13, $Eduteka13, $Moodle13, $Claroline13,
+                $Edmodo13, $WhatsApp13, $Spotify13, $Messenger13, $Softonic13, $Pandora13, $Web2_013, $Wikipedia13, $Google13,
+                $Windows13, $YouTube13, $MSN13, $Yahoo13,
+                $Facebook14, $Badoo14, $Instagram14, $GoogleMas14, $Twitter14, $Schoology14, $Eduteka14, $Moodle14, $Claroline14,
+                $Edmodo14, $WhatsApp14, $Spotify14, $Messenger14, $Softonic14, $Pandora14, $Web2_014, $Wikipedia14, $Google14,
+                $Windows14, $YouTube14, $MSN14, $Yahoo14,
+                $Facebook15, $Badoo15, $Instagram15, $GoogleMas15, $Twitter15, $Schoology15, $Eduteka15, $Moodle15, $Claroline15,
+                $Edmodo15, $WhatsApp15, $Spotify15, $Messenger15, $Softonic15, $Pandora15, $Web2_015, $Wikipedia15, $Google15,
+                $Windows15, $YouTube15, $MSN15, $Yahoo15,
+                '$otro',
+                $total_redes, $total_plataformas, $total_apps, $total_comunidades, $total_internet)";
 //echo $comando."<br /><br />";
-        if($conexion->query($comando) === TRUE)
-            echo "Registro Guardado<h1>Muchas Gracias, La encuesta ha terminado</h1><a href='index.html'>Volver a capturar cuestionario</a>";
-        else
-            die("Error: ".$conexion->error);
+    if($conexion->query($comando) === TRUE)
+        echo "Registro Guardado<h1>Muchas Gracias, La encuesta ha terminado</h1><a href='index.html'>Volver a capturar cuestionario</a>";
+    else
+        die("Error: ".$conexion->error);
 
-        $conexion->close();
-    }
+    $conexion->close();
 
     $conexion = null;
 
