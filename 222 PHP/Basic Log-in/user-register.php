@@ -10,47 +10,40 @@
 
 	require_once("conexion.php");
 
-	if (!$conexion)
+	echo "Conexi&oacute;n exitosa<br /><br /> ";
+
+	$query = "SELECT *
+	          FROM alumnos
+			  WHERE no_control ={$no_control}
+			  AND registro ='0'";
+
+	$result = $conexion->query($query);
+
+	if ($result->num_rows == 1)
 	{
-		die("Error: " . mysqli_connect_error());
-	}
-	else
-	{
-		echo "Conexi&oacute;n exitosa<br /><br /> ";
+		$query = "UPDATE alumnos
+		          SET nombre = '{$nombre}',
+				      paterno = '{$paterno}',
+					  materno = '{$materno}',
+					  correo = '{$correo}',
+					  contrasena = '{$contrasena}'
+				  WHERE no_control = {$no_control}";
 
-		$query = "SELECT *
-		          FROM alumnos
-				  WHERE no_control =$no_control
-				  AND registro ='0'";
-
-		$result = mysqli_query($conexion, $query);
-
-		if (mysqli_num_rows($result) == 1)
+		if($conexion->query($query) === TRUE)
 		{
-			$query = "UPDATE alumnos
-			          SET nombre = '$nombre',
-					      paterno = '$paterno',
-						  materno = '$materno',
-						  correo = '$correo',
-						  contrasena = '$contrasena'
-					  WHERE no_control = ".$no_control;
+			echo "Registro guardado<br /><br /> ";
 
-			if(mysqli_query($conexion, $query))
-			{
-				echo "Registro guardado<br /><br /> ";
-
-				mail($correo, $subject, $message, $headers);
-			}
-			else
-			{
-				echo "Error: ".mysqli_error($conexion);
-			}
+			mail($correo, $subject, $message, $headers);
 		}
 		else
 		{
-			echo "0 Registros";
+			echo "Error: " . $conexion->error;
 		}
-
-		mysqli_close($conexion);
 	}
+	else
+	{
+		echo "0 Registros";
+	}
+
+	$conexion = null;
 ?>

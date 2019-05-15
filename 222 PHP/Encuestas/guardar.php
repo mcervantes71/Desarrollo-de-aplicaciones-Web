@@ -365,8 +365,8 @@
     $total_internet = $_POST["total_internet"];
 
     require_once "conexion.php";
-    
-    $comando = "INSERT INTO cuestionario2
+
+    $query = "INSERT INTO cuestionario2
                 VALUES($matricula, $cuatrimestre, $edad, $sexo, $carrera,
                 $computadora, $laptop, $tablet, $smart, $noTengo,
                 $Facebook1, $Badoo1, $Instagram1, $GoogleMas1, $Twitter1, $Schoology1, $Eduteka1, $Moodle1, $Claroline1,
@@ -416,8 +416,8 @@
                 $Windows15, $YouTube15, $MSN15, $Yahoo15,
                 '$otro',
                 $total_redes, $total_plataformas, $total_apps, $total_comunidades, $total_internet)";
-//echo $comando."<br /><br />";
-    if($conexion->query($comando) === TRUE)
+//echo $query."<br /><br />";
+    if($conexion->query($query) === TRUE)
         echo "Registro Guardado<h1>Muchas Gracias, La encuesta ha terminado</h1><a href='index.html'>Volver a capturar cuestionario</a>";
     else
         die("Error: ".$conexion->error);

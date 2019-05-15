@@ -4,28 +4,21 @@
 
 	require_once("conexion.php");
 
-	if (!$conexion)
+	echo "Conexi&oacute;n exitosa<br /><br /> ";
+
+	$query = "UPDATE alumnos
+	          SET contrasena = '{$contrasena}',
+			      registro = '".date("M")."'
+			  WHERE no_control={$no_control}";
+
+	if($conexion->query($query) === TRUE)
 	{
-		die("Error: " . mysqli_connect_error());
+		echo "Registro Actualizado";
 	}
 	else
 	{
-		echo "Conexi&oacute;n exitosa<br /><br /> ";
-
-		$query = "UPDATE alumnos
-		          SET contrasena = '$contrasena',
-				      registro = '".date("M")."'
-				  WHERE no_control=".$no_control;
-
-		if(mysqli_query($conexion, $query))
-		{
-			echo "Registro Actualizado";
-		}
-		else
-		{
-			echo "Error: ".mysqli_error($conexion);
-		}
-
-		mysqli_close($conexion);
+		echo "Error: " . $conexion->error;
 	}
+
+	$conexion = null;
 ?>

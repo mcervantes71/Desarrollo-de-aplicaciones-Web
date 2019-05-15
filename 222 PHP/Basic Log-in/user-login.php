@@ -4,33 +4,26 @@
 
 	require_once("conexion.php");
 
-	if (!$conexion)
+	echo "Conexi&oacute;n exitosa<br /><br /> ";
+
+	$query = "SELECT *
+	          FROM alumnos
+			  WHERE no_control ={$no_control}
+			  AND contrasena = '{$contrasena}'";
+
+	$result = $conexion->query($query);
+
+	if ($result->num_rows == 1)
 	{
-		die("Error: " . mysqli_connect_error());
+		while($row = $result->fetch_assoc())
+		{
+			echo "No Control: " . $row["no_control"]. "<br>Nombre: " . $row["nombre"]. "<br>Apellido: " . $row["paterno"]." ". $row["materno"]. "<br />";
+		}
 	}
 	else
 	{
-		echo "Conexi&oacute;n exitosa<br /><br /> ";
-
-		$query = "SELECT *
-		          FROM alumnos
-				  WHERE no_control =$no_control
-				  AND contrasena = '$contrasena'";
-
-		$result = mysqli_query($conexion, $query);
-
-		if (mysqli_num_rows($result) == 1)
-		{
-			while($row = mysqli_fetch_assoc($result))
-			{
-				echo "No Control: " . $row["no_control"]. "<br>Nombre: " . $row["nombre"]. "<br>Apellido: " . $row["paterno"]." ". $row["materno"]. "<br />";
-			}
-		}
-		else
-		{
-			echo "0 Registros";
-		}
-
-		mysqli_close($conexion);
+		echo "0 Registros";
 	}
+
+	$conexion = null;
 ?>
