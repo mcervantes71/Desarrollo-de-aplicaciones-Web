@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gist Task</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <!--a class="brand-logo" href="https://www.google.com"><i id="logo" class="material-icons">healing</i>Med-Pro</a>
+                    <a class="sidenav-trigger hide-on-med-and-up" data-target="mobile" href=""><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-small-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul-->
+                </div>
+            </nav>
+        </div>
+        <!--ul id="mobile" class="sidenav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul-->
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+        <div class="container">
+            <h4>Choose an option that correctly match the operations:</h4>
+            <form action="guardar.php" method="post">
+
+                <div class="row">
+                    <h5 class="col s1">5</h5>
+                    <div class="input-field col s2">
+                        <select name="q1" id="q1" class="teal">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                            <option value="5">%</option>
+                            <option value="6" selected>**</option>
+                        </select>
+                        <label>Operators:</label>
+                    </div>
+                    <h5 class="col s4">5  =  10<i id="q1_answer" class="material-icons right"></i></h5>
+                </div>
+                <div class="row">
+                    <h5 class="col s1">9</h5>
+                    <div class="input-field col s2">
+                        <select name="q2" id="q2">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                            <option value="5">%</option>
+                            <option value="6" selected>**</option>
+                        </select>
+                        <label>Operators:</label>
+                    </div>
+                    <h5 class="col s4">6  =  3<i id="q2_answer" class="material-icons right"></i></h5>
+                </div>
+                <div class="row">
+                    <h5 class="col s1">4</h5>
+                    <div class="input-field col s2">
+                        <select name="q3" id="q3">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                            <option value="5">%</option>
+                            <option value="6" selected>**</option>
+                        </select>
+                        <label>Operators:</label>
+                    </div>
+                    <h5 class="col s4">3  =  12<i id="q3_answer" class="material-icons right"></i></h5>
+                </div>
+                <div class="row">
+                    <h5 class="col s1">4</h5>
+                    <div class="input-field col s2">
+                        <select name="q4" id="q4">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                            <option value="5">%</option>
+                            <option value="6" selected>**</option>
+                        </select>
+                        <label>Operators:</label>
+                    </div>
+                    <h5 class="col s4">2  =  0<i id="q4_answer" class="material-icons right"></i></h5>
+                </div>
+                <div class="row">
+                    <h5 class="col s1">5</h5>
+                    <div class="input-field col s2">
+                        <select name="q5" id="q5">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                            <option value="5">%</option>
+                            <option value="6" selected>**</option>
+                        </select>
+                        <label>Operators:</label>
+                    </div>
+                    <h5 class="col s1">3</h5>
+                    <div class="input-field col s2">
+                        <select name="q6" id="q6">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">*</option>
+                            <option value="4">/</option>
+                            <option value="5">%</option>
+                            <option value="6" selected>**</option>
+                        </select>
+                        <label>Operators:</label>
+                    </div>
+                    <h5 class="col s4">5  =  20<i id="q5_answer" class="material-icons right"></i></h5>
+                </div>
+
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+
+            </form>
+        </div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+        <footer>
+            <div class="footer-copyleft blue">
+                Copyleft <span class="copy-left">&copy;</span> 2019 Martin Cervantes
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

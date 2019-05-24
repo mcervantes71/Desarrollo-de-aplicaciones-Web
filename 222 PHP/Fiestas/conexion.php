@@ -4,8 +4,9 @@
     $password = "P4ssw0rd55";
     $db_name = "Party_Supplies";
 
-    $conexion = mysqli_connect($host, $user_name, $password, $db_name);
+    $conexion = new mysqli($host, $user_name, $password, $db_name);
 
-    if(!$conexion)
-        die("Error: " . mysqli_connect_error());
+    if($conexion->connect_error)
+        die("Error: " . $conexion->connect_error);
+
 ?>

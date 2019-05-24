@@ -19,26 +19,24 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
         <div class="container">
-            <form action="guardar.php" method="post">
-                <div class="input-field">
-                    <input id="nombre" class="validate" type="text">
-                    <label for="nombre">Nombre</label>
-                </div>
-
-                <div class="input-field">
-                    <input id="precio" class="validate" type="number">
-                    <label for="precio">Precio</label>
-                </div>
-
-                <div class="input-field">
-                    <input id="cantidad" class="validate" type="number">
-                    <label for="cantidad">Cantidad</label>
-                </div>
-
-                <button class="btn waves-effect waves-light" type="submit" name="action">Guardar<i class="material-icons right">save</i></button>
-                <button class="btn waves-effect waves-red red accent-2" >Cancelar<i class="material-icons right">cancel</i></button>
-
-            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Item Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>$0.87</td>
+                        <td> <i class="material-icons">delete</i></td>
+                        <td> <i class="material-icons">edit</i></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
