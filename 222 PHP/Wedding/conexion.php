@@ -1,10 +1,11 @@
 <?php
     $server = "localhost";
-    $user = "Admin";
+    $user_name = "Admin";
     $password = "123456";
-    $dbname = "Wedding";
+    $db_name = "Wedding";
 
-    $conexion = mysqli_connect($server, $user, $password, $dbname);
+    $conexion = new mysqli($server, $user_name, $password, $db_name);
 
-    if(!$conexion) die("Error: ".mysqli_connect_error());
+    if($conexion->connect_error)
+        die("Error: " . $conexion->connect_error);
 ?>
