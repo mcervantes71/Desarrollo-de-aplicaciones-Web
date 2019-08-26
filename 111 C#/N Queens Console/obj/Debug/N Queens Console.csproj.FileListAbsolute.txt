@@ -1,0 +1,7 @@
+C:\Users\Martin Cervantes\Desktop\N Queens Console\bin\Debug\EightQueensConsole.exe.config
+C:\Users\Martin Cervantes\Desktop\N Queens Console\bin\Debug\EightQueensConsole.exe
+C:\Users\Martin Cervantes\Desktop\N Queens Console\bin\Debug\EightQueensConsole.pdb
+C:\Users\Martin Cervantes\Desktop\N Queens Console\obj\Debug\N Queens Console.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\N Queens Console\obj\Debug\N Queens Console.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\N Queens Console\obj\Debug\EightQueensConsole.exe
+C:\Users\Martin Cervantes\Desktop\N Queens Console\obj\Debug\EightQueensConsole.pdb
