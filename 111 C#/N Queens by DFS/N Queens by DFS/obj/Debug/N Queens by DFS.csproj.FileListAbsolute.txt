@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\bin\Debug\N Queens by DFS.exe.config
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\bin\Debug\N Queens by DFS.exe
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\bin\Debug\N Queens by DFS.pdb
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N Queens by DFS.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N_Queens_by_DFS.Form1.resources
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N_Queens_by_DFS.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N Queens by DFS.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N Queens by DFS.csproj.CoreCompileInputs.cache
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N Queens by DFS.exe
+C:\Users\Martin Cervantes\Desktop\N Queens by DFS\N Queens by DFS\obj\Debug\N Queens by DFS.pdb
