@@ -1,0 +1,9 @@
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\bin\Debug\Speech R-S.exe.config
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\bin\Debug\Speech R-S.exe
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\bin\Debug\Speech R-S.pdb
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\obj\Debug\Speech R-S.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\obj\Debug\Speech_R_S.Form1.resources
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\obj\Debug\Speech_R_S.Properties.Resources.resources
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\obj\Debug\Speech R-S.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\obj\Debug\Speech R-S.exe
+C:\Users\Martin Cervantes\Desktop\Speech R-S\Speech R-S\obj\Debug\Speech R-S.pdb
