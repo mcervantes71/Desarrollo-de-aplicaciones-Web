@@ -1,0 +1,9 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\bin\Debug\NQueens by BFS.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\bin\Debug\NQueens by BFS.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\bin\Debug\NQueens by BFS.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\obj\Debug\N Queens by BFS.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\obj\Debug\NQueens_by_BFS.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\obj\Debug\NQueens_by_BFS.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\obj\Debug\N Queens by BFS.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\obj\Debug\NQueens by BFS.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens by BFS\N Queens by BFS\obj\Debug\NQueens by BFS.pdb

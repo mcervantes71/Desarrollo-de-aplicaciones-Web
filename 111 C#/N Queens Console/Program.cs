@@ -15,9 +15,9 @@ namespace EightQueensConsole
 
             do
             {
+                Position.NumberOfQueens = 0;
                 Position.NumberOfAttempts = 0;
                 Position.NumberOfNodes = 0;
-                Position.NumberOfQueens = 0;
                 Position.NumberOfSolutions = 0;
 
                 Console.Clear();

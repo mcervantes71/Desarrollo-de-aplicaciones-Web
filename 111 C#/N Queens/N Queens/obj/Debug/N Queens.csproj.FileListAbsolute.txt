@@ -1,0 +1,9 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\bin\Debug\N Queens.exe.config
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\bin\Debug\N Queens.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\bin\Debug\N Queens.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\obj\Debug\N_Queens.Form1.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\obj\Debug\N_Queens.Properties.Resources.resources
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\obj\Debug\N Queens.csproj.GenerateResource.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\obj\Debug\N Queens.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\obj\Debug\N Queens.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\N Queens\N Queens\obj\Debug\N Queens.csprojAssemblyReference.cache
