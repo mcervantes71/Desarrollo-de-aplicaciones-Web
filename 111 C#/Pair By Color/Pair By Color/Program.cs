@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Pair_By_Color
 {
@@ -7,13 +7,14 @@ namespace Pair_By_Color
     {
         static void Main(string[] args)
         {
-            int n = 9;
-            int[] ar = { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
+            int n = 10;
+            int[] ar = { 1,1,3,1,2,1,3,3,3,3 };
 
+            int pair = 0;
             int odds = 0;
             int index = 0;
-            ArrayList numbers = new ArrayList();
-            ArrayList counters = new ArrayList();
+            List<int> numbers = new List<int>();
+            List<int> counters = new List<int>();
 
 
             for (int i = 0; i < n; i++)
@@ -26,16 +27,18 @@ namespace Pair_By_Color
                 else
                 {
                     index = numbers.IndexOf(ar[i]);
-                    counters[index] = Convert.ToInt32(counters[index]) + 1;
+                    counters[index] += 1;
                 }
             }
 
             foreach (int count in counters)
             {
-                odds += Convert.ToInt32(count) % 2;
+                pair += count / 2;
+                odds += count % 2;
             }
 
-            Console.WriteLine(odds);
+            Console.WriteLine("Pair of Socks --> " + pair);
+            Console.WriteLine("Odds --> " + odds);
         }
     }
 }

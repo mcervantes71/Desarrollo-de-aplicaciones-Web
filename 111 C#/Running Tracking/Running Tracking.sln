@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Running Tracking", "Running Tracking\Running Tracking.csproj", "{B409B719-7666-40B8-B9C1-1B73FFB4130A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B409B719-7666-40B8-B9C1-1B73FFB4130A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B409B719-7666-40B8-B9C1-1B73FFB4130A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B409B719-7666-40B8-B9C1-1B73FFB4130A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B409B719-7666-40B8-B9C1-1B73FFB4130A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0671EF7A-42CE-455A-B2BA-261D272DC4A8}
+	EndGlobalSection
+EndGlobal

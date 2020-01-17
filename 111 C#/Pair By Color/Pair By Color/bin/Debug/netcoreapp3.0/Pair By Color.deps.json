@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Pair By Color/1.0.0": {
+        "runtime": {
+          "Pair By Color.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pair By Color/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

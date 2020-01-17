@@ -1,0 +1,10 @@
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\bin\Debug\netcoreapp3.0\Pair By Color.exe
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\bin\Debug\netcoreapp3.0\Pair By Color.deps.json
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\bin\Debug\netcoreapp3.0\Pair By Color.runtimeconfig.json
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\bin\Debug\netcoreapp3.0\Pair By Color.runtimeconfig.dev.json
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\bin\Debug\netcoreapp3.0\Pair By Color.dll
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\bin\Debug\netcoreapp3.0\Pair By Color.pdb
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\obj\Debug\netcoreapp3.0\Pair By Color.AssemblyInfoInputs.cache
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\obj\Debug\netcoreapp3.0\Pair By Color.AssemblyInfo.cs
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\obj\Debug\netcoreapp3.0\Pair By Color.dll
+C:\Users\Martin Cervantes\Downloads\Programming\111 C#\Pair By Color\Pair By Color\obj\Debug\netcoreapp3.0\Pair By Color.pdb
