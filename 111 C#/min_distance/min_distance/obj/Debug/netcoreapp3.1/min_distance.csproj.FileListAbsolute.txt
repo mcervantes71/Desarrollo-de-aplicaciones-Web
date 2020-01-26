@@ -1,0 +1,11 @@
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\bin\Debug\netcoreapp3.1\min_distance.exe
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\bin\Debug\netcoreapp3.1\min_distance.deps.json
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\bin\Debug\netcoreapp3.1\min_distance.runtimeconfig.json
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\bin\Debug\netcoreapp3.1\min_distance.runtimeconfig.dev.json
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\bin\Debug\netcoreapp3.1\min_distance.dll
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\bin\Debug\netcoreapp3.1\min_distance.pdb
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\obj\Debug\netcoreapp3.1\min_distance.csprojAssemblyReference.cache
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\obj\Debug\netcoreapp3.1\min_distance.AssemblyInfoInputs.cache
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\obj\Debug\netcoreapp3.1\min_distance.AssemblyInfo.cs
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\obj\Debug\netcoreapp3.1\min_distance.dll
+C:\Users\Martin Cervantes\Desktop\min_distance\min_distance\obj\Debug\netcoreapp3.1\min_distance.pdb
