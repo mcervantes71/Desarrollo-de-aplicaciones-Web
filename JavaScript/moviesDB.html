@@ -4,6 +4,8 @@
         <title>Movies DB</title>
     </head>
     <body>
+        <h1>Open your console to get the result</h1>
+
         <script>
             var movies = [{title:"In Bruge",
                            rating: 5,
@@ -18,11 +20,14 @@
                            rating: 3,
                            hasWatched: false}];
 
-            movies.forEach(function(movie){
-                if(movie.hasWatched){
+            movies.forEach(function(movie)
+            {
+                if(movie.hasWatched)
+                {
                     console.log("You have watched \"" + movie.title + "\" - " + movie.rating + " starts");
                 }
-                else {
+                else
+                {
                     console.log("You have not watched \"" + movie.title + "\" - " + movie.rating + " starts");
                 }
             });
