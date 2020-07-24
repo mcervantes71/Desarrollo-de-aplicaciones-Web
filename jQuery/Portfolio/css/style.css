@@ -237,3 +237,27 @@ main {
   display: inline-block;
   transform: rotate(180deg);
 }
+
+@media (max-width: 1020px) {
+  .skills {
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    margin: 1rem 1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .repos {
+    margin-bottom: 2rem;
+  }
+
+  .bg_black,
+  .bg_blue {
+    height: 27rem;
+  }
+}
