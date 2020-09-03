@@ -1,5 +1,10 @@
-let game = new Phaser.Game(600, 400, Phaser.AUTO);
+let gameScene = new Phaser.Scene('Game');
 
-game.state.add('state1', demo.state1);
+let config = {
+  type: Phaser.AUTO,
+  width: 640,
+  height: 360,
+  scene: gameScene
+};
 
-game.state.start('state1');
+const game = new Phaser.Game(config);
