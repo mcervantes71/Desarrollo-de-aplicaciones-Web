@@ -12,8 +12,7 @@ console.log(user);
 //Option One
 //fs.appendFile('greetings.txt', 'Hello, ' + user.username, function(err) {
 /*fs.appendFile('greetings.txt', `Hello, ${user.username}. You are ${notes.age} years old.`, function(err) {
-    if(err)
-    {
+    if(err) {
         concole.log('Unable to write to file');
     }
 });*/

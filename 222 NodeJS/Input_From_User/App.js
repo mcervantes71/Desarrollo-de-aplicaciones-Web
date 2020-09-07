@@ -13,27 +13,18 @@ console.log('Command: ', command);
 //console.log('Process: ', process.argv);
 console.log('Yargs: ', argv);
 
-if(command === 'add')
-{
+if(command === 'add') {
     //console.log('Adding new note');
     notes.addNote(argv.title, argv.body);
-}
-else if(command === 'list')
-{
+} else if(command === 'list') {
     //console.log('Listing all notes');
     notes.getAll();
-}
-else if(command === 'read')
-{
+} else if(command === 'read') {
     //console.log('Reading a note');
     notes.readNote(argv.title);
-}
-else if(command === 'remove')
-{
+} else if(command === 'remove') {
     //console.log('Removing a note');
     notes.removeNote(argv.title);
-}
-else
-{
+} else {
     console.log('Command not recognize');
 }
