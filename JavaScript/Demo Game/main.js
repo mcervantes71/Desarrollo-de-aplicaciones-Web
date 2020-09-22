@@ -22,8 +22,8 @@ gameScene.create = function() {
   // player is alive
   this.isPlayerAlive = true;
 
-  // this.enemy = this.add.sprite(this.sys.game.config.width - 60, this.sys.game.config.height / 2, 'enemy');
-  // this.enemy.setScale(0.25);
+  this.enemy = this.add.sprite(this.sys.game.config.width - 60, this.sys.game.config.height / 2, 'enemy');
+  this.enemy.setScale(0.25);
   this.enemies = this.add.group({
     key: 'enemy',
     repeat: 2,
@@ -54,13 +54,13 @@ gameScene.update = function() {
   let numEnemies = enemies.length;
 
   for (let i = 0; i < numEnemies; i++) {
-  //   enemies[i].y += enemies[i].speed;
-  //
-  //   if (enemies[i].y >= this.enemyMaxY && enemies[i].speed > 0) {
-  //     enemies[i].speed *= -1;
-  //   } else if (enemies[i].y <= this.enemyMinY && enemies[i].speed < 0) {
-  //     enemies[i].speed *= -1;
-  //   }
+    // enemies[i].y += enemies[i].speed;
+    //
+    // if (enemies[i].y >= this.enemyMaxY && enemies[i].speed > 0) {
+    //   enemies[i].speed *= -1;
+    // } else if (enemies[i].y <= this.enemyMinY && enemies[i].speed < 0) {
+    //   enemies[i].speed *= -1;
+    // }
     // enemies collision
     if (Phaser.Geom.Intersects.RectangleToRectangle(this.player.getBounds(), enemies[i].getBounds())) {
       this.gameOver();
