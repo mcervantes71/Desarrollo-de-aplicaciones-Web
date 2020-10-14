@@ -75,7 +75,7 @@ class Board extends React.Component {
 
     let status;
     if (winner) status = `Winner: ${winner}`;
-    else status = `Next player: ${xIsNext ? 'X' : 'O'}`;}
+    else status = `Next player: ${xIsNext ? 'X' : 'O'}`;
 
     return (
       <div className="game-board">
@@ -100,10 +100,10 @@ class Board extends React.Component {
   }
 }
 
-const Game = () => (
-  <div className="game">
-    <Board />
-  </div>
-);
-
-export default Game;
+export default function Game() {
+  return (
+    <div className="game">
+      <Board />
+    </div>
+  );
+}
